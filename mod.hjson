@@ -1,5 +1,5 @@
 displayName: "[#261354]BioMecHazard"
-name: "biomechazard-mod"
+name: "biomechazard"
 author: "[cyan]MiteMoisie"
 main: "biomechazard.BioMecHazardModLauncher"
 subtitle: "Expérimental. À utiliser avec prudence."
