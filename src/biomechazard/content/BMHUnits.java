@@ -64,7 +64,7 @@ public class BMHUnits{
 			strafePenalty = 0.3f;
 			
 			weapons.add(new Weapon("-mouth"){{
-                reload = 75f; //75f;
+                reload = 40f; //75f;
                 shootY = 8f;
                 x = 0f;
                 y = 0f;
@@ -75,9 +75,9 @@ public class BMHUnits{
                 shootStatus = StatusEffects.slow;
                 shootStatusDuration = 60f * 3;
                 mirror = false;
-                bullet = new ContinuousLaserBulletType(41.67f){{
+                bullet = new ContinuousLaserBulletType(41.66f){{
                     width = 4f;
-                    length = 366.85f;
+                    length = 293.5f;
                     drawSize = 100f;
                     lifetime = 300f;
                     healPercent = 0.5f;
@@ -93,7 +93,10 @@ public class BMHUnits{
 			range = 125f;  
             
 			abilities.add(new RegenAbility(){{percentAmount = 0.034f;}});
-			//abilities.add(new RegenAbility(){{percentAmount = 1f / (240f * 60f * 2f) * 100f;}});
+			//RepairFieldAbility(float amount, float reload, float range)
+			abilities.add(new RepairFieldAbility(1, 100, 60));
+			//StatusFieldAbility(StatusEffect effect, float duration, float reload, float range)
+			abilities.add(new StatusFieldAbility(overdrive, 60, 100, 20));
 			
             engineSize = 3f;
 			engineOffset = 12f;
@@ -101,6 +104,7 @@ public class BMHUnits{
 			engineColorInner = Color.valueOf("00E673");
         }};
 }}
+
 
 
 
