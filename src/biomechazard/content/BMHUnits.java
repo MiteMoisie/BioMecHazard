@@ -32,7 +32,7 @@ public class BMHUnits{
         mokuge = new UnitType("mokuge"){{
 			this.constructor = UnitEntity::create;
 			
-			outlineColor = Color.valueOf("303a45");
+			outlineColor = Color.valueOf("303A45");
 			health = 2280;
             armor = 25;
 			flying = true;
@@ -82,21 +82,22 @@ public class BMHUnits{
                     healPercent = 0.5f;
                     collidesTeam = true;
                     buildingDamageMultiplier = 0.10f;
-                    colors = new Color[]{Color.valueOf("00E600"), Color.valueOf("A865C9"), Color.valueOf("A865C9"), Color.valueOf("ffffff")};
-					//C43737 4900FF 8B73C7
+                    colors = new Color[]{Color.valueOf("00FFFF"), Color.valueOf("7665C9"), Color.valueOf("BD8BD6"), Color.valueOf("000000")};
+					//, Color.valueOf("FF0000")
                     chargeEffect = BMHVisualEffects.purpleLaserChargeBig;
                 }};
             }});
 			
             hitSize = 17f;
-			range = 125f;  
+			range = 204f;  
             
-			abilities.add(new RegenAbility(){{percentAmount = 0.015f;}});
+			abilities.add(new RegenAbility(){{percentAmount = 0.033f;}});
 			//abilities.add(new RegenAbility(){{percentAmount = 1f / (240f * 60f * 2f) * 100f;}});
 			
-            engineSize = 4f;
+            engineSize = 2f;
 			engineOffset = 12f;
-			engineColor = Color.valueOf("E60073");
+			engineColor = Color.valueOf("B40059");
 			engineColorInner = Color.valueOf("00E673");
         }};
 }}
+
