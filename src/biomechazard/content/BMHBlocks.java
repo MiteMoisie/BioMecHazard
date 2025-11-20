@@ -1,0 +1,91 @@
+package biomechazard.content;
+
+import mindustry.world.*;
+import mindustry.world.blocks.storage.CoreBlock;
+import mindustry.world.blocks.power.*;
+import mindustry.type.*;
+import mindustry.content.Items.*;
+
+public class BMHBlocks{
+    public static Block coreNethrax;
+
+        public static void load(){
+        
+        coreNethrax = new CoreBlock("core-nethrax"){{
+            requirements(Category.effect, with(sporePod, 14000, titanium, 14000, silicon, 11000, thorium, 10000, phaseFabric, 7000, surgeAlloy, 4000));
+
+            unitType = BMHUnits.mokuge;
+            health = 13820;
+            size = 6;
+			armor = 60f;
+			unitCapModifier = 32;
+            itemCapacity = 19000;
+			hasLiquids = true;
+			liquidCapacity = 8000;
+			hasPower = true;
+			consumesPower = false;
+			outputsPower = true;
+			conductivePower = true;
+			
+			//À faire : ajouter la capacité au noyau de produire de l'énergie
+			//powerProduction = 14.5f;
+			//
+			/*Code java converti d'après du code javascript. 
+			*import mindustry.world.blocks.storage.CoreBlock;
+			*
+			*public class coreLevel4 extends CoreBlock {
+			*    private static final int powerProduction = 9;
+			*    private static final float productionEfficiency = 1.0f;
+			*
+			*    public coreLevel4() {
+			*        super("coreLevel4");
+			*        hasPower = true;
+			*        outputsPower = true;
+			*        consumesPower = false;
+			*
+			*        baseExplosiveness = 10;
+			*        thrusterLength = 46f / 4f;
+			*    }
+			*
+			*    @Override
+			*    public CoreBuild createBuild() {
+			*        return new coreLevel4Build();
+			*    }
+			*
+			*    public class coreLevel4Build extends CoreBlock.CoreBuild {
+			*        public float getPowerProduction() {
+			*            return powerProduction * productionEfficiency;
+			*        }
+			*    }
+			*}
+			*/
+			/* Code javascript d'origine
+			*const powerProduction = 10;
+			*const productionEfficiency = 1.0;
+			*
+			*const coreLevel4 = extend(CoreBlock, "coreLevel4", {
+			*	
+			*    hasPower: true,
+			*    outputsPower: true,
+			*    consumesPower: false,
+			*	
+			*    baseExplosiveness: 12,
+			*    thrusterLength: 46/4,
+			*});
+			*
+			*coreLevel4.buildType = () => extend(CoreBlock.CoreBuild, coreLevel4, {
+			*	//endowing the core with the ability to produce power
+			*    getPowerProduction(){
+			*        return powerProduction * productionEfficiency;
+			*    }
+			*});
+			*/
+			
+            buildTime = 12600f;
+			floating = true;
+            placeableLiquid = true;
+            researchCostMultiplier = 0.15f;
+			requiresCoreZone = false;
+        }};
+}}
+
