@@ -29,6 +29,8 @@ public class BMHUnits{
         public static void load(){
         
         mokuge = new UnitType("mokuge"){{
+			this.constructor = UnitEntity::create;
+			
 			outlineColor = Color.valueOf("303a45");
 			health = 2280;
             armor = 25;
@@ -94,4 +96,5 @@ public class BMHUnits{
 			engineOffset = 12f;
         }};
 }}
+
 
