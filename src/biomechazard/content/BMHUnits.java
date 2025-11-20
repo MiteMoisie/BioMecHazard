@@ -75,11 +75,11 @@ public class BMHUnits{
                 shootStatus = StatusEffects.slow;
                 shootStatusDuration = 60f * 3;
                 mirror = false;
-                bullet = new ContinuousLaserBulletType(75f){{
+                bullet = new ContinuousLaserBulletType(41.67f){{
                     width = 4f;
-                    length = 225f;
+                    length = 366.85f;
                     drawSize = 100f;
-                    lifetime = 125f;
+                    lifetime = 300f;
                     healPercent = 0.5f;
                     collidesTeam = true;
                     buildingDamageMultiplier = 0.10f;
@@ -101,5 +101,6 @@ public class BMHUnits{
 			engineColorInner = Color.valueOf("00E673");
         }};
 }}
+
 
 
