@@ -3,7 +3,7 @@ package biomechazard.content;
 import arc.func.Prov;
 import arc.graphics.*;
 import arc.struct.*;
-//import mindustry.Vars;
+import mindustry.Vars;
 import mindustry.ai.*;
 import mindustry.ai.types.*;
 import mindustry.entities.abilities.*;
@@ -54,7 +54,7 @@ public class BMHUnits{
 			mineHardnessScaling = false;
 			
 			itemCapacity = 150;
-            payloadCapacity = (3 * 3) * Vars.tilePayload;
+            payloadCapacity = (3 * 3) * tilePayload;
 			
             speed = 6.7f;
 			rotateSpeed = 6.1f;
