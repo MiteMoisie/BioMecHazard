@@ -7,6 +7,9 @@ import mindustry.type.*;
 import mindustry.content.*;
 import mindustry.content.Items;
 
+import static mindustry.type.ItemStack.*;
+import static mindustry.content.Items.*;
+
 public class BMHBlocks{
     public static Block coreNethrax;
 
@@ -89,4 +92,5 @@ public class BMHBlocks{
 			requiresCoreZone = false;
         }};
 }}
+
 
