@@ -37,7 +37,7 @@ public class BMHUnits{
 			health = 2280;
             armor = 25;
 			flying = true;
-			immunities = ObjectSet.with(disarmed, sapped, slow, sporeSlowed, unmoving, shocked, freezing);
+			immunities = ObjectSet.with(disarmed, sapped, slow, sporeSlowed, unmoving, shocked, freezing, overdrive);
 			
 			lightRadius = 35f;
 			lightOpacity = 0.1f;
@@ -75,7 +75,7 @@ public class BMHUnits{
                 shootStatus = StatusEffects.slow;
                 shootStatusDuration = 60f * 3;
                 mirror = false;
-                bullet = new ContinuousLaserBulletType(41.66f){{
+                bullet = new ContinuousLaserBulletType(45f){{
                     width = 4f;
                     length = 293.5f;
                     drawSize = 100f;
@@ -94,9 +94,9 @@ public class BMHUnits{
             
 			abilities.add(new RegenAbility(){{percentAmount = 0.034f;}});
 			//RepairFieldAbility(float amount, float reload, float range)
-			abilities.add(new RepairFieldAbility(1, 100, 60));
+			abilities.add(new RepairFieldAbility(200f, 10f, 200f));
 			//StatusFieldAbility(StatusEffect effect, float duration, float reload, float range)
-			abilities.add(new StatusFieldAbility(overdrive, 60, 100, 20));
+			abilities.add(new StatusFieldAbility(overdrive, 90f, 100f, 120f));
 			
             engineSize = 3f;
 			engineOffset = 12f;
@@ -104,6 +104,7 @@ public class BMHUnits{
 			engineColorInner = Color.valueOf("00E673");
         }};
 }}
+
 
 
 
