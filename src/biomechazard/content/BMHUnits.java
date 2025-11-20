@@ -94,7 +94,7 @@ public class BMHUnits{
             
 			abilities.add(new RegenAbility(){{percentAmount = 0.034f;}});
 			//RepairFieldAbility(float amount, float reload, float range)
-			abilities.add(new RepairFieldAbility(200f, 10f, 200f));
+			abilities.add(new RepairFieldAbility(20f, 10f, 200f));
 			//StatusFieldAbility(StatusEffect effect, float duration, float reload, float range)
 			abilities.add(new StatusFieldAbility(overdrive, 90f, 100f, 120f));
 			
@@ -104,6 +104,7 @@ public class BMHUnits{
 			engineColorInner = Color.valueOf("00E673");
         }};
 }}
+
 
 
 
