@@ -1,4 +1,4 @@
-package jp.content;
+package biomechazard.content;
 
 import arc.graphics.*;
 import arc.graphics.g2d.*;
