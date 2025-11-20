@@ -30,6 +30,7 @@ public class BMHUnits{
         public static void load(){
         
         mokuge = new UnitType("mokuge"){{
+			//Plantage au démarrage : apparemment, ce constructeur est nécessaire
 			this.constructor = UnitEntity::create;
 			
 			outlineColor = Color.valueOf("303A45");
@@ -63,7 +64,7 @@ public class BMHUnits{
 			strafePenalty = 0.3f;
 			
 			weapons.add(new Weapon("-mouth"){{
-                reload = 150f; //75f;
+                reload = 75f; //75f;
                 shootY = 8f;
                 x = 0f;
                 y = 0f;
@@ -82,22 +83,23 @@ public class BMHUnits{
                     healPercent = 0.5f;
                     collidesTeam = true;
                     buildingDamageMultiplier = 0.10f;
-                    colors = new Color[]{Color.valueOf("00FFFF"), Color.valueOf("7665C9"), Color.valueOf("BD8BD6"), Color.valueOf("000000")};
-					//, Color.valueOf("FF0000")
+                    colors = new Color[]{Color.valueOf("FF0000"), Color.valueOf("7665C9"), Color.valueOf("BD8BD6"), Color.valueOf("000000")};
+					//, Color.valueOf("00FFFF")
                     chargeEffect = BMHVisualEffects.purpleLaserChargeBig;
                 }};
             }});
 			
             hitSize = 17f;
-			range = 204f;  
+			range = 125f;  
             
-			abilities.add(new RegenAbility(){{percentAmount = 0.033f;}});
+			abilities.add(new RegenAbility(){{percentAmount = 0.034f;}});
 			//abilities.add(new RegenAbility(){{percentAmount = 1f / (240f * 60f * 2f) * 100f;}});
 			
-            engineSize = 2f;
+            engineSize = 3f;
 			engineOffset = 12f;
 			engineColor = Color.valueOf("B40059");
 			engineColorInner = Color.valueOf("00E673");
         }};
 }}
+
 
