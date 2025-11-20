@@ -31,7 +31,7 @@ public class BMHUnits{
 			health = 2280;
             armor = 25;
 			flying = true;
-			immunities = ObjectSet.with(disarmed, sapped, slow, sporeSlowed, unmoving, shocked, freezing);
+			immunities = ObjectSet.with(StatusEffects.disarmed, StatusEffects.sapped, StatusEffects.slow, StatusEffects.sporeSlowed, StatusEffects.unmoving, StatusEffects.shocked, StatusEffects.freezing);
 			
 			lightRadius = 35f;
 			lightOpacity = 0.1f;
