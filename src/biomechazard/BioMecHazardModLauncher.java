@@ -17,7 +17,7 @@ import biomechazard.content.*;
 
 public class BioMecHazardModLauncher extends Mod{
 	
-	public static Mods.LoadedMod MOD;
+	//public static Mods.LoadedMod MOD;
 
     public BioMecHazardModLauncher(){
         Log.info("Loaded BioMecHazardModLauncher constructor.");
@@ -42,14 +42,14 @@ public class BioMecHazardModLauncher extends Mod{
     public void loadContent(){
 		Time.mark();
 		
-		MOD = Mods.getMod(getClass());
+		//MOD = Mods.getMod(getClass());
 		
         //Log.info("Mod BioMecHazard : chargement des stats.");
 		//BMHStats.load();
         //Log.info("Mod BioMecHazard : chargement des réglages.");
 		//BMHSettings.load();
-		Log.info("Mod BioMecHazard : chargement des effets visuels.");
-		BMHVisualEffects.load();
+		//Log.info("Mod BioMecHazard : chargement des effets visuels.");
+		//BMHVisualEffects.load();
         Log.info("Mod BioMecHazard : chargement des unités.");
 		BMHUnits.load();
         Log.info("Mod BioMecHazard : chargement des blocs.");
@@ -61,10 +61,10 @@ public class BioMecHazardModLauncher extends Mod{
         //BMHWeathers.load();
         //BMHPlanets.load();
         //BMHSectors.load();
-        Log.info("Mod BioMecHazard : chargement de l'arbre des technologies.");
-		BMHTechTree.load();
+        //Log.info("Mod BioMecHazard : chargement de l'arbre des technologies.");
+		//BMHTechTree.load();
 		
-		Log.info("Chargement de BioMecHazard " + MOD.meta.version + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
+		Log.info("Chargement de BioMecHazard v0.0.1" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
     }
 
 }
