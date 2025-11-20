@@ -30,6 +30,8 @@ public class BMHBlocks{
 			consumesPower = false;
 			outputsPower = true;
 			conductivePower = true;
+
+			alwaysUnlocked = true;
 			
 			//À faire : ajouter la capacité au noyau de produire de l'énergie
 			//powerProduction = 14.5f;
@@ -92,5 +94,6 @@ public class BMHBlocks{
 			requiresCoreZone = false;
         }};
 }}
+
 
 
