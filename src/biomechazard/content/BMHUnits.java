@@ -21,6 +21,8 @@ import mindustry.type.unit.*;
 import mindustry.world.meta.*;
 import biomechazard.content.*;
 
+import static mindustry.content.StatusEffects.*;
+
 public class BMHUnits{
     public static UnitType mokuge;
 
@@ -92,3 +94,4 @@ public class BMHUnits{
 			engineOffset = 12f;
         }};
 }}
+
