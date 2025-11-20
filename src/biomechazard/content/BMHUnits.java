@@ -19,7 +19,7 @@ import mindustry.content.*;
 import mindustry.content.StatusEffects;
 import mindustry.type.unit.*;
 import mindustry.world.meta.*;
-//import biomechazard.content;
+import biomechazard.content.*;
 
 public class BMHUnits{
     public static UnitType mokuge;
