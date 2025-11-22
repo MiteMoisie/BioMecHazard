@@ -32,14 +32,6 @@ public class BMHBlocks{
             researchCostMultiplier = 0.15f;
 			alwaysUnlocked = true;
 			
-			requiresCoreZone = false; //Pour que le noyau soit constructible n'importe où, cet attribut ne suffit pas.
-			//On utilise le même comportement que si on était dans l'éditeur
-			//@Override
-			public boolean canPlaceOn(Tile tile, Team team, int rotation){
-				//if(tile == null) return false;
-				return true;
-			};
-
 			/*À faire : ajouter la capacité au noyau de stocker des liquides. Pour l'instant
 			*le noyau affiche les infos mais n'accepte pas les liquides.
 			*/
@@ -104,8 +96,17 @@ public class BMHBlocks{
 			consumesPower = false;
 			outputsPower = true;
 			conductivePower = true;
+
+			requiresCoreZone = false; //Pour que le noyau soit constructible n'importe où, cet attribut ne suffit pas.
+			//On utilise le même comportement que si on était dans l'éditeur
+			@Override
+			public boolean canPlaceOn(Tile tile, Team team, int rotation){
+				//if(tile == null) return false;
+				return true;
+			}
         }};
 }}
+
 
 
 
