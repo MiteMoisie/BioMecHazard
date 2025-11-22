@@ -26,7 +26,7 @@ public class BioMecHazardModLauncher extends Mod{
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
             Time.runTask(10f, () -> {
-                BaseDialog dialog = new BaseDialog("welcome");
+                BaseDialog dialog = new BaseDialog("splashscreen");
                 dialog.cont.add("A scourge is coming.").row();
                 //mod sprites are prefixed with the mod name (this mod is called 'biomechazard' in its config)
                 dialog.cont.image(Core.atlas.find("biomechazard-splashscreen")).pad(20f).row();
@@ -68,4 +68,5 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
+
 
