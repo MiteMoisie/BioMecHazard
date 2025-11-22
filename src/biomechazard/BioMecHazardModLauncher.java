@@ -68,5 +68,3 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
-
-
