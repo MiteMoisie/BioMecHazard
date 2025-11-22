@@ -99,7 +99,7 @@ public class BMHBlocks{
 
 			requiresCoreZone = false; //Pour que le noyau soit constructible n'importe où, cet attribut ne suffit pas.
 			//On utilise le même comportement que si on était dans l'éditeur
-			canPlaceOn = (tile, team, rotation) -> true;
+			canPlaceOn = (Tile tile, Team team, int rotation) -> true;
         }
 		//On utilise le même comportement que si on était dans l'éditeur
 		/*@Override
@@ -108,6 +108,7 @@ public class BMHBlocks{
 			return true;
 		}*/};
 }}
+
 
 
 
