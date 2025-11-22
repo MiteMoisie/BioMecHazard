@@ -105,13 +105,14 @@ public class BMHBlocks{
 				return true;
 			}*/
         }
-			@Override
-			public boolean canPlaceOn(Tile tile, Team team, int rotation){
-				//if(tile == null) return false;
-				return true;
-			}
-												   };
+		//On utilise le même comportement que si on était dans l'éditeur
+		@Override
+		public boolean canPlaceOn(Tile tile, Team team, int rotation){
+			if(tile == null) return false;
+			return true;
+		}};
 }}
+
 
 
 
