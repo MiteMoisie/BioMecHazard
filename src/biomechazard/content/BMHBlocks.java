@@ -3,6 +3,7 @@ package biomechazard.content;
 import mindustry.world.*;
 import mindustry.world.blocks.storage.CoreBlock;
 import mindustry.world.blocks.power.*;
+import mindustry.game.*;
 import mindustry.type.*;
 import mindustry.content.*;
 import mindustry.content.Items;
@@ -24,14 +25,27 @@ public class BMHBlocks{
 			armor = 60f;
 			unitCapModifier = 32;
             itemCapacity = 19000;
+			unitMoveBreakable = true;
+            buildTime = 12600f;
+			floating = true;
+            placeableLiquid = true;
+            researchCostMultiplier = 0.15f;
+			alwaysUnlocked = true;
+			
+			requiresCoreZone = false; //Pour que le noyau soit constructible n'importe où, cet attribut ne suffit pas.
+			//On utilise le même comportement que si on était dans l'éditeur
+			@Override
+			public boolean canPlaceOn(Tile tile, Team team, int rotation){
+				if(tile == null) return false;
+				return true;
+			}
+
+			/*À faire : ajouter la capacité au noyau de stocker des liquides. Pour l'instant
+			*le noyau affiche les infos mais n'accepte pas les liquides.
+			*/
 			hasLiquids = true;
 			liquidCapacity = 8000;
-			hasPower = true;
-			consumesPower = false;
-			outputsPower = true;
-			conductivePower = true;
-
-			alwaysUnlocked = true;
+			liquidPressure = 800;
 			
 			//À faire : ajouter la capacité au noyau de produire de l'énergie
 			//powerProduction = 14.5f;
@@ -40,7 +54,7 @@ public class BMHBlocks{
 			*import mindustry.world.blocks.storage.CoreBlock;
 			*
 			*public class coreLevel4 extends CoreBlock {
-			*    private static final int powerProduction = 9;
+			*    private static final int powerProduction = 10;
 			*    private static final float productionEfficiency = 1.0f;
 			*
 			*    public coreLevel4() {
@@ -86,14 +100,13 @@ public class BMHBlocks{
 			*    }
 			*});
 			*/
-			
-            buildTime = 12600f;
-			floating = true;
-            placeableLiquid = true;
-            researchCostMultiplier = 0.15f;
-			requiresCoreZone = false;
+			hasPower = true;
+			consumesPower = false;
+			outputsPower = true;
+			conductivePower = true;
         }};
 }}
+
 
 
 
