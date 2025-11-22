@@ -98,16 +98,15 @@ public class BMHBlocks{
 			conductivePower = true;
 
 			requiresCoreZone = false; //Pour que le noyau soit constructible n'importe où, cet attribut ne suffit pas.
-			//On utilise le même comportement que si on était dans l'éditeur
-			canPlaceOn(Tile tile, Team team, int rotation){return true};
         }
 		//On utilise le même comportement que si on était dans l'éditeur
-		/*@Override
+		@Override
 		public boolean canPlaceOn(Tile tile, Team team, int rotation){
 			if(tile == null) return false;
 			return true;
-		}*/};
+		}};
 }}
+
 
 
 
