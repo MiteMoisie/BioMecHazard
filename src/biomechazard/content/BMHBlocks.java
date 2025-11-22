@@ -38,7 +38,7 @@ public class BMHBlocks{
 			public boolean canPlaceOn(Tile tile, Team team, int rotation){
 				if(tile == null) return false;
 				return true;
-			}
+			};
 
 			/*À faire : ajouter la capacité au noyau de stocker des liquides. Pour l'instant
 			*le noyau affiche les infos mais n'accepte pas les liquides.
@@ -106,6 +106,7 @@ public class BMHBlocks{
 			conductivePower = true;
         }};
 }}
+
 
 
 
