@@ -71,7 +71,7 @@ public class BMHLiquids {
 		livingSteelLiquid = new CellLiquid("living-steel-liquid", Color.valueOf("9000a4")) {{
 			viscosity = 0.2f;
 			moveThroughBlocks = true;
-			canStayOn = new ObjectSet<>(Liquids.oil);
+			canStayOn.add(Liquids.oil);
 			heatCapacity = 0.9f;
 			explosiveness = 0.05f;
 			incinerable = true;
