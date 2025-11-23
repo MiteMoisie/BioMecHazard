@@ -42,8 +42,8 @@ public class BMHItems {
 			cost = 2.5f;
 		}};
 		anthracite = new Item("anthracite", Color.valueOf("272727")) {{
-			flammability = Items.coal.flammability * 1.8f;
-			explosiveness = Items.coal.explosiveness / 2;
+			flammability = coal.flammability * 1.8f;
+			explosiveness = coal.explosiveness / 2;
 			hardness = 4;
 		}};
 		gold = new Item("gold", Color.valueOf("FFD700")) {{
@@ -155,3 +155,4 @@ public class BMHItems {
 		nukeMineCanister = new Item("mine-nuke", Color.valueOf("706f74")) {{}};
 	}
 }
+
