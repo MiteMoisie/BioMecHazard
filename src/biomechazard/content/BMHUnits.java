@@ -20,6 +20,7 @@ import mindustry.content.StatusEffects;
 import mindustry.type.unit.*;
 import mindustry.world.meta.*;
 import biomechazard.content.*;
+import biomechazard.audiovisual.*;
 
 import static mindustry.content.StatusEffects.*;
 import static mindustry.Vars.*;
