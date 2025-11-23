@@ -4,6 +4,8 @@ import arc.graphics.Color;
 import mindustry.type.Item;
 import biomechazard.audiovisual.UAWPal;
 
+import static mindustry.content.Items.*;
+
 /*
 ** Objets issus du mod "Unlimited Armament Works" : cryogel dieselCore stoutsteel anthracite phlogistonCrystal sulphur
 ** 	emptyBulletCasing standardBullet incendiaryBullet cryoBullet armourPiercingBullet spreadShotBullet explosiveBullet arcBullet
@@ -64,7 +66,7 @@ public class BMHItems {
 			hardness = 3;
 			flammability = 0.5f;
 			frames = 5;
-			frameTime = 0.5;
+			frameTime = 0.5f;
 		}};
 		hardenedLivingSteel = new Item("living-steel-hard", Color.valueOf("6d59c6")) {{
 			cost = 2.5f;
@@ -73,7 +75,7 @@ public class BMHItems {
 			radioactivity = 0.2f;
 		}};
 		cryogenicAlloy = new Item("cryogenic-alloy", Color.valueOf("2cbcc9")) {{
-			cost = 1.4;
+			cost = 1.4f;
 			hardness = 5;
 			charge = 0.45f;
 		}};
@@ -81,7 +83,7 @@ public class BMHItems {
 			hardness = 0;
 		}};
 		igneousAlloy = new Item("igneous-alloy", Color.valueOf("e48c57")) {{
-			cost = 1.3;
+			cost = 1.3f;
 			hardness = 3;
 			charge = 0.55f;
 		}};
@@ -152,5 +154,4 @@ public class BMHItems {
 		empMineCanister = new Item("mine-emp", Color.valueOf("6974c4")) {{}};
 		nukeMineCanister = new Item("mine-nuke", Color.valueOf("706f74")) {{}};
 	}
-	
 }
