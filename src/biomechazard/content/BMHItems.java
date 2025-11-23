@@ -130,7 +130,7 @@ public class BMHItems {
 			radioactivity = 2;
 		}};
 		
-		sulphur = new Item("sulphur", Color.valueOf("e28654")) {{ {{}};
+		sulphur = new Item("sulphur", Color.valueOf("e28654")) {{}};
 		titaniumCarbide = new Item("titanium-carbide", Color.valueOf("919fe7")) {{}};
 		
 		emptyBulletCasing = new Item("bullet-empty", Color.valueOf("989aa4")) {{}};
@@ -153,4 +153,5 @@ public class BMHItems {
 		nukeMineCanister = new Item("mine-nuke", Color.valueOf("706f74")) {{}};
 	}
 	
+
 }
