@@ -1,6 +1,7 @@
 /*
 ** Auteur : Eschatologue 
 ** mod "Unlimited Armament Works"
+*  Palette de couleurs pour les éléments du mod UAW
 */
 
 package biomechazard.audiovisual;
