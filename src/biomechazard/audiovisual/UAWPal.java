@@ -1,7 +1,7 @@
-/*
-** Auteur : Eschatologue 
-** mod "Unlimited Armament Works"
-*  Palette de couleurs pour les éléments du mod UAW
+/**
+* @author Eschatologue 
+* mod "Unlimited Armament Works"
+* Palette de couleurs pour les éléments du mod UAW
 */
 
 package biomechazard.audiovisual;
@@ -70,5 +70,5 @@ public class UAWPal {
 	// Ajout d'une couleur manquante pour arcBullet dans la classe Items
 	lancerLaser = Color.valueOf("c0ecff")
 			// end
-			;
+	;
 }
