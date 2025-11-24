@@ -10,12 +10,13 @@ import biomechazard.audiovisual.UAWPal;
 
 import static mindustry.content.Items.*;
 
-/*
-** Liquides issus du mod "Unlimited Armament Works" : phlogiston liquidOxygen glycerine nitroglycerine surgeSolvent
-** 	steam liquefiedPetroleumGas
-** Liquides issus du mod "Fading Revelations" : acid livingSteelLiquid neutronFluid
-**  waterVapor
+/**
+* Liquides issus du mod "Unlimited Armament Works" : phlogiston liquidOxygen glycerine nitroglycerine surgeSolvent
+* 	steam liquefiedPetroleumGas
+* Liquides issus du mod "Fading Revelations" : acid livingSteelLiquid neutronFluid
+*  waterVapor
 */
+
 public class BMHLiquids {
 	public static Liquid 
 	// Liquid
@@ -105,3 +106,4 @@ public class BMHLiquids {
 		}};
 	}
 }
+
