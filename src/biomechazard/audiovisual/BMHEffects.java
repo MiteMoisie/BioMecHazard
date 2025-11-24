@@ -1,0 +1,42 @@
+package biomechazard.audiovisual;
+
+import arc.graphics.*;
+import arc.graphics.g2d.*;
+import arc.math.*;
+import mindustry.entities.*;
+import mindustry.graphics.*;
+import static arc.graphics.g2d.Draw.*;
+import static arc.graphics.g2d.Lines.*;
+import static arc.math.Angles.*;
+
+public class BMHEffects {
+	public static Effect
+	
+	purpleBigLaserBeam = new Effect(40f, 100f, e -> {
+        color(Color.valueOf("8B73C7"));
+        stroke(e.fin() * 2f);
+        Lines.circle(e.x, e.y, e.fout() * 50f);
+    }).followParent(true).rotWithParent(true), 
+	
+	/** @author Eschatologue  */
+	// region Status
+	statusEffectCircle = new Effect(35f, e -> {
+		color(e.color);
+
+		randLenVectors(e.id, 3, 2f + e.fin() * 7f, (x, y) -> {
+			Fill.circle(e.x + x, e.y + y, 0.2f + e.fslope() * 1.5f);
+		});
+	}),
+	
+	/** @author Eschatologue  */
+	statusEffectSquare = new Effect(35f, e -> {
+		color(e.color);
+
+		randLenVectors(e.id, 3, 2f + e.fin() * 7f, (x, y) -> {
+			Fill.square(e.x + x, e.y + y, 0.2f + e.fslope() * 1.5f, 45f);
+		});
+	})
+	// endregion Status
+	
+	;
+}
