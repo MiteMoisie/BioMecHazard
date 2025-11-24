@@ -24,6 +24,7 @@ public class BioMecHazardModLauncher extends Mod{
 
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
+			/*
             //show dialog upon startup
             Time.runTask(10f, () -> {
                 BaseDialog dialog = new BaseDialog("splashscreen");
@@ -33,6 +34,7 @@ public class BioMecHazardModLauncher extends Mod{
                 dialog.cont.button("I'm ready", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
+			*/
         });
 		
 		Log.info("So far, so good...");
@@ -44,22 +46,40 @@ public class BioMecHazardModLauncher extends Mod{
 		
 		//MOD = Mods.getMod(getClass());
 		
-        //Log.info("Mod BioMecHazard : chargement des stats.");
+		//Log.info("Mod BioMecHazard : chargement des stats.");
 		//BMHStats.load();
+		
+		//BMHAttribute.load();
+		
+		//BMHSounds.load();
         //Log.info("Mod BioMecHazard : chargement des réglages.");
 		//BMHSettings.load();
-		//Log.info("Mod BioMecHazard : chargement des effets visuels.");
+		//Log.info("Mod BioMecHazard : chargement des états.");
+		//BMHStatusEffects.load();
+		Log.info("Mod BioMecHazard : chargement des objets.");
+		BMHItems.load();
+		Log.info("Mod BioMecHazard : chargement des liquides.");
+		BMHLiquids.load();
+		
+		//BMHBullets.load();
+		
+		//BMHWeathers.load();
+		
+        //Log.info("Mod BioMecHazard : chargement des effets visuels.");
 		//BMHVisualEffects.load();
         Log.info("Mod BioMecHazard : chargement des unités.");
 		BMHUnits.load();
         Log.info("Mod BioMecHazard : chargement des blocs.");
 		BMHBlocks.load();
-		
-		//BMHStatusEffects.load();
-        //BMHItems.load();
-        //BMHLiquids.load();
-        //BMHWeathers.load();
+		/*
+		BMHBlocksPower.load();
+		BMHBlocksDefense.load();
+		BMHBlocksLogistic.load();
+		BMHBlocksProduction.load();
+		BMHBlocksUnits.load();
+		*/
         //BMHPlanets.load();
+		
         //BMHSectors.load();
         //Log.info("Mod BioMecHazard : chargement de l'arbre des technologies.");
 		//BMHTechTree.load();
