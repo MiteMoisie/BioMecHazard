@@ -6,13 +6,14 @@ import biomechazard.audiovisual.UAWPal;
 
 import static mindustry.content.Items.*;
 
-/*
-** Objets issus du mod "Unlimited Armament Works" : cryogel dieselCore stoutsteel anthracite phlogistonCrystal sulphur
-** 	emptyBulletCasing standardBullet incendiaryBullet cryoBullet armourPiercingBullet spreadShotBullet explosiveBullet arcBullet
-** 	emptyMineCanister standardMineCanister incendiaryMineCanister cryoMineCanister antiAirMineCanister sporeMineCanister empMineCanister nukeMineCanister
-** Objets issus du mod "Fading Revelations" : gold steelAmalgam uraniumRod livingSteel hardenedLivingSteel cryogenicAlloy cryogenicGel igneousAlloy
-**  copperAmmo titaniumAmmo explosiveAmmo healingAmmo homingAmmo nanoAmmo nuke
+/**
+* Objets issus du mod "Unlimited Armament Works" : cryogel dieselCore stoutsteel anthracite phlogistonCrystal sulphur
+* 	emptyBulletCasing standardBullet incendiaryBullet cryoBullet armourPiercingBullet spreadShotBullet explosiveBullet arcBullet
+* 	emptyMineCanister standardMineCanister incendiaryMineCanister cryoMineCanister antiAirMineCanister sporeMineCanister empMineCanister nukeMineCanister
+* Objets issus du mod "Fading Revelations" : gold steelAmalgam uraniumRod livingSteel hardenedLivingSteel cryogenicAlloy cryogenicGel igneousAlloy
+*  copperAmmo titaniumAmmo explosiveAmmo healingAmmo homingAmmo nanoAmmo nuke
 */
+
 public class BMHItems {
 	public static Item 
 		// Manufacturé
@@ -155,4 +156,5 @@ public class BMHItems {
 		nukeMineCanister = new Item("mine-nuke", Color.valueOf("706f74")) {{}};
 	}
 }
+
 
