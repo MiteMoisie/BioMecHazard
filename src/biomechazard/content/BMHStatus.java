@@ -208,12 +208,12 @@ public class BMHStatus {
 		public BMHStatusEffect(String name) {
 			super(name);
 		}
-		
+		/**
 		@Override
 		public void createIcons(MultiPacker packer) {
 			Outliner.outlineRegion(packer, fullIcon, outlineColor, name, outlineThickness);
 			
 			super.createIcons(packer);
-		}
+		}*/
 	}
 }
