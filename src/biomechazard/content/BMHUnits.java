@@ -70,7 +70,7 @@ public class BMHUnits{
                 x = 0f;
                 y = 0f;
                 continuous = true;
-                shoot.firstShotDelay = BMHVisualEffects.purpleLaserChargeBig.lifetime -1f;
+                shoot.firstShotDelay = BMHEffects.purpleBigLaserBeam.lifetime -1f;
                 chargeSound = Sounds.lasercharge2;
                 shootSound = Sounds.beam;
                 shootStatus = StatusEffects.slow;
@@ -86,7 +86,7 @@ public class BMHUnits{
                     buildingDamageMultiplier = 0.10f;
                     colors = new Color[]{Color.valueOf("FF0000"), Color.valueOf("7665C9"), Color.valueOf("BD8BD6"), Color.valueOf("000000")};
 					//, Color.valueOf("00FFFF")
-                    chargeEffect = BMHVisualEffects.purpleLaserChargeBig;
+                    chargeEffect = BMHEffects.purpleBigLaserBeam;
                 }};
             }});
 			
@@ -105,3 +105,4 @@ public class BMHUnits{
 			engineColorInner = Color.valueOf("00E673");
         }};
 }}
+
