@@ -1,6 +1,7 @@
 package biomechazard.content;
 
 import arc.graphics.Color;
+import arc.math.Interp;
 import mindustry.content.Fx;
 import mindustry.entities.effect.MultiEffect;
 import mindustry.graphics.*;
@@ -11,13 +12,13 @@ import biomechazard.audiovisual.*;
 import biomechazard.audiovisual.Outliner;
 //import biomechazard.type.BMHStatusEffect;
 
-import static biomechazard.Vars.tick;
 import static mindustry.content.StatusEffects.*;
+import static biomechazard.Vars.tick;
 
 /**
 * États issus du mod "Unlimited Armament Works" : concussion breached cryoBurn EMP thermalShock superConduct
-* États issus du mod "Fading Revelations" : 
-*  
+* États issus du mod "Fading Revelations" : acidicBurn constructionShock empAffected hastened highEnergyBurn japonicaWeakened 
+*  neutronFrozen polymorphousBuilding radiated shockSlowed superHastened
 */
 public class BMHStatus {
 	public static StatusEffect 
@@ -79,7 +80,6 @@ public class BMHStatus {
 				});
 			});
 		}};
-
 		superConduct = new BMHStatusEffect("superconduct") {{
 			dragMultiplier = 1.5f;
 			healthMultiplier = 0.7f;
@@ -99,6 +99,99 @@ public class BMHStatus {
 				Fx.burning,
 				Fx.smoke
 			);
+		}};
+		
+		acidicBurn = new BMHStatusEffect("acidic-burn") {{
+			damage = 0.1f;
+			speedMultiplier = 0.9f;
+			effectChance = 0.2f;
+			effect = new ParticleEffect(){{
+				particles = 20;
+				colorFrom = Color.valueOf("f8f854");
+				colorTo = Color.valueOf("b0bf1a");
+				interp = circleOut;
+				length = 4;
+				baseLength = 6;
+				line = true;
+				strokeFrom = 1.1f;
+				strokeTo = 0.3f;
+				lifetime = 120f;
+			}};
+		}};
+		constructionShock = new BMHStatusEffect("construction-shock") {{
+			buildSpeedMultiplier = 0.8f;
+			speedMultiplier = 0.8f;
+		}};
+		empAffected = new BMHStatusEffect("emp-affected") {{
+			speedMultiplier = 0.4f;
+			damageMultiplier = 0.6f;
+			healthMultiplier = 0.8f;
+			reloadMultiplier = 0.7f;
+		}};
+		hastened = new BMHStatusEffect("hastened") {{
+			reloadMultiplier = 1.6f;
+			alwaysUnlocked = true;
+		}};
+		highEnergyBurn = new BMHStatusEffect("high-energy-burn") {{
+			reloadMultiplier = 0.85f;
+			damage = 0.4f;
+			applyColor = Color.valueOf("e8d174");
+			color = Color.valueOf("e8d174");
+			alwaysUnlocked = true;
+			effect = new ParticleEffect(){{
+				particles = 8;
+				sizeFrom = 1f;
+				sizeTo = 2.7f;
+				line = true;
+				strokeFrom = 0.6f;
+				strokeTo = 1f;
+				colorFrom = Color.valueOf("e8d174");
+				colorTo = Color.valueOf("fffab8");
+				interp = pow2Out;
+				sizeInterp = pow2Out;
+			}};
+			init(() -> {
+                affinity(wet);
+                opposite(tarred, freezing);
+            });
+		}};
+		japonicaWeakened = new BMHStatusEffect("japonica-weakened") {{
+			buildSpeedMultiplier = 0.8f;
+			damageMultiplier = 0.8f;
+			reloadMultiplier = 0.8f;
+			speedMultiplier = 0.8f;
+			alwaysUnlocked = true;
+		}};
+		neutronFrozen = new BMHStatusEffect("neutron-frozen") {{
+			speedMultiplier = 0.4f;
+			alwaysUnlocked = true;
+			reloadMultiplier = 0.7f;
+			damage = 0.1f;
+		}};
+		polymorphousBuilding = new BMHStatusEffect("polymorphous-building") {{
+			buildSpeedMultiplier = 1.2f;
+		}};
+		radiated = new BMHStatusEffect("radiated") {{
+			damage = 0.125f;
+			speedMultiplier = 0.9f;
+			reloadMultiplier = 0.9f;
+			healthMultiplier = 0.9f;
+			permanent = true;
+			alwaysUnlocked = true;
+			effect = new ParticleEffect(){{
+				particles = 8;
+				colorFrom = Color.valueOf("30af1f");
+				colorTo = Color.valueOf("328926");
+				interp = circleOut;
+			}};
+		}};
+		shockSlowed = new BMHStatusEffect("shock-slowed") {{
+			speedMultiplier = 0.3f;
+			alwaysUnlocked = true;
+		}};
+		superHastened = new BMHStatusEffect("super-hastened") {{
+			reloadMultiplier = 2.2f;
+			alwaysUnlocked = true;
 		}};
 	}
 	public static class BMHStatusEffect extends StatusEffect {
