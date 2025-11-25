@@ -101,7 +101,7 @@ public class BMHStatus {
 			);
 		}};
 	}
-	public class BMHStatusEffect extends StatusEffect {
+	public static class BMHStatusEffect extends StatusEffect {
 		public Color outlineColor = Pal.darkerMetal;
 		public int outlineThickness = 3;
 		public float affinityResultTime = 60f;
