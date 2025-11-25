@@ -4,6 +4,7 @@ import arc.graphics.Color;
 import arc.math.Interp;
 import mindustry.content.Fx;
 import mindustry.entities.effect.MultiEffect;
+import mindustry.entities.effect.ParticleEffect;
 import mindustry.graphics.*;
 import mindustry.graphics.Pal;
 import mindustry.type.StatusEffect;
