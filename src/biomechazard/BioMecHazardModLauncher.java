@@ -54,8 +54,8 @@ public class BioMecHazardModLauncher extends Mod{
 		//BMHSounds.load();
         //Log.info("Mod BioMecHazard : chargement des réglages.");
 		//BMHSettings.load();
-		//Log.info("Mod BioMecHazard : chargement des états.");
-		//BMHStatusEffects.load();
+		Log.info("Mod BioMecHazard : chargement des états.");
+		BMHStatus.load();
 		Log.info("Mod BioMecHazard : chargement des objets.");
 		BMHItems.load();
 		Log.info("Mod BioMecHazard : chargement des liquides.");
@@ -88,3 +88,4 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
+
