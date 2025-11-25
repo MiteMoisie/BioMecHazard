@@ -1,7 +1,7 @@
 package biomechazard.content;
 
 import arc.graphics.Color;
-import arc.math.Interp;
+import arc.math.Interp.*;
 import mindustry.content.Fx;
 import mindustry.entities.effect.MultiEffect;
 import mindustry.entities.effect.ParticleEffect;
