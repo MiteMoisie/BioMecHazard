@@ -28,7 +28,10 @@ public class BMHStatus {
 	// Thermal / Elemental
 	cryoBurn, EMP, thermalShock, 
 	// Reactions
-	superConduct;
+	superConduct, 
+	
+	acidicBurn, constructionShock, empAffected, hastened, highEnergyBurn, japonicaWeakened, neutronFrozen, polymorphousBuilding, 
+	radiated, shockSlowed, superHastened;
 
 	public static void load() {
 		concussion = new BMHStatusEffect("concussion") {{
