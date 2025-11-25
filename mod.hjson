@@ -13,7 +13,7 @@ description:
   Created to test, experiment and try out ideas and concepts that come to mind.
   [#e60000]NOT[] playable.
   '''
-version: "[coral]v0.0.1"
+version: "[coral]v0.0.2"
 minGameVersion: 150
 repo: MiteMoisie/BioMecHazard
 java: true
