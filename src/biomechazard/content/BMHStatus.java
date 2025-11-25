@@ -156,7 +156,8 @@ public class BMHStatus {
 				sizeInterp = pow2Out;
 			}};
 			init(() -> {
-                affinity(wet);
+				//Rien n'est indiqué dans le json sur les résultats de l'affinité.
+                affinity(wet, (unit, result, time) -> {});
                 opposite(tarred, freezing);
             });
 		}};
