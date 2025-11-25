@@ -1,7 +1,7 @@
 package biomechazard.content;
 
 import arc.graphics.Color;
-import arc.math.Interp.*;
+import arc.math.*;
 import mindustry.content.Fx;
 import mindustry.entities.effect.MultiEffect;
 import mindustry.entities.effect.ParticleEffect;
@@ -13,6 +13,7 @@ import biomechazard.audiovisual.*;
 import biomechazard.audiovisual.Outliner;
 //import biomechazard.type.BMHStatusEffect;
 
+import static arc.math.Interp.*;
 import static mindustry.content.StatusEffects.*;
 import static biomechazard.Vars.tick;
 
