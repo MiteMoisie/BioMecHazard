@@ -1,6 +1,7 @@
 package biomechazard.content.blocks;
 
-import mindustry.world.Block;
+import mindustry.world.*;
+import mindustry.world.blocks.defense.Wall;
 import mindustry.world.meta.*;
 
 import static mindustry.world.meta.BuildVisibility.*;
