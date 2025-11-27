@@ -2,12 +2,15 @@ package biomechazard.content;
 
 import arc.*;
 import arc.struct.*;
+import arc.struct.Seq;
+import mindustry.content.*;
 import mindustry.content.SectorPresets;
 import mindustry.game.Objectives.*;
 
 import static mindustry.content.Blocks.*;
 import static mindustry.content.TechTree.*;
-import static mindustry.content.SectorPresets.*;
+//import static mindustry.content.SectorPresets.*;
+import static mindustry.game.Objectives.*;
 import static biomechazard.content.blocks.BMHGates.*;
 import static biomechazard.content.BMHBlocks.*;
 import static biomechazard.content.BMHUnits.*;
@@ -25,7 +28,8 @@ public class BMHTechtree {
 			
 			// Noyau  
 			node(gateCore, () -> {
-				node(coreNethrax, Seq.with(new Research(coreNucleus)));
+				node(coreNethrax, Seq.with(new Research(coreNucleus)), () -> {
+				});
 			});
 			
 			// Unités de noyau
