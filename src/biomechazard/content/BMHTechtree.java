@@ -74,6 +74,6 @@ public class BMHTechtree {
 			
 			// Unités navales
 			node(gateNavalUnit);
-		};
-	};
-};
+		});
+	}
+}
