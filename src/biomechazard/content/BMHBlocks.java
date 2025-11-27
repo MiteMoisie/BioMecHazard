@@ -13,6 +13,7 @@ import static mindustry.content.Items.*;
 
 public class BMHBlocks{
     public static Block coreNethrax;
+	public static float pwrProduction = 14.5f;
 
         public static void load(){
         
@@ -96,6 +97,11 @@ public class BMHBlocks{
 			consumesPower = false;
 			outputsPower = true;
 			conductivePower = true;
+			buildType = super.CoreBuild(){
+				getPowerProduction(){
+					return pwrProduction;
+				}
+			};
 
 			requiresCoreZone = false; //Pour que le noyau soit constructible n'importe où, cet attribut ne suffit pas.
         }
@@ -106,4 +112,5 @@ public class BMHBlocks{
 			return true;
 		}};
 }}
+
 
