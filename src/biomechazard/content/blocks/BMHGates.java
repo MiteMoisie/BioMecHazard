@@ -1,11 +1,7 @@
 package biomechazard.content.blocks;
 
-import mindustry.content.Items;
-import mindustry.type.Category;
 import mindustry.world.Block;
-import mindustry.world.blocks.liquid.LiquidRouter;
-import biomechazard.content.NHItems;
-import biomechazard.expand.block.liquid.AdaptPump;
+import mindustry.world.meta.*;
 
 import static mindustry.world.meta.BuildVisibility.*;
 
