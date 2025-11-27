@@ -21,7 +21,7 @@ public class BMHBlocks{
 
             unitType = BMHUnits.mokuge;
             health = 13820;
-            size = 6;
+            size = 7;
 			armor = 60f;
 			unitCapModifier = 32;
             itemCapacity = 19000;
@@ -106,3 +106,4 @@ public class BMHBlocks{
 			return true;
 		}};
 }}
+
