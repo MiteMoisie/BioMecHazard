@@ -31,14 +31,17 @@ public class BMHBlocks{
 			floating = true;
             placeableLiquid = true;
             researchCostMultiplier = 0.15f;
-			alwaysUnlocked = true;
+			//alwaysUnlocked = true;
 			
-			/*À faire : ajouter la capacité au noyau de stocker des liquides. Pour l'instant
-			*le noyau affiche les infos mais n'accepte pas les liquides.
+			/** 
+			* À faire : ajouter la capacité au noyau de stocker des liquides. Pour l'instant
+			* le noyau affiche les infos mais n'accepte pas les liquides.
 			*/
 			hasLiquids = true;
 			liquidCapacity = 8000;
 			liquidPressure = 800;
+			isDuct = true;
+			outputsLiquid = true;
 			
 			//À faire : ajouter la capacité au noyau de produire de l'énergie
 			//powerProduction = 14.5f;
@@ -106,14 +109,15 @@ public class BMHBlocks{
 			if(tile == null) return false;
 			return true;
 		}
-		public class coreNethraxBuild extends CoreBlock.CoreBuild {
+		/*public class coreNethraxBuild extends CoreBlock.CoreBuild {
 			public float getPowerProduction() {
 				return pwrProduction;
 			}
-		}
+		}*/
 		};
 		
 }}
+
 
 
 
