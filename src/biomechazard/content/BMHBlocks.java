@@ -100,7 +100,7 @@ public class BMHBlocks{
 			buildType = super.CoreBuild(){
 				getPowerProduction(){
 					return pwrProduction;
-				}
+				};
 			};
 
 			requiresCoreZone = false; //Pour que le noyau soit constructible n'importe où, cet attribut ne suffit pas.
@@ -112,5 +112,6 @@ public class BMHBlocks{
 			return true;
 		}};
 }}
+
 
 
