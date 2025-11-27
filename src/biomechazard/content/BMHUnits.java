@@ -34,7 +34,7 @@ public class BMHUnits{
 			//Plantage au démarrage : apparemment, ce constructeur est nécessaire
 			this.constructor = UnitEntity::create;
 			
-			outlineColor = Color.valueOf("303A45");
+			outlineColor = Color.valueOf("000000"); //Original 303A45
 			health = 2280;
             armor = 25;
 			flying = true;
@@ -105,4 +105,5 @@ public class BMHUnits{
 			engineColorInner = Color.valueOf("00E673");
         }};
 }}
+
 
