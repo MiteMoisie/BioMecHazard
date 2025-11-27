@@ -97,11 +97,6 @@ public class BMHBlocks{
 			consumesPower = false;
 			outputsPower = true;
 			conductivePower = true;
-			buildType = super.CoreBuild(){
-				getPowerProduction(){
-					return pwrProduction;
-				};
-			};
 
 			requiresCoreZone = false; //Pour que le noyau soit constructible n'importe où, cet attribut ne suffit pas.
         }
@@ -110,7 +105,14 @@ public class BMHBlocks{
 		public boolean canPlaceOn(Tile tile, Team team, int rotation){
 			if(tile == null) return false;
 			return true;
-		}};
+		}
+		public class coreNethraxBuild extends CoreBlock.CoreBuild {
+			public float getPowerProduction() {
+				return pwrProduction;
+			}
+		}
+		};
+		
 }}
 
 
