@@ -83,10 +83,12 @@ public class BioMecHazardModLauncher extends Mod{
 		
         //BMHSectors.load();
         Log.info("Mod BioMecHazard : chargement de l'arbre des technologies.");
-		BMHGates.load();
+		//BMHGates.load();
+		BMHTechtreeNodes.load();
 		BMHTechtree.load();
 		
 		Log.info("Chargement de BioMecHazard v0.0.1" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
     }
 
 }
+
