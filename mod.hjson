@@ -1,13 +1,13 @@
-displayName: "[#7665C9]BioMecHazard"
+displayName: "[purple]BioMecHazard"
 name: "biomechazard"
-author: "[#00b3b3]MiteMoisie"
+author: "[#00b3b3ff]MiteMoisie"
 main: "biomechazard.BioMecHazardModLauncher"
 subtitle: "Expérimental. À utiliser avec prudence."
 description:
   '''
   Mod pour Mindustry.
   Créé pour tester, expérimenter et essayer des idées, concepts qui me passent par la tête.
-  N'est [#e60000]PAS[] jouable.
+  N'est [#e60000ff]PAS[] jouable.
 
   Mod for Mindustry.
   Created to test, experiment and try out ideas and concepts that come to mind.
