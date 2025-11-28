@@ -90,7 +90,7 @@ public class BMHTechtree {
 						nodeProduce(stoutsteel, () -> {
 						});
 					});
-					nodeProduce(cryofluid, () -> {
+					nodeProduce(Liquids.cryofluid, () -> {
 						nodeProduce(cryogel, () -> {
 						});
 					});
@@ -197,3 +197,4 @@ public class BMHTechtree {
 		});
 	}
 }
+
