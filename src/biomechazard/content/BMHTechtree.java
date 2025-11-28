@@ -50,7 +50,7 @@ public class BMHTechtree {
 			node(gateDuct);
 			
 			// Usines de fabrication
-			node(gateCrafter);
+			node(gateCrafting);
 			
 			// Génération d'énergie
 			node(gatePower);
@@ -81,3 +81,4 @@ public class BMHTechtree {
 		});
 	}
 }
+
