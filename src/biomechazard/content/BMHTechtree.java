@@ -11,15 +11,17 @@ import static mindustry.content.Blocks.*;
 import static mindustry.content.TechTree.*;
 //import static mindustry.content.SectorPresets.*;
 import static mindustry.game.Objectives.*;
-import static biomechazard.content.blocks.BMHGates.*;
+import static mindustry.content.Items.*;
+import static mindustry.content.Liquids.*;
+//import static biomechazard.content.blocks.BMHGates.*;
+import static biomechazard.content.blocks.BMHTechtreeNodes.*;
 import static biomechazard.content.BMHBlocks.*;
 import static biomechazard.content.BMHUnits.*;
+import static biomechazard.content.BMHItems.*;
+import static biomechazard.content.BMHLiquids.*;
 
 public class BMHTechtree {
     public static void load(){
-        //nodeRoot("BioMecHazard", coreShard, false, () -> {
-			//node(BMHBlocks.coreNethrax/*, Seq.with(new SectorComplete(biomassFacility))*/);
-		//});
 		
 		nodeRoot("Quarkhod", gateQuarkhod, () -> {
 			
@@ -64,7 +66,7 @@ public class BMHTechtree {
 			// Murs
 			node(gateWall);
 			
-			// Tourelles de défense
+			// Tours de défense
 			node(gateTurret);
 			
 			// Usines de fabrication d'unités
@@ -79,7 +81,119 @@ public class BMHTechtree {
 			// Unités navales
 			node(gateNavalUnit);
 		});
+		
+		nodeRoot("Unlimited Armament Works 2", gateUAWStart, () -> {
+			// Objets et fluides
+			nodeProduce(steam, () -> {
+				nodeProduce(oil, () -> {
+					nodeProduce(anthracite, () -> {
+						nodeProduce(stoutsteel, () -> {
+						});
+					});
+					nodeProduce(cryofluid, () -> {
+						nodeProduce(cryogel, () -> {
+						});
+					});
+				});
+			});
+			// Récolteurs d'objets | Distributions d'objets | Conduits de fluides | Usines de fabrication | Génération d'énergie
+			node(gateUAWCrafting/*, () -> {
+				node(steamKettle, Seq.with(new Research(mechanicalPump)), () -> {
+					node(industrialBoiler, () -> {
+						node(pressureBoiler);
+						node(geothermalBoiler);
+						node(steamTurbine, () -> {
+							node(advancedSteamTurbine);
+						});
+					});
+					node(steamDrill, () -> {
+						node(advancedSteamDrill);
+						node(steamPress, Seq.with(new Research(multiPress)), () -> {
+						});
+						node(steamThumper, () -> {
+							node(alloyCrucible, () -> {
+							});
+						});
+					});
+					node(steamPump, Seq.with(new Research(rotaryPump)), () -> {
+						node(pulsometerPump, () -> {
+							node(pressurizedConduit, Seq.with(new Research(platedConduit), new Produce(stoutsteel)), () -> {
+								node(platedPressurizedConduit);
+								node(pressurizedLiquidRouter, () ->
+									node(pressurizedLiquidJunction, () ->
+										node(pressurizedLiquidBridge)
+									));
+							});
+						});
+						node(gelatinizer, Seq.with(new Research(cryofluidMixer)), () -> {
+							node(cryofluidBlender);
+						});
+					});
+				});
+			}*/);
+			// Tours de défense (artillery energy machine-gun missile-launcher shotcannon snipers)
+			node(gateUAWTurret, () -> {
+				node(gateUAWTurretART/*, () -> {
+					node(zounderkite, Seq.with(new Research(quadra), new Research(ashlock), new Research(salvo)), () -> {
+						node(skyhammer, Seq.with(new Research(ripple)), () -> {
+						});
+					});
+				}*/);
+				node(gateUAWTurretEN);
+				node(gateUAWTurretMG/*, () -> {
+					node(quadra, () -> {
+						node(spitfire);
+					});
+				}*/);
+				node(gateUAWTurretMSL);
+				node(gateUAWTurretSG/*, () -> {
+					node(buckshot);
+					node(tempest);
+					node(strikeforce);
+				}*/);/*
+				node(ashlock, () -> {
+					node(longbow, () -> {
+						node(deadeye);
+					});
+				});*/
+			});
+			// Murs
+			node(gateUAWDefence/*, () -> {
+				node(stoutSteelWall, () -> {
+					node(stoutSteelWallLarge);
+				});
+			}*/);
+			// Usines de fabrication d'unités | Unités terrestres | Unités aériennes | Unités navales
+			/*node(airGroundFactory, () -> {
+				node(crotchety, () -> {
+					node(cantankerous, Seq.with(new Research(gelatinizer)), () -> {
+					});
+				});
+				node(aglovale, () -> {
+					node(bedivere, () -> {
+						node(calogrenant, () -> {
+						});
+					});
+				});
+				node(cavalier, Seq.with(new Research(crotchety)), () -> {
+					node(centurion, () -> {
+						node(caernarvon);
+					});
+				});
+				node(navalFactory, () -> {
+					node(megaera, () -> {
+						node(alecto);
+					});
+					node(arquebus, () -> {
+						node(carronade, () -> {
+							node(falconet);
+						});
+					});
+				});
+				node(exponentialPetroleumReconstructor, () -> {
+					node(tetrativePetroleumReconstructor);
+				});
+			});*/
+		});
 	}
 }
-
-
