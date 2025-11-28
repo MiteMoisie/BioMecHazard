@@ -21,7 +21,7 @@ public class BMHTechtree {
 			//node(BMHBlocks.coreNethrax/*, Seq.with(new SectorComplete(biomassFacility))*/);
 		//});
 		
-		nodeRoot("BioMecHazard", gateMain, () -> {
+		nodeRoot("Quarkhod", gateQuarkhod, () -> {
 			
 			// Secteurs
 			node(gateSector);
@@ -81,4 +81,5 @@ public class BMHTechtree {
 		});
 	}
 }
+
 
