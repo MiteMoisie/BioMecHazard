@@ -8,7 +8,7 @@ import static mindustry.world.meta.BuildVisibility.*;
 
 public class BMHGates {
     public static Block 
-		gateMain, gateSector, gateCore, gateCoreUnit,  gateItem, gateDrill, gateDistribution, gateDuct, gateCrafter, gatePower, 
+		gateMain, gateSector, gateCore, gateCoreUnit,  gateItem, gateDrill, gateDistribution, gateDuct, gateCrafting, gatePower, 
 		gateUtil, gateLogic, gateWall, gateTurret, gateUnitFactory, gateGroundUnit, gateAirUnit, gateNavalUnit;
 		//BuildVisibility.hidden
 		
