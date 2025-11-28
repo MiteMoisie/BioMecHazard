@@ -81,12 +81,11 @@ public class BioMecHazardModLauncher extends Mod{
         //BMHPlanets.load();
 		
         //BMHSectors.load();
-        //Log.info("Mod BioMecHazard : chargement de l'arbre des technologies.");
-		//BMHTechTree.load();
+        Log.info("Mod BioMecHazard : chargement de l'arbre des technologies.");
+		BMHGates.load();
+		BMHTechTree.load();
 		
-		Log.info("Chargement de BioMecHazard v0.0.2" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
+		Log.info("Chargement de BioMecHazard v0.0.1" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
     }
 
 }
-
-
