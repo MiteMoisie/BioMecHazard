@@ -69,7 +69,7 @@ public class BMHGates {
 			health = 0;
 			size = 1;
 		}};
-		gateCrafter = new Wall("gate-crafter") {{
+		gateCrafting = new Wall("gate-crafting") {{
 			buildVisibility = hidden;
 			alwaysUnlocked = true;
 			hideDatabase = true;
