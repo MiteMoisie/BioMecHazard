@@ -8,9 +8,13 @@ import static mindustry.world.meta.BuildVisibility.*;
 
 public class BMHGates {
     public static Block 
+		//BuildVisibility.hidden
+		//Arbre Quarkhod
 		gateQuarkhod, gateSector, gateCore, gateCoreUnit,  gateItem, gateDrill, gateDistribution, gateDuct, gateCrafting, gatePower, 
 		gateUtil, gateLogic, gateWall, gateTurret, gateUnitFactory, gateGroundUnit, gateAirUnit, gateNavalUnit;
-		//BuildVisibility.hidden
+		//Arbre Unlimited Armament Works
+		gateUAWStart gateUAWCrafting gateUAWDefence gateUAWTurret gateUAWTurretART gateUAWTurretEN gateUAWTurretMG gateUAWTurretMSL gateUAWTurretSG
+		//gate-uaw-start gate-uaw-crafting gate-uaw-defence gate-uaw-turret gate-uaw-turret-art gate-uaw-turret-en gate-uaw-turret-mg gate-uaw-turret-msl gate-uaw-turret-sg
 		
     public static void load() {
 		gateQuarkhod = new Wall("gate-quarkhod") {{
@@ -133,6 +137,69 @@ public class BMHGates {
 			size = 1;
 		}};
 		gateNavalUnit = new Wall("gate-naval-unit") {{
+			buildVisibility = hidden;
+			alwaysUnlocked = true;
+			hideDatabase = true;
+			health = 0;
+			size = 1;
+		}};
+		gateUAWStart = new Wall("gate-uaw-start") {{
+			buildVisibility = hidden;
+			alwaysUnlocked = true;
+			hideDatabase = true;
+			health = 0;
+			size = 1;
+		}};
+		gateUAWCrafting = new Wall("gate-uaw-crafting") {{
+			buildVisibility = hidden;
+			alwaysUnlocked = true;
+			hideDatabase = true;
+			health = 0;
+			size = 1;
+		}};
+		gateUAWDefence = new Wall("gate-uaw-defence") {{
+			buildVisibility = hidden;
+			alwaysUnlocked = true;
+			hideDatabase = true;
+			health = 0;
+			size = 1;
+		}};
+		gateUAWTurret = new Wall("gate-uaw-turret") {{
+			buildVisibility = hidden;
+			alwaysUnlocked = true;
+			hideDatabase = true;
+			health = 0;
+			size = 1;
+		}};
+		gateUAWTurretART = new Wall("gate-uaw-turret-art") {{
+			buildVisibility = hidden;
+			alwaysUnlocked = true;
+			hideDatabase = true;
+			health = 0;
+			size = 1;
+		}};
+		gateUAWTurretEN = new Wall("gate-uaw-turret-en") {{
+			buildVisibility = hidden;
+			alwaysUnlocked = true;
+			hideDatabase = true;
+			health = 0;
+			size = 1;
+		}};
+		gateUAWTurretMG = new Wall("gate-uaw-turret-mg") {{
+			buildVisibility = hidden;
+			alwaysUnlocked = true;
+			hideDatabase = true;
+			health = 0;
+			size = 1;
+		}};
+		gateUAWTurretMSL = new Wall("gate-uaw-turret-msl") {{
+			buildVisibility = hidden;
+			alwaysUnlocked = true;
+			hideDatabase = true;
+			health = 0;
+			size = 1;
+		}};
+		gateUAWTurretSG = new Wall("gate-uaw-turret-sg") {{
 			buildVisibility = hidden;
 			alwaysUnlocked = true;
 			hideDatabase = true;
