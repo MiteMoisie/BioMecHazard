@@ -82,8 +82,7 @@ public class BioMecHazardModLauncher extends Mod{
         //BMHPlanets.load();
 		
         //BMHSectors.load();
-        Log.info("Mod BioMecHazard : chargement de l'arbre des technologies.");
-		//BMHGates.load();
+        Log.info("Mod BioMecHazard : chargement des arbres technologiques.");
 		BMHTechtreeNodes.load();
 		BMHTechtree.load();
 		
@@ -91,4 +90,5 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
+
 
