@@ -11,9 +11,9 @@ public class BMHGates {
 		//BuildVisibility.hidden
 		//Arbre Quarkhod
 		gateQuarkhod, gateSector, gateCore, gateCoreUnit,  gateItem, gateDrill, gateDistribution, gateDuct, gateCrafting, gatePower, 
-		gateUtil, gateLogic, gateWall, gateTurret, gateUnitFactory, gateGroundUnit, gateAirUnit, gateNavalUnit;
+		gateUtil, gateLogic, gateWall, gateTurret, gateUnitFactory, gateGroundUnit, gateAirUnit, gateNavalUnit, 
 		//Arbre Unlimited Armament Works
-		gateUAWStart gateUAWCrafting gateUAWDefence gateUAWTurret gateUAWTurretART gateUAWTurretEN gateUAWTurretMG gateUAWTurretMSL gateUAWTurretSG
+		gateUAWStart, gateUAWCrafting, gateUAWDefence, gateUAWTurret, gateUAWTurretART, gateUAWTurretEN, gateUAWTurretMG, gateUAWTurretMSL, gateUAWTurretSG;
 		//gate-uaw-start gate-uaw-crafting gate-uaw-defence gate-uaw-turret gate-uaw-turret-art gate-uaw-turret-en gate-uaw-turret-mg gate-uaw-turret-msl gate-uaw-turret-sg
 		
     public static void load() {
