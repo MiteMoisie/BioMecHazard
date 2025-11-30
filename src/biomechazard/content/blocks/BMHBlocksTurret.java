@@ -11,12 +11,15 @@ import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.draw.DrawTurret;
 import biomechazard.entities.bullet.*;
 
-import static mindustry.type.Category.*;
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
 import static mindustry.content.Fx.*;
-import static mindustry.graphics.Pal.*;
 import static mindustry.content.StatusEffects.*;
+import static mindustry.graphics.Pal.*;
+import static mindustry.type.Category.*;
+import static mindustry.type.ItemStack.with;
+import static mindustry.Vars.tilesize;
+import static biomechazard.Vars.*;
 import static biomechazard.audiovisual.UAWPal.*;
 import static biomechazard.audiovisual.BMHEffects.*;
 import static biomechazard.content.BMHItems.*;
@@ -109,7 +112,7 @@ public class BMHBlocksTurret {
 					width = 8f;
 					frontColor = lightishOrange;
 					backColor = lightOrange;
-					status = burning;
+					status = StatusEffects.burning;
 					hitEffect = new MultiEffect(hitBulletSmall, fireHit);
 					ammoMultiplier = 5;
 					splashDamage = 10f;
@@ -122,7 +125,7 @@ public class BMHBlocksTurret {
 					width = 8f;
 					frontColor = cryoFront;
 					hitColor = backColor = cryoBack;
-					status = freezing;
+					status = StatusEffects.freezing;
 					hitEffect = new MultiEffect(hitBulletColor, cryoHit);
 					ammoMultiplier = 5;
 					splashDamage = 10f;
@@ -150,5 +153,4 @@ public class BMHBlocksTurret {
 			}};
 		}};
 	}
-
 }
