@@ -8,6 +8,7 @@ import mindustry.graphics.*;
 import static arc.graphics.g2d.Draw.*;
 import static arc.graphics.g2d.Lines.*;
 import static arc.math.Angles.*;
+import static mindustry.Vars.state;
 import static biomechazard.audiovisual.UAWPal.*;
 
 public class BMHEffects {
@@ -66,4 +67,5 @@ public class BMHEffects {
 	
 	;
 }
+
 
