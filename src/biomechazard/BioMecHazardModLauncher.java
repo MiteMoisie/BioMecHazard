@@ -72,12 +72,21 @@ public class BioMecHazardModLauncher extends Mod{
 		BMHUnits.load();
         Log.info("Mod BioMecHazard : chargement des blocs.");
 		BMHBlocks.load();
+		BMHBlocksTurret.load();
 		/*
-		BMHBlocksPower.load();
-		BMHBlocksDefense.load();
-		BMHBlocksLogistic.load();
 		BMHBlocksProduction.load();
 		BMHBlocksUnits.load();
+		BMHBlocksCore.load();
+		BMHBlocksDrill.load();
+		BMHBlocksLogistic.load();
+		BMHBlocksDuct.load();
+		BMHBlocksCrafting.load();
+		BMHBlocksPower.load();
+		BMHBlocksUtility.load();
+		BMHBlocksLogic.load();
+		BMHBlocksWall.load();
+		BMHBlocksTurret.load();
+		BMHBlocksUnitFactory.load();
 		*/
         //BMHPlanets.load();
 		
@@ -90,5 +99,3 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
-
-
