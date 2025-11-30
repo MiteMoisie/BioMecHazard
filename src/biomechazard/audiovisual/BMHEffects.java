@@ -62,7 +62,8 @@ public class BMHEffects {
 		Draw.color(cryoFront, cryoBack, e.fin());
 		Angles.randLenVectors(e.id, 5, 2f + e.fin() * 10f, (x, y) -> Fill.circle(e.x + x, e.y + y, 0.2f + e.fout() * 1.6f));
 		Draw.color();
-	}),
+	})
 	
 	;
 }
+
