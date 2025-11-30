@@ -14,6 +14,7 @@ import static mindustry.game.Objectives.*;
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
 import static biomechazard.content.blocks.BMHTechtreeNodes.*;
+import static biomechazard.content.blocks.BMHBlocksTurret.*;
 import static biomechazard.content.BMHBlocks.*;
 import static biomechazard.content.BMHUnits.*;
 import static biomechazard.content.BMHItems.*;
@@ -139,11 +140,11 @@ public class BMHTechtree {
 					});
 				}*/);
 				node(gateUAWTurretEN);
-				node(gateUAWTurretMG/*, () -> {
-					node(quadra, () -> {
+				node(gateUAWTurretMG, () -> {
+					node(quadra/*, () -> {
 						node(spitfire);
-					});
-				}*/);
+					}*/);
+				});
 				node(gateUAWTurretMSL);
 				node(gateUAWTurretSG/*, () -> {
 					node(buckshot);
@@ -196,5 +197,6 @@ public class BMHTechtree {
 		});
 	}
 }
+
 
 
