@@ -6,7 +6,15 @@ import arc.assets.loaders.SoundLoader;
 import arc.audio.Sound;
 import mindustry.Vars;
 
-public class Sfx {
+/**
+* Sons issus du mod "Unlimited Armament Works" : cannonShoot1 cannonShoot2 cannonShootBig1 cannonShootBig2 explosionHuge1 gunShoot1 gunShoot2 gunShoot3 gunShoot4 gunShoot5
+* 	launcherShoot1 mineDetonate1 missileShootBig1 missileShootBig2 shellWhistle shotgunShoot1 suppressedShoot1 torpedoShoot1
+* 	
+* Sons issus du mod "Fading Revelations" : 
+*  
+*/
+
+public class BMHSoundEffects {
 	public static Sound
 		cannonShoot1 = new Sound(),
 		cannonShoot2 = new Sound(),
