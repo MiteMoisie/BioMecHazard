@@ -1,7 +1,6 @@
 package biomechazard.content.blocks;
 
 import arc.graphics.Color;
-import mindustry.audio.SoundControl.*;
 import mindustry.content.*;
 import mindustry.entities.effect.*;
 import mindustry.entities.bullet.*;
@@ -14,6 +13,7 @@ import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.draw.DrawTurret;
 import biomechazard.entities.bullet.*;
 import biomechazard.audiovisual.*;
+import biomechazard.entities.UAWUnitSorts;
 
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
@@ -306,9 +306,125 @@ public class BMHBlocksTurret {
 			}};
 		}};
 
+		ashlock = new ItemTurret("ashlock") {{
+			requirements(Category.turret, with(
+				Items.copper, 150,
+				Items.graphite, 100,
+				Items.titanium, 50
+			));
+			size = 2;
+			scaledHealth = 250;
+
+			reload = 1.75f * tick;
+			recoil = 3f;
+			ammoPerShot = 3;
+			maxAmmo = 30;
+
+			range = 30 * tilesize;
+			inaccuracy = 0f;
+			rotateSpeed = 5f;
+			shake = 3.5f;
+
+			shootSound = BMHSoundEffects.cannonShoot1;
+			soundPitchMin = 1.5f;
+			soundPitchMax = 2f;
+
+			ammoUseEffect = Fx.casing3;
+
+			unitSort = UAWUnitSorts.mostHitPoints;
+
+			ammoEjectBack = 9f;
+			shootY = 10f;
+
+			ammo(
+				Items.graphite, new TrailBulletType(10f, 90f) {{
+					hitSize = 6;
+					height = 24f;
+					width = 10f;
+					frontColor = UAWPal.graphiteFront;
+					backColor = UAWPal.graphiteMiddle;
+					trailEffect = Fx.disperseTrail;
+					trailChance = 0.8f;
+					shootEffect = Fx.shootBigColor;
+					hitEffect = Fx.hitBulletColor;
+					trailColor = hitColor = backColor;
+					despawnHit = true;
+					smokeEffect = Fx.shootBigSmoke;
+					reloadMultiplier = 0.5f;
+					ammoMultiplier = 2;
+					knockback = 1.2f;
+				}},
+				Items.silicon, new TrailBulletType(8f, 80f) {{
+					hitSize = 5;
+					height = 30f;
+					width = 10f;
+					homingPower = 0.2f;
+					trailEffect = Fx.disperseTrail;
+					trailChance = 0.8f;
+					shootEffect = Fx.shootBigColor;
+					hitEffect = Fx.hitBulletColor;
+					trailColor = hitColor = backColor;
+					despawnHit = true;
+					ammoMultiplier = 2;
+					pierceCap = 2;
+				}},
+				Items.thorium, new TrailBulletType(10f, 120f) {{
+					hitSize = 5;
+					height = 30f;
+					width = 12f;
+					frontColor = Pal.missileYellow;
+					backColor = Pal.missileYellowBack;
+					trailEffect = Fx.disperseTrail;
+					trailChance = 0.8f;
+					shootEffect = Fx.shootBigColor;
+					hitEffect = Fx.hitBulletColor;
+					trailColor = hitColor = backColor;
+					despawnHit = true;
+					knockback = 0.7f;
+				}},
+				Items.titanium, new TrailBulletType(11f, 70f) {{
+					hitSize = 6f;
+					height = 20f;
+					width = 8f;
+					despawnHit = true;
+					pierceArmor = true;
+					frontColor = UAWPal.titaniumFront;
+					backColor = UAWPal.titaniumBack;
+					trailEffect = Fx.disperseTrail;
+					trailChance = 0.8f;
+					shootEffect = Fx.shootBigColor;
+					hitEffect = Fx.hitBulletColor;
+					trailColor = hitColor = backColor;
+					smokeEffect = Fx.shootBigSmoke;
+					ammoMultiplier = 2;
+					pierce = true;
+				}}
+			);
+			limitRange();
+
+			squareSprite = false;
+			cooldownTime = reload * 0.5f;
+			drawer = new DrawTurret(modTurretBase) {{
+				parts.addAll(
+					new RegionPart("-barrel") {{
+						progress = PartProgress.recoil;
+						moveY = -9 * px;
+					}},
+					new RegionPart("-breach") {{
+						progress = PartProgress.reload;
+						moveY = -12 * px;
+						heatProgress = PartProgress.reload.add(1.5f);
+					}},
+					new RegionPart("-body")
+				);
+			}};
+		}};
+
+
 		
 	}
 }
+
 
 
 
