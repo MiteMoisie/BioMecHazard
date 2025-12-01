@@ -244,7 +244,7 @@ public class BMHBlocksTurret {
 					width = 10;
 					knockback = 1.2f;
 					hitEffect = hitBulletBig;
-					despawnEffect = StatusEffects.freezing;
+					despawnEffect = Fx.freezing;
 					smokeEffect = shootBigSmoke2;
 					shootEffect = new MultiEffect(shootSmoke, shootBig2);
 					hitEffect = new MultiEffect(hitBulletBig, cryoHit);
@@ -259,7 +259,7 @@ public class BMHBlocksTurret {
 				surgeAlloy, new BasicBulletType(8, 15) {{
 					height = 25;
 					width = 8;
-					hitEffect = despawnEffect = new MultiEffect(hitBulletBig, lightning);
+					hitEffect = despawnEffect = new MultiEffect(Fx.hitBulletBig, Fx.lightning);
 					smokeEffect = new MultiEffect(shootBigSmoke2, fireSmoke);
 					shootEffect = new MultiEffect(shootBig, sparkShoot);
 					status = StatusEffects.electrified;
@@ -309,6 +309,7 @@ public class BMHBlocksTurret {
 		
 	}
 }
+
 
 
 
