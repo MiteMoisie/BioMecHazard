@@ -1,16 +1,19 @@
 package biomechazard.content.blocks;
 
 import arc.graphics.Color;
+import mindustry.audio.SoundControl.*;
 import mindustry.content.*;
 import mindustry.entities.effect.*;
 import mindustry.entities.bullet.*;
 import mindustry.entities.pattern.*;
 import mindustry.entities.part.RegionPart;
+import mindustry.gen.Sounds;
 import mindustry.world.*;
 import mindustry.world.blocks.defense.*;
 import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.draw.DrawTurret;
 import biomechazard.entities.bullet.*;
+import biomechazard.audiovisual.*;
 
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
@@ -159,7 +162,7 @@ public class BMHBlocksTurret {
 				lead, 350,
 				titanium, 280,
 				thorium, 250,
-				plastanium, 250,
+				Items.plastanium, 250,
 				silicon, 150
 			));
 			size = 3;
@@ -306,6 +309,7 @@ public class BMHBlocksTurret {
 		
 	}
 }
+
 
 
 
