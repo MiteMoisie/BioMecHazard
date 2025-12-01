@@ -241,7 +241,7 @@ public class BMHBlocksTurret {
 					width = 10;
 					knockback = 1.2f;
 					hitEffect = hitBulletBig;
-					despawnEffect = freezing;
+					despawnEffect = StatusEffects.freezing;
 					smokeEffect = shootBigSmoke2;
 					shootEffect = new MultiEffect(shootSmoke, shootBig2);
 					hitEffect = new MultiEffect(hitBulletBig, cryoHit);
@@ -306,5 +306,6 @@ public class BMHBlocksTurret {
 		
 	}
 }
+
 
 
