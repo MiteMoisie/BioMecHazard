@@ -73,6 +73,7 @@ public class BioMecHazardModLauncher extends Mod{
         Log.info("Mod BioMecHazard : chargement des blocs.");
 		BMHBlocks.load();
 		BMHBlocksTurret.load();
+		UAWBlocksDefense.load();
 		/*
 		BMHBlocksProduction.load();
 		BMHBlocksUnits.load();
@@ -99,3 +100,4 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
+
