@@ -15,7 +15,6 @@ import mindustry.entities.*;
 import mindustry.entities.bullet.BulletType;
 import mindustry.gen.*;
 import mindustry.graphics.Pal;
-
 import biomechazard.audiovisual.*;
 
 import static mindustry.Vars.indexer;
