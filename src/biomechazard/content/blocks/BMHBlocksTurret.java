@@ -39,6 +39,11 @@ import static biomechazard.content.BMHLiquids.*;
 * Tourrelles issues du mod "Fading Revelations" : 
 *  
 */
+/**
+Sfx = BMHSoundEffects
+UAWFx = BMHEffects
+UAWItems = BMHItems
+*/
 
 public class BMHBlocksTurret {
 	
@@ -54,6 +59,7 @@ public class BMHBlocksTurret {
 		heavylight, reticence, trailblazer, sundouser;
 		
 	public static void load() {
+		/*
 		quadra = new ItemTurret("quadra") {{
 			requirements(turret, with(
 				copper, 115,
@@ -158,14 +164,14 @@ public class BMHBlocksTurret {
 					}}
 				);
 			}};
-		}};;
+		}};
 		
 		spitfire = new ItemTurret("spitfire") {{
 			requirements(turret, with(
 				lead, 350,
 				titanium, 280,
 				thorium, 250,
-				Items.plastanium, 250,
+				plastanium, 250,
 				silicon, 150
 			));
 			size = 3;
@@ -308,7 +314,7 @@ public class BMHBlocksTurret {
 				);
 			}};
 		}};
-
+		
 		ashlock = new ItemTurret("ashlock") {{
 			requirements(Category.turret, with(
 				Items.copper, 150,
@@ -422,7 +428,7 @@ public class BMHBlocksTurret {
 				);
 			}};
 		}};
-
+		
 		longsword = new ItemTurret("longsword") {{
 			requirements(Category.turret, with(
 				Items.thorium, 400,
@@ -521,9 +527,12 @@ public class BMHBlocksTurret {
 				);
 			}};
 		}};
-
-
+		
+		*/
+		
+		
+		
+		
 		
 	}
 }
-
