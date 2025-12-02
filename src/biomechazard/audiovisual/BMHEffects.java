@@ -1,10 +1,17 @@
 package biomechazard.audiovisual;
 
+import arc.Core;
+import arc.graphics.Color;
 import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.math.*;
+import arc.math.geom.Vec2;
+import mindustry.content.Fx;
 import mindustry.entities.*;
+import mindustry.entities.Effect;
 import mindustry.graphics.*;
+
+import static arc.graphics.g2d.Draw.rect;
 import static arc.graphics.g2d.Draw.*;
 import static arc.graphics.g2d.Lines.*;
 import static arc.math.Angles.*;
@@ -230,3 +237,4 @@ public class BMHEffects {
 	}
 	/** Fin du code UAW */
 }
+
