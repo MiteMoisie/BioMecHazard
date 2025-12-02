@@ -63,7 +63,7 @@ public class AftershockBulletType extends BulletType {
 	public void generateAftershock(Bullet b) {
 		if (b.timer(1, splashDelay) && splashAmount > 1) {
 			Damage.damage(b.team, b.x, b.y, splashDamageRadius, splashDamage * b.damageMultiplier(), collidesAir, collidesGround, scaledSplashDamage);
-			UAWFx.circleSplash(splashDamageRadius, splashDelay, frontColor, backColor, bottomColor == null ? backColor : bottomColor, pointCount).at(b.x, b.y);
+			BMHEffects.circleSplash(splashDamageRadius, splashDelay, frontColor, backColor, bottomColor == null ? backColor : bottomColor, pointCount).at(b.x, b.y);
 			applySound.at(b.x, b.y);
 			for (int j = 0; j < ((splashAmount) * 15); j++) {
 				particleEffect.at(
