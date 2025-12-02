@@ -197,44 +197,7 @@ public class BMHEffects {
 			}
 		});
 	}
-	/** Refer to {@link UAWFx#circleSplash(float, float, Color, Color, Color, int)} */
-	public static Effect circleSplash(float size, float lifetime, Color frontColor, Color backColor, Color splashColor) {
-		return circleSplash(size, lifetime, frontColor, backColor, splashColor, 0);
-	}
-
-	/**
-	 * Used with repeating aftershocks and statusfieldprojectors
-	 * @param size
-	 * 	How big is the affected area
-	 * @param lifetime
-	 * 	How long does the circle last
-	 * @param splashColor
-	 * 	the color that appears on the bottom of the affected area
-	 * @param pointCount
-	 * 	How many circling point does the effect has
-	 */
-	public static Effect circleSplash(float size, float lifetime, Color frontColor, Color backColor, Color splashColor, int pointCount) {
-		return new Effect(lifetime, size * 2f, e -> {
-			Draw.color(frontColor, backColor, e.fin());
-			Lines.stroke(e.fout() * 4f);
-			Lines.circle(e.x, e.y, size + e.fout() * 3f - 2f);
-			Draw.reset();
-			if (pointCount > 0) {
-				float offset = Mathf.randomSeed(e.id, 360f);
-				for (int i = 0; i < pointCount; i++) {
-					float angle = (i * 360f / pointCount + (Time.time * 3)) + (offset + 4);
-					float rx = Angles.trnsx(angle, size - 2f), ry = Angles.trnsy(angle, size);
-					Draw.color(frontColor, backColor, e.fin());
-					Drawf.tri(
-						e.x + rx, e.y + ry, 48f, 28f * e.fout(), angle);
-				}
-			}
-			Draw.z(Layer.debris);
-			Fill.light(e.x, e.y, Lines.circleVertices(size / 2), size, Color.white.cpy().a(0f), Tmp.c4.set(splashColor).a(e.fout()));
-			Draw.reset();
-			Drawf.light(e.x, e.y, size * 1.6f, backColor, e.fout());
-		});
-	}
 	/** Fin du code UAW */
 }
+
 
