@@ -47,7 +47,7 @@ public class BMHStatus {
 		}};
 		cryoBurn = new BMHStatusEffect("cryoburn") {{
 			color = UAWPal.cryoMiddle;
-			effect = BMHEffects.statusEffectSquare.wrap(color);
+			effect = UAWFx.statusEffectSquare.wrap(color);
 			reloadMultiplier = 0.6f;
 			speedMultiplier = 0.45f;
 			healthMultiplier = 0.8f;
@@ -72,7 +72,7 @@ public class BMHStatus {
 		EMP = new BMHStatusEffect("emp") {{
 			color = UAWPal.surgeBack;
 			effect = new MultiEffect(
-				BMHEffects.statusEffectSquare.wrap(color),
+				UAWFx.statusEffectSquare.wrap(color),
 				Fx.hitLancer,
 				Fx.smoke
 			);
@@ -90,7 +90,7 @@ public class BMHStatus {
 			healthMultiplier = 0.7f;
 			color = Pal.surge.lerp(UAWPal.cryoMiddle, 0.5f);
 			effect = new MultiEffect(
-				BMHEffects.statusEffectSquare.wrap(Pal.surge.lerp(UAWPal.cryoMiddle, 0.5f)),
+				UAWFx.statusEffectSquare.wrap(Pal.surge.lerp(UAWPal.cryoMiddle, 0.5f)),
 				Fx.hitLancer
 			);
 		}};
@@ -100,7 +100,7 @@ public class BMHStatus {
 			reloadMultiplier = 0.4f;
 			color = Pal.lightPyraFlame;
 			effect = new MultiEffect(
-				BMHEffects.statusEffectSquare.wrap(Pal.lightPyraFlame),
+				UAWFx.statusEffectSquare.wrap(Pal.lightPyraFlame),
 				Fx.burning,
 				Fx.smoke
 			);
