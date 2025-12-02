@@ -107,7 +107,7 @@ public class UAWBullets {
 				UAWFx.shootSmoke(width, frontColor)
 			);
 			hitEffect = UAWFx.dynamicExplosion(splashDamageRadius, frontColor, backColor);
-			hitSound = Sfx.explosionHuge1;
+			hitSound = BMHSoundEffects.explosionHuge1;
 			hitSoundVolume = 3f;
 			hitShake = 34f;
 			trailEffect = Fx.artilleryTrail;
@@ -140,7 +140,7 @@ public class UAWBullets {
 				UAWFx.shootSmoke(width, frontColor)
 			);
 			hitEffect = UAWFx.dynamicExplosion(splashDamageRadius, frontColor, backColor);
-			hitSound = Sfx.explosionHuge1;
+			hitSound = BMHSoundEffects.explosionHuge1;
 			hitSoundVolume = 3f;
 			hitShake = 34f;
 			trailEffect = Fx.artilleryTrail;
@@ -173,7 +173,7 @@ public class UAWBullets {
 				UAWFx.shootSmoke(width, frontColor)
 			);
 			hitEffect = UAWFx.dynamicExplosion(splashDamageRadius, frontColor, backColor);
-			hitSound = Sfx.explosionHuge1;
+			hitSound = BMHSoundEffects.explosionHuge1;
 			hitSoundVolume = 3f;
 			hitShake = 34f;
 			trailEffect = Fx.artilleryTrail;
@@ -248,7 +248,7 @@ public class UAWBullets {
 			hitEffect = UAWFx.dynamicExplosion(splashDamageRadius, frontColor, backColor);
 		}};
 		mineEMP = new MineBulletType(200, 10 * tilesize, 30 * tick) {{
-			status = UAWStatusEffects.EMP;
+			status = BMHStatus.EMP;
 			collidesAir = true;
 			statusDuration = 120f;
 			frontColor = UAWPal.titaniumFront;
