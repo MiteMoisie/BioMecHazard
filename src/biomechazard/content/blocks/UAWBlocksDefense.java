@@ -32,9 +32,6 @@ import static mindustry.Vars.tilesize;
 import static mindustry.type.ItemStack.with;
 import static biomechazard.Vars.*;
 import static biomechazard.content.UAWBullets.*;
-// UAWItems = BMHItems
-// UAWStatusEffects = BMHStatus
-// Sfx = BMHSoundEffects
 
 /** Contains defense & support structures, such as Walls, Turrets, and booster */
 public class UAWBlocksDefense {
