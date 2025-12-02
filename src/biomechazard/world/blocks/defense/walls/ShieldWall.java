@@ -95,7 +95,7 @@ public class ShieldWall extends Wall {
 				Fx.reactorsmoke.at(x + Mathf.range(tilesize / 2f), y + Mathf.range(tilesize / 2f));
 			}
 
-			warmup = Mathf.lerpDelta(warmup, efficiency(), 0.1f);
+			warmup = Mathf.lerpDelta(warmup, efficiency, 0.1f);
 
 			if (buildup > 0) {
 				float scale = !broken ? cooldown : cooldownBrokenShield;
