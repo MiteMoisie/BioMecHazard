@@ -1,6 +1,7 @@
 package biomechazard.content.blocks;
 
 import arc.graphics.Color;
+import arc.math.Interp;
 import mindustry.content.*;
 import mindustry.entities.effect.*;
 import mindustry.entities.bullet.*;
@@ -525,3 +526,4 @@ public class BMHBlocksTurret {
 		
 	}
 }
+
