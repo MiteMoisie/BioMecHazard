@@ -31,7 +31,7 @@ import biomechazard.world.blocks.defense.turrets.UAWItemTurret;
 import static mindustry.Vars.tilesize;
 import static mindustry.type.ItemStack.with;
 import static biomechazard.Vars.*;
-import static biomechazard.content.UAWBullets.*;
+import static biomechazard.content.bullets.UAWBullets.*;
 
 /** Contains defense & support structures, such as Walls, Turrets, and booster */
 public class UAWBlocksDefense {
