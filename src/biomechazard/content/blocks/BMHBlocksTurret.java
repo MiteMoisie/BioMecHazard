@@ -32,7 +32,7 @@ import static biomechazard.content.BMHItems.*;
 import static biomechazard.content.BMHLiquids.*;
 
 /**
-* Tourrelles issues du mod "Unlimited Armament Works" : quadra ashlock buckshot skeeter spitfire longbow tempest strikeforce zounderkite redeemer 
+* Tourrelles issues du mod "Unlimited Armament Works" : quadra ashlock buckshot skeeter spitfire longsword tempest strikeforce zounderkite redeemer 
 * 	deadeye skyhammer hellseeker heavylight reticence trailblazer sundouser
 * 	
 * Tourrelles issues du mod "Fading Revelations" : 
@@ -45,7 +45,7 @@ public class BMHBlocksTurret {
 		// Tier 2
 		quadra, ashlock, buckshot, skeeter, 
 		// Tier 3
-		spitfire, longbow, tempest, strikeforce, zounderkite, redeemer, 
+		spitfire, longsword, tempest, strikeforce, zounderkite, redeemer, 
 		// Tier 4
 		deadeye, skyhammer, hellseeker, 
 		// Tier 5
@@ -422,14 +422,106 @@ public class BMHBlocksTurret {
 			}};
 		}};
 
+		longsword = new ItemTurret("longsword") {{
+			requirements(Category.turret, with(
+				Items.thorium, 400,
+				Items.titanium, 275,
+				Items.graphite, 250,
+				Items.silicon, 200,
+				Items.plastanium, 150
+			));
+			size = 3;
+			scaledHealth = 250;
+
+			reload = 2 * tick;
+			recoil = 3f;
+			ammoPerShot = 6;
+			maxAmmo = 30;
+
+			range = 65 * tilesize;
+			shootCone = 1f;
+			shake = 3f;
+			rotateSpeed = 2.5f;
+			
+			shootSound = BMHSoundEffects.cannonShoot2;
+			soundPitchMin = 2.2f;
+			soundPitchMax = 2.8f;
+
+			ammoUseEffect = Fx.casing4;
+
+			unitSort = UAWUnitSorts.mostHitPoints;
+
+			ammo(
+				Items.surgeAlloy, new TrailBulletType(15f, 400) {{
+					hitSize = 8f;
+					height = 28f;
+					width = 12f;
+					despawnHit = true;
+					frontColor = UAWPal.surgeFront;
+					backColor = UAWPal.surgeBack;
+					trailEffect = new MultiEffect(
+						Fx.disperseTrail,
+						Fx.disperseTrail,
+						Fx.disperseTrail
+					);
+					trailInterval = 0.05f;
+					trailChance = 0.8f;
+					shootEffect = new MultiEffect(
+						BMHEffects.railShoot(35, UAWPal.surgeBack),
+						Fx.shootBigColor
+					);
+					hitEffect = new MultiEffect(
+						BMHEffects.railHit(35, UAWPal.surgeBack),
+						Fx.hitBulletColor
+					);
+					trailColor = hitColor = backColor;
+					smokeEffect = Fx.shootBigSmoke;
+					pierceCap = 3;
+				}},
+				stoutsteel, new TrailBulletType(18f, 350) {{
+					hitSize = 8f;
+					height = 28f;
+					width = 12f;
+					despawnHit = true;
+					pierceArmor = true;
+					frontColor = UAWPal.graphiteFront;
+					backColor = UAWPal.graphiteMiddle;
+					trailEffect = new MultiEffect(
+						Fx.disperseTrail,
+						Fx.disperseTrail,
+						Fx.disperseTrail
+					);
+					trailInterval = 0.05f;
+					trailChance = 0.8f;
+					shootEffect = new MultiEffect(
+						BMHEffects.railShoot(85, backColor),
+						Fx.shootBigColor
+					);
+					hitEffect = new MultiEffect(
+						BMHEffects.railHit(40, hitColor),
+						BMHEffects.hitBulletBigColor
+					);
+					trailColor = hitColor = backColor;
+					smokeEffect = Fx.shootBigSmoke;
+					pierce = true;
+				}}
+			);
+			limitRange();
+
+			squareSprite = false;
+			drawer = new DrawTurret(modTurretBase) {{
+				parts.addAll(
+					new RegionPart("-body"),
+					new RegionPart("-barrel") {{
+						progress = PartProgress.recoil.curve(Interp.pow2In);
+						moveY = -9 * px;
+						heatProgress = PartProgress.recoil;
+					}}
+				);
+			}};
+		}};
+
 
 		
 	}
 }
-
-
-
-
-
-
-
