@@ -30,7 +30,6 @@ public class BMHEffects {
 		});
 	}),
 	
-	/** @author Eschatologue  */
 	statusEffectSquare = new Effect(35f, e -> {
 		color(e.color);
 
@@ -40,7 +39,6 @@ public class BMHEffects {
 	}),
 	// endregion Status
 	
-	/** @author Eschatologue  */
 	// region Trails
 	/**
 	 * Vanilla trail fade but with much larger clipsize
@@ -57,7 +55,6 @@ public class BMHEffects {
 		trail.draw(e.color, e.rotation);
 	}),
 	
-	/** @author Eschatologue  */
 	/** Based on Fx.fireHit */
 	cryoHit = new Effect(38f, e -> {
 		Draw.color(cryoFront, cryoBack, e.fin());
@@ -65,7 +62,6 @@ public class BMHEffects {
 		Draw.color();
 	}),
 	
-	/** @author Eschatologue  */
 	// region Shooting
 	shootSmoke = new Effect(30f, e -> {
 		Draw.color(e.color, Color.lightGray, Color.gray, e.fin());
@@ -73,10 +69,21 @@ public class BMHEffects {
 		Angles.randLenVectors(e.id, 9, e.finpow() * 23f, e.rotation, 20f, (x, y) -> {
 			Fill.circle(e.x + x, e.y + y, e.fout() * 2.4f + 0.2f);
 		});
+	}),
+	
+	hitBulletBigColor = new Effect(13, e -> {
+		Draw.color(Color.white, e.color, e.fin());
+		Lines.stroke(0.5f + e.fout() * 1.5f);
+		Angles.randLenVectors(e.id, 8, e.finpow() * 30f, e.rotation, 50f, (x, y) -> {
+			float ang = Mathf.angle(x, y);
+			lineAngle(e.x + x, e.y + y, ang, e.fout() * 4 + 1.5f);
+		});
 	})
 	
+	/** Fin du code UAW */
+	
 	;
-
+	
 	/** @author Eschatologue  */
 	/** Refer to {@link UAWFx#shootSmoke(float, Color, boolean, float, float)} */
 	public static Effect shootSmoke(float lifetime, Color color) {
@@ -114,8 +121,74 @@ public class BMHEffects {
 			Draw.reset();
 		});
 	}
+	/** Refer to {@link UAWFx#railShoot(float, float, Color)} */
+	public static Effect railShoot(float burstLength, Color color) {
+		return railShoot(burstLength, burstLength * 0.5f, color);
+	}
+	/**
+	 * Based on {@link Fx#railShoot}
+	 * @param burstLength
+	 * 	[85] Side Burst Length
+	 * @param lifetime
+	 * 	* 	[24] Effect Lifetime
+	 * @param color
+	 * 	The effect color
+	 */
+	public static Effect railShoot(float burstLength, float lifetime, Color color) {
+		float l2 = lifetime * 0.41f;
+		float width = burstLength * 0.15f;
+		float circleRad = burstLength * 0.58f;
+		float lightRad = burstLength * 2.11f;
+		return new Effect(lifetime, e -> {
+			e.scaled(l2, b -> {
+				color(Color.white, Color.lightGray, b.fin());
+				stroke(b.fout() * 3f + 0.2f);
+				Lines.circle(b.x, b.y, b.fin() * circleRad);
+			});
+			color(color);
+			for (int i : Mathf.signs) {
+				Drawf.tri(e.x, e.y, width * e.fout(), burstLength, e.rotation + 90f * i);
+			}
+			Drawf.light(e.x, e.y, lightRad, color, 0.9f * e.fout());
+		});
+	}
+	/**
+	 * Based on Fx.railTrail
+	 * @param width
+	 * 	How wide is the trail, also adjusts its height, spacing have to be adjusted manually
+	 * @param color
+	 * 	The color of the trail
+	 */
+	public static Effect railTrail(float width, Color color) {
+		return new Effect(width * 1.8f, e -> {
+			color(color);
+			for (int i : Mathf.signs) {
+				Drawf.tri(e.x, e.y, width * e.fout(), (width * 2.4f), e.rotation + 90 + 90f * i);
+			}
+			Drawf.light(e.x, e.y, (width * 6) * e.fout(), color, 0.5f);
+		});
+	}
+	/** Refer to {@link UAWFx#railHit(float, float, Color)} */
+	public static Effect railHit(float hitLength, Color color) {
+		return railHit(hitLength, hitLength * 0.3f, color);
+	}
+	/**
+	 * Based on {@link Fx#railHit}
+	 * @param hitLength
+	 * 	[60] Hit length of the effect
+	 * @param lifetime
+	 * 	[18]
+	 */
+	public static Effect railHit(float hitLength, float lifetime, Color color) {
+		float clipsize = hitLength * 3.33f;
+		float width = hitLength * 0.16f;
+		return new Effect(lifetime, clipsize, e -> {
+			color(color);
+
+			for (int i : Mathf.signs) {
+				Drawf.tri(e.x, e.y, width * e.fout(), hitLength, e.rotation + 140f * i);
+			}
+		});
+	}
 	/** Fin du code UAW */
 }
-
-
-
