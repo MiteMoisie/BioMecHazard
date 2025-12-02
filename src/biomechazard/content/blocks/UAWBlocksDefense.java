@@ -26,7 +26,7 @@ import biomechazard.content.*;
 import biomechazard.entities.UAWUnitSorts;
 import biomechazard.entities.bullet.*;
 import biomechazard.world.blocks.defense.turrets.UAWItemTurret;
-//import biomechazard.world.blocks.defense.walls.ShieldWall;
+import biomechazard.world.blocks.defense.walls.ShieldWall;
 
 import static mindustry.Vars.tilesize;
 import static mindustry.type.ItemStack.with;
