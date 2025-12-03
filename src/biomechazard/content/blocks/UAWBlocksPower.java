@@ -6,7 +6,7 @@
 package biomechazard.content.blocks;
 
 import biomechazard.audiovisual.UAWPal;
-import biomechazard.content.UAWLiquids;
+import biomechazard.content.BMHLiquids;
 import biomechazard.world.blocks.power.steam.*;
 import biomechazard.world.drawer.DrawBoilerSmoke;
 import mindustry.content.*;
