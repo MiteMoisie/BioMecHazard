@@ -1149,7 +1149,7 @@ public class UAWBlocksDefense {
 //					splashAmount = 1;
 //					shootEffect = UAWFx.circleSplash(range, reload / 2, frontColor, backColor, backColor, 6);
 //				}},
-//				UAWLiquids.surgeSolvent, new AftershockBulletType(0, range) {{
+//				BMHLiquids.surgeSolvent, new AftershockBulletType(0, range) {{
 //					smokeEffect = FxS.surgeHit;
 //					status = StatusEffects.electrified;
 //					frontColor = Pal.missileYellow;
