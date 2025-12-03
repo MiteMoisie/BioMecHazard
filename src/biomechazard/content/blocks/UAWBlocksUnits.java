@@ -97,7 +97,7 @@ public class UAWBlocksUnits {
 				Items.titanium, 2000,
 				Items.thorium, 550,
 				Items.plastanium, 500,
-				UAWItems.stoutsteel, 550
+				BMHItems.stoutsteel, 550
 			));
 
 			size = 7;
@@ -105,7 +105,7 @@ public class UAWBlocksUnits {
 			consumeItems(with(
 				Items.silicon, 425,
 				Items.metaglass, 325,
-				UAWItems.stoutsteel, 250,
+				BMHItems.stoutsteel, 250,
 				Items.plastanium, 225
 			));
 			consumeLiquid(Liquids.oil, 1.5f);
@@ -131,7 +131,7 @@ public class UAWBlocksUnits {
 				Items.silicon, 1125,
 				Items.metaglass, 500,
 				Items.plastanium, 600,
-				UAWItems.stoutsteel, 600,
+				BMHItems.stoutsteel, 600,
 				Items.surgeAlloy, 600
 			));
 
@@ -142,7 +142,7 @@ public class UAWBlocksUnits {
 				Items.metaglass, 450,
 				Items.plastanium, 300,
 				Items.surgeAlloy, 350,
-				UAWItems.stoutsteel, 350
+				BMHItems.stoutsteel, 350
 			));
 			consumeLiquid(Liquids.oil, 3.5f);
 
