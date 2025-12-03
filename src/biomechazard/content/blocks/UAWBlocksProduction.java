@@ -104,7 +104,7 @@ public class UAWBlocksProduction {
 			baseArrowColor = Color.valueOf("989aa4");
 			squareSprite = false;
 			tileRequirement = Blocks.oreCoal;
-			drilledItem = UAWItems.anthracite;
+			drilledItem = BMHItems.anthracite;
 			tier = 3;
 			arrows = 1;
 			itemCapacity = 35;
@@ -253,7 +253,7 @@ public class UAWBlocksProduction {
 			consumeItems(
 				new ItemStack(Items.titanium, 3),
 				new ItemStack(Items.silicon, 2),
-				new ItemStack(UAWItems.anthracite, 3)
+				new ItemStack(BMHItems.anthracite, 3)
 			);
 			outputItem = new ItemStack(
 				BMHItems.stoutsteel, 3
@@ -300,7 +300,7 @@ public class UAWBlocksProduction {
 			consumeItems(
 				new ItemStack(Items.sand, 6),
 				new ItemStack(Items.lead, 2),
-				new ItemStack(UAWItems.anthracite, 1)
+				new ItemStack(BMHItems.anthracite, 1)
 			);
 			consumeLiquid(Liquids.oil, 1.5f);
 			outputItems = with(
