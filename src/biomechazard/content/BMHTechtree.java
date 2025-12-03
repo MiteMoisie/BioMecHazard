@@ -15,7 +15,7 @@ import static mindustry.game.Objectives.*;
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
 import static biomechazard.content.blocks.BMHTechtreeNodes.*;
-import static biomechazard.content.blocks.BMHBlocksTurret.*;
+//import static biomechazard.content.blocks.BMHBlocksTurret.*;
 import static biomechazard.content.blocks.UAWBlocksDefense.*;
 import static biomechazard.content.blocks.UAWBlocksPower.*;
 import static biomechazard.content.blocks.UAWBlocksLogistic.*;
@@ -159,7 +159,7 @@ public class BMHTechtree {
 					node(strikeforce);
 				});
 				node(ashlock, () -> {
-					node(longsword, () -> {
+					node(longbow, () -> {
 						node(deadeye);
 					});
 				});
@@ -203,4 +203,5 @@ public class BMHTechtree {
 			});
 		});
 	}
+
 }
