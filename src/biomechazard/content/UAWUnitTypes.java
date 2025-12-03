@@ -11,7 +11,7 @@ import arc.math.Mathf;
 import arc.math.geom.Rect;
 import arc.struct.*;
 import arc.struct.ObjectMap.Entry;
-import com.sun.istack.NotNull;
+//import com.sun.istack.NotNull;
 import mindustry.ai.types.FlyingAI;
 import mindustry.content.*;
 import mindustry.entities.abilities.MoveEffectAbility;
