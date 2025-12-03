@@ -38,7 +38,7 @@ import biomechazard.type.Rotor;
 import biomechazard.type.weapon.*;
 
 import static biomechazard.Vars.*;
-import static biomechazard.content.UAWBullets.fragGlassFrag;
+import static biomechazard.content.bullets.UAWBullets.fragGlassFrag;
 import static mindustry.Vars.tilesize;
 
 @SuppressWarnings("unchecked")
