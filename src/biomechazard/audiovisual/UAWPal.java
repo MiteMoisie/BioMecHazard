@@ -1,15 +1,25 @@
 /**
 * @author Eschatologue 
 * mod "Unlimited Armament Works"
+* Palette de couleurs pour les éléments du mod UAW
 */
 
 package biomechazard.audiovisual;
 
 import arc.graphics.Color;
+import mindustry.graphics.Pal;
 
 public class UAWPal {
 	// front = light, back = dark
 	public static Color placeHolder,
+	
+	heat = new Color(1f, 0.22f, 0.22f, 0.8f),
+	missileSmoke = Color.grays(0.3f).cpy().lerp(Pal.bulletYellow, 0.5f).cpy().a(0.4f),
+	phlogiston = Color.valueOf("00aea2"),
+		phlogistonFront = Color.valueOf("82e9de"),
+		phlogistonMid = Color.valueOf("4db6ac"),
+		phlogistonBack = Color.valueOf("00867d"),
+	lancerLaser = Color.valueOf("c0ecff"),
 
 	cryoFront = Color.valueOf("c0ecff"),
 		cryoMiddle = Color.valueOf("87ceeb"),
