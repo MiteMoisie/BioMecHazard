@@ -2,7 +2,6 @@ package biomechazard;
 
 import arc.*;
 import arc.util.*;
-//import arc.util.Time;
 
 import mindustry.*;
 import mindustry.content.*;
@@ -62,18 +61,21 @@ public class BioMecHazardModLauncher extends Mod{
 		Log.info("Mod BioMecHazard : chargement des liquides.");
 		BMHLiquids.load();
 		
-		//BMHBullets.load();
-		
 		//BMHWeathers.load();
 		
         //Log.info("Mod BioMecHazard : chargement des effets visuels.");
 		//BMHVisualEffects.load();
         Log.info("Mod BioMecHazard : chargement des unités.");
 		BMHUnits.load();
+		UAWUnitTypes.load();
         Log.info("Mod BioMecHazard : chargement des blocs.");
 		BMHBlocks.load();
 		BMHBlocksTurret.load();
 		UAWBlocksDefense.load();
+		UAWBlocksPower.load();
+		UAWBlocksLogistic.load();
+		UAWBlocksProduction.load();
+		UAWBlocksUnits.load();
 		/*
 		BMHBlocksProduction.load();
 		BMHBlocksUnits.load();
@@ -89,6 +91,10 @@ public class BioMecHazardModLauncher extends Mod{
 		BMHBlocksTurret.load();
 		BMHBlocksUnitFactory.load();
 		*/
+		Log.info("Mod BioMecHazard : chargement des balles.");
+		//BMHBullets.load();
+		UAWBullets.load();
+		
         //BMHPlanets.load();
 		
         //BMHSectors.load();
@@ -96,8 +102,7 @@ public class BioMecHazardModLauncher extends Mod{
 		BMHTechtreeNodes.load();
 		BMHTechtree.load();
 		
-		Log.info("Chargement de BioMecHazard v0.0.1" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
+		Log.info("Chargement de BioMecHazard v0.0.4" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
     }
 
 }
-
