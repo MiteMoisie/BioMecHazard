@@ -126,7 +126,7 @@ public class UAWBlocksProduction {
 				Items.copper, 225,
 				Items.graphite, 300,
 				Items.titanium, 230,
-				UAWItems.stoutsteel, 100,
+				BMHItems.stoutsteel, 100,
 				Items.silicon, 120
 			));
 			size = 4;
@@ -256,7 +256,7 @@ public class UAWBlocksProduction {
 				new ItemStack(UAWItems.anthracite, 3)
 			);
 			outputItem = new ItemStack(
-				UAWItems.stoutsteel, 3
+				BMHItems.stoutsteel, 3
 			);
 
 			squareSprite = false;
