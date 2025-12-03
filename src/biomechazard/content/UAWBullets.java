@@ -248,7 +248,7 @@ public class UAWBullets {
 			hitEffect = UAWFx.dynamicExplosion(splashDamageRadius, frontColor, backColor);
 		}};
 		mineEMP = new MineBulletType(200, 10 * tilesize, 30 * tick) {{
-			status = UAWStatusEffects.EMP;
+			status = BMHStatus.EMP;
 			collidesAir = true;
 			statusDuration = 120f;
 			frontColor = UAWPal.titaniumFront;
