@@ -96,7 +96,7 @@ public class BMHTechtree {
 						nodeProduce(stoutsteel, () -> {
 						});
 					});
-					nodeProduce(cryofluid, () -> {
+					nodeProduce(Liquids.cryofluid, () -> {
 						nodeProduce(cryogel, () -> {
 						});
 					});
@@ -158,7 +158,7 @@ public class BMHTechtree {
 					node(strikeforce);
 				});
 				node(ashlock, () -> {
-					node(longbow, () -> {
+					node(longsword, () -> {
 						node(deadeye);
 					});
 				});
@@ -186,7 +186,7 @@ public class BMHTechtree {
 						node(caernarvon);
 					});
 				});
-				node(navalFactory, () -> {
+				node(UAWBlocksUnits.navalFactory, () -> {
 					node(megaera, () -> {
 						node(alecto);
 					});
