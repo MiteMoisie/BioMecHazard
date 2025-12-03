@@ -212,7 +212,7 @@ public class UAWBlocksDefense {
 					status = StatusEffects.slow;
 					collidesAir = false;
 				}},
-				UAWItems.stoutsteel, new TrailBulletType(12, 22) {{
+				BMHItems.stoutsteel, new TrailBulletType(12, 22) {{
 					height = 20;
 					width = 5;
 					pierce = true;
@@ -482,7 +482,7 @@ public class UAWBlocksDefense {
 					smokeEffect = Fx.shootBigSmoke;
 					pierceCap = 3;
 				}},
-				UAWItems.stoutsteel, new TrailBulletType(18f, 350) {{
+				BMHItems.stoutsteel, new TrailBulletType(18f, 350) {{
 					hitSize = 8f;
 					height = 28f;
 					width = 12f;
@@ -531,7 +531,7 @@ public class UAWBlocksDefense {
 				Items.thorium, 600,
 				Items.metaglass, 900,
 				Items.surgeAlloy, 900,
-				UAWItems.stoutsteel, 800,
+				BMHItems.stoutsteel, 800,
 				Items.silicon, 1200
 			));
 			size = 4;
@@ -555,7 +555,7 @@ public class UAWBlocksDefense {
 
 			unitSort = UAWUnitSorts.mostHitPoints;
 			ammo(
-				UAWItems.stoutsteel, new HighVelocityShellBulletType(25f, 12500) {{
+				BMHItems.stoutsteel, new HighVelocityShellBulletType(25f, 12500) {{
 					height = 30f;
 					trailChance = 0.8f;
 					sideTrailInterval = 0.05f;
@@ -680,7 +680,7 @@ public class UAWBlocksDefense {
 				Items.graphite, 500,
 				Items.plastanium, 325,
 				Items.silicon, 325,
-				UAWItems.stoutsteel, 250
+				BMHItems.stoutsteel, 250
 			));
 			size = 4;
 			scaledHealth = 250;
@@ -876,7 +876,7 @@ public class UAWBlocksDefense {
 					hitEffect = new MultiEffect(Fx.hitBulletColor, Fx.fireSmoke);
 					despawnEffect = new MultiEffect(Fx.flakExplosion, Fx.fireSmoke);
 				}},
-				UAWItems.stoutsteel, new TrailBulletType(12, 10) {{
+				BMHItems.stoutsteel, new TrailBulletType(12, 10) {{
 					height = 14f;
 					width = 6f;
 					despawnHit = true;
@@ -1090,7 +1090,7 @@ public class UAWBlocksDefense {
 		}};
 		stoutSteelWall = new Wall("stoutsteel-wall") {{
 			requirements(Category.defense, with(
-				UAWItems.stoutsteel, 8
+				BMHItems.stoutsteel, 8
 			));
 			size = 2;
 			health = 300 * wallHealthMultiplier;
@@ -1101,7 +1101,7 @@ public class UAWBlocksDefense {
 		stoutSteelWallLarge = new Wall("stoutsteel-wall-large") {{
 			size = 3;
 			requirements(Category.defense, with(
-				UAWItems.stoutsteel, 12
+				BMHItems.stoutsteel, 12
 			));
 			health = 300 * wallHealthMultiplier * 3;
 			chanceDeflect = 6f;
