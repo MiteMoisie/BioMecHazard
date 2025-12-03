@@ -5,6 +5,8 @@
 
 package biomechazard.type.Weapon;
 
+import mindustry.type.*;
+
 /** Weapon that kills the user */
 public class SuicideWeapon extends Weapon {
 	public SuicideWeapon(String name) {
