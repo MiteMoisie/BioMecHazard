@@ -14,6 +14,7 @@ import mindustry.ui.dialogs.*;
 
 import biomechazard.content.*;
 import biomechazard.content.blocks.*;
+import biomechazard.content.bullets.*;
 
 public class BioMecHazardModLauncher extends Mod{
 	
@@ -106,3 +107,4 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
+
