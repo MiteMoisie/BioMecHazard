@@ -32,7 +32,12 @@ public class UAWModLoader extends Mod {
 		UAWUnitTypes.load();
 		UAWItems.load();
 		UAWLiquids.load();
-		UAWBlockContent();
+		//UAWBlockContent();
+		UAWBlocksPower.load();
+		UAWBlocksDefense.load();
+		UAWBlocksLogistic.load();
+		UAWBlocksProduction.load();
+		UAWBlocksUnits.load();
 		UAWSerpuloTechTree.load();
 
 	}
