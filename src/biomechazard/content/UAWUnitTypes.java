@@ -218,7 +218,7 @@ public class UAWUnitTypes {
 				x = 8f;
 				y = 4.5f;
 				reload = 4f;
-				shootSound = Sfx.gunShoot3;
+				shootSound = BMHSoundEffects.gunShoot3;
 				ejectEffect = Fx.casing1;
 				bullet = new TrailBulletType(6f, 15) {{
 					height = 8f;
@@ -278,7 +278,7 @@ public class UAWUnitTypes {
 				y = 11f;
 				reload = 4;
 				recoil = 0f;
-				shootSound = Sfx.gunShoot3;
+				shootSound = BMHSoundEffects.gunShoot3;
 				ejectEffect = Fx.casing1;
 				bullet = new TrailBulletType(10f, 24) {{
 					trailLengthScale = 1;
@@ -341,7 +341,7 @@ public class UAWUnitTypes {
 				y = 3.5f;
 				maxRange = unitRange;
 				reload = 2f * 60;
-				shootSound = Sfx.missileShootBig1;
+				shootSound = BMHSoundEffects.missileShootBig1;
 
 				bullet = new BulletType() {{
 					hitColor = Pal.lightPyraFlame;
@@ -443,7 +443,7 @@ public class UAWUnitTypes {
 				x = 20 * px;
 				y = 80 * px;
 				reload = 2.5f;
-				shootSound = Sfx.gunShoot3;
+				shootSound = BMHSoundEffects.gunShoot3;
 				ejectEffect = Fx.casing1;
 				bullet = new BasicBulletType(7f, 12) {{
 					height = 12f;
@@ -499,7 +499,7 @@ public class UAWUnitTypes {
 				x = 40 * px;
 				y = -26 * px;
 				reload = 5 * tick;
-				shootSound = Sfx.missileShootBig1;
+				shootSound = BMHSoundEffects.missileShootBig1;
 				bullet = new BulletType() {{
 					hitColor = UAWPal.cryoFront;
 					shootEffect = Fx.shootBigColor;
@@ -589,7 +589,7 @@ public class UAWUnitTypes {
 				y = 15 * px;
 				reload = 60f;
 				recoil = 6 * px;
-				shootSound = Sfx.gunShoot5;
+				shootSound = BMHSoundEffects.gunShoot5;
 				ejectEffect = Fx.casing3;
 				bullet = new StatusEffectBulletType(BMHStatus.cryoBurn, 3 * tick) {{
 					lifetime = unitRange / speed;
@@ -692,7 +692,7 @@ public class UAWUnitTypes {
 				x = y = 0;
 				reload = 3f * tick;
 				recoil = 0;
-				shootSound = Sfx.cannonShoot1;
+				shootSound = BMHSoundEffects.cannonShoot1;
 				ejectEffect = Fx.casing3;
 				shootY = 82 * px;
 				shoot = new ShootAlternate() {{
@@ -1182,7 +1182,7 @@ public class UAWUnitTypes {
 				inaccuracy = 10f;
 				reload = 5f * 60;
 				recoil = 2f;
-				shootSound = Sfx.cannonShootBig1;
+				shootSound = BMHSoundEffects.cannonShootBig1;
 				shake = 16;
 				shootStatusDuration = reload * 1.5f;
 				shootStatus = StatusEffects.slow;
@@ -1197,7 +1197,7 @@ public class UAWUnitTypes {
 					incendChance = 0.8f;
 					incendSpread = 16f;
 					makeFire = true;
-					hitSound = Sfx.explosionHuge1;
+					hitSound = BMHSoundEffects.explosionHuge1;
 					trailMult = 1f;
 					hitShake = 15f;
 					frontColor = Pal.sapBullet;
@@ -1262,7 +1262,7 @@ public class UAWUnitTypes {
 				x = 28f * px;
 				y = -12f * px;
 				reload = 5f;
-				shootSound = Sfx.gunShoot3;
+				shootSound = BMHSoundEffects.gunShoot3;
 				ejectEffect = Fx.casing1;
 				bullet = new TrailBulletType(6f, 2) {{
 					height = 8f;
@@ -1284,7 +1284,7 @@ public class UAWUnitTypes {
 				ammoType = new ItemAmmoType(Items.thorium);
 				targetAir = false;
 
-				shootSound = Sfx.torpedoShoot1;
+				shootSound = BMHSoundEffects.torpedoShoot1;
 
 				bullet = new TorpedoBulletType(1.8f, 550) {{
 					shootEffect = new MultiEffect(
@@ -1349,7 +1349,7 @@ public class UAWUnitTypes {
 				inaccuracy = 1f;
 				targetAir = false;
 
-				shootSound = Sfx.torpedoShoot1;
+				shootSound = BMHSoundEffects.torpedoShoot1;
 
 				bullet = new TorpedoBulletType(1.8f, 650) {{
 					shootEffect = new MultiEffect(
@@ -1547,7 +1547,7 @@ public class UAWUnitTypes {
 					recoil = 1f;
 					inaccuracy = 12f;
 
-					shootSound = Sfx.gunShoot3;
+					shootSound = BMHSoundEffects.gunShoot3;
 					ejectEffect = Fx.casing1;
 
 					bullet = new BasicBulletType(6f, 10) {{
@@ -1621,7 +1621,7 @@ public class UAWUnitTypes {
 					shootY = 117f * px;
 					shake = 18f;
 
-					shootSound = Sfx.cannonShoot1;
+					shootSound = BMHSoundEffects.cannonShoot1;
 					ejectEffect = UAWFx.casing3Long;
 					bullet = new HighVelocityShellBulletType(15f, 355) {{
 						shootEffect = new MultiEffect(
@@ -1812,7 +1812,7 @@ public class UAWUnitTypes {
 					shootY = 165f * px;
 					shake = 25f;
 
-					shootSound = Sfx.cannonShoot2;
+					shootSound = BMHSoundEffects.cannonShoot2;
 					ejectEffect = UAWFx.casing4Long;
 					bullet = new HighVelocityShellBulletType(15f, 600) {{
 						frontColor = Pal.bulletYellow;
