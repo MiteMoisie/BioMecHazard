@@ -59,7 +59,7 @@ public class UAWBlocksPower {
 				new DrawBlurSpin("-rotator", 6)
 			);
 			float steamInput = 45 / tick;
-			consumeLiquid(UAWLiquids.steam, steamInput);
+			consumeLiquid(BMHLiquids.steam, steamInput);
 			outputLiquid = new LiquidStack(Liquids.water, (steamInput / steamConversionScl) * 0.8f);
 		}};
 		advancedSteamTurbine = new ConsumeGenerator("advanced-steam-turbine") {{
@@ -87,7 +87,7 @@ public class UAWBlocksPower {
 				new DrawBlurSpin("-rotator", 7)
 			);
 			float steamInput = 135 / tick;
-			consumeLiquid(UAWLiquids.steam, steamInput);
+			consumeLiquid(BMHLiquids.steam, steamInput);
 			outputLiquid = new LiquidStack(Liquids.water, (steamInput / steamConversionScl) * 0.8f);
 		}};
 
@@ -101,7 +101,7 @@ public class UAWBlocksPower {
 
 			float steamOutput = 15 / tick;
 			consumeLiquid(Liquids.water, steamOutput);
-			outputLiquid = new LiquidStack(UAWLiquids.steam, steamOutput * steamConversionScl);
+			outputLiquid = new LiquidStack(BMHLiquids.steam, steamOutput * steamConversionScl);
 			liquidCapacity = 180f;
 
 			squareSprite = false;
@@ -128,7 +128,7 @@ public class UAWBlocksPower {
 
 			float steamOutput = 30 / tick;
 			consumeLiquid(Liquids.water, steamOutput);
-			outputLiquid = new LiquidStack(UAWLiquids.steam, steamOutput * steamConversionScl);
+			outputLiquid = new LiquidStack(BMHLiquids.steam, steamOutput * steamConversionScl);
 			liquidCapacity = steamKettle.liquidCapacity * 2;
 
 			squareSprite = false;
@@ -159,7 +159,7 @@ public class UAWBlocksPower {
 
 			float steamOutput = 120 / tick;
 			consumeLiquid(Liquids.water, steamOutput);
-			outputLiquid = new LiquidStack(UAWLiquids.steam, steamOutput * steamConversionScl);
+			outputLiquid = new LiquidStack(BMHLiquids.steam, steamOutput * steamConversionScl);
 			liquidCapacity = steamKettle.liquidCapacity * 4;
 
 			squareSprite = false;
@@ -197,7 +197,7 @@ public class UAWBlocksPower {
 			attribute = Attribute.heat;
 			float steamOutput = 90 / tick;
 			consumeLiquid(Liquids.water, steamOutput);
-			outputLiquid = new LiquidStack(UAWLiquids.steam, steamOutput * steamConversionScl);
+			outputLiquid = new LiquidStack(BMHLiquids.steam, steamOutput * steamConversionScl);
 		}};
 
 		// Heat Generation
@@ -237,7 +237,7 @@ public class UAWBlocksPower {
 //			regionRotated1 = 1;
 //
 //			craftTime = 30f;
-//			consumeLiquid(UAWLiquids.steam, 0.5f * 3);
+//			consumeLiquid(BMHLiquids.steam, 0.5f * 3);
 //			liquidCapacity = 40f;
 //
 //			heatOutput = 12f;
@@ -247,7 +247,7 @@ public class UAWBlocksPower {
 //			squareSprite = false;
 //			drawer = new DrawMulti(
 //				new DrawRegion("-bottom"),
-//				new DrawLiquidTile(UAWLiquids.steam, 2),
+//				new DrawLiquidTile(BMHLiquids.steam, 2),
 //				new DrawDefault(),
 //				new DrawCells(){{
 //					color = UAWPal.steamFront;
