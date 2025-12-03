@@ -110,8 +110,9 @@ public class BioMecHazardModLauncher extends Mod{
 		BMHTechtreeNodes.load();
 		BMHTechtree.load();
 		
-		Log.info("Chargement de BioMecHazard v0.0.5" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
+		Log.info("Chargement de BioMecHazard v0.0.6" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
     }
 
 
 }
+
