@@ -95,11 +95,11 @@ public class BioMecHazardModLauncher extends Mod{
         //BMHSectors.load();
 		
 		Log.info("Mod BioMecHazard : chargement du mod 'Unlimited Armament Works'.");
-		UAWStatusEffects.load();
+		//UAWStatusEffects.load();
 		UAWBullets.load();
 		UAWUnitTypes.load();
-		UAWItems.load();
-		UAWLiquids.load();
+		//UAWItems.load();
+		//UAWLiquids.load();
 		UAWBlocksPower.load();
 		UAWBlocksDefense.load();
 		UAWBlocksLogistic.load();
@@ -112,5 +112,6 @@ public class BioMecHazardModLauncher extends Mod{
 		
 		Log.info("Chargement de BioMecHazard v0.0.5" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
     }
+
 
 }
