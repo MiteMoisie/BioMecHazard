@@ -130,7 +130,7 @@ public class UAWBlocksDefense {
 					makeFire = true;
 					lifetime = 60f;
 				}},
-				UAWItems.cryogel, new BasicBulletType(5f, 15) {{
+				BMHItems.cryogel, new BasicBulletType(5f, 15) {{
 					height = 12f;
 					width = 8f;
 					frontColor = UAWPal.cryoFront;
@@ -244,7 +244,7 @@ public class UAWBlocksDefense {
 					trailColor = Color.lightGray;
 					collidesAir = false;
 				}},
-				UAWItems.cryogel, new BasicBulletType(7, 15) {{
+				BMHItems.cryogel, new BasicBulletType(7, 15) {{
 					height = 25;
 					width = 10;
 					knockback = 1.2f;
@@ -625,7 +625,7 @@ public class UAWBlocksDefense {
 			));
 			ammo(
 				Items.blastCompound, mineCanisterBasic,
-				UAWItems.cryogel, mineCanisterCryo,
+				BMHItems.cryogel, mineCanisterCryo,
 				Items.pyratite, mineCanisterIncendiary,
 				Items.surgeAlloy, mineCanisterEMP
 			);
@@ -708,7 +708,7 @@ public class UAWBlocksDefense {
 
 			ammo(
 				Items.pyratite, artilleryLargeAftershockIncendiary,
-				UAWItems.cryogel, artilleryLargeAftershockCryo,
+				BMHItems.cryogel, artilleryLargeAftershockCryo,
 				Items.plastanium, artilleryLargeFrag,
 				Items.thorium, artilleryLargeAftershockBasic
 			);
@@ -992,7 +992,7 @@ public class UAWBlocksDefense {
 					knockback = 8;
 					collidesAir = false;
 				}},
-				UAWItems.cryogel, new BuckshotBulletType(18, 6f, 60f) {{
+				BMHItems.cryogel, new BuckshotBulletType(18, 6f, 60f) {{
 					pierceCap = 3;
 					frontColor = UAWPal.cryoFront;
 					backColor = UAWPal.cryoBack;
