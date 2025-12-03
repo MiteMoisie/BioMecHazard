@@ -30,7 +30,7 @@ import biomechazard.ai.types.DynamicFlyingAI;
 import biomechazard.audiovisual.*;
 import biomechazard.entities.abilities.RazorRotorAbility;
 import biomechazard.entities.bullet.*;
-import biomechazard.entities.bullet.ModdedVanillaBullet.SplashArtilleryBulletType;
+import biomechazard.entities.bullet.SplashArtilleryBulletType;
 import biomechazard.entities.effects.*;
 import biomechazard.entities.units.*;
 import biomechazard.entities.units.entity.*;
