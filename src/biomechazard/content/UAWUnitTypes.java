@@ -124,7 +124,7 @@ public class UAWUnitTypes {
 		return idMap.get(type, -1);
 	}
 
-	public static <T extends UnitType> void registerPayloadSource(@Nullable Class<T> clz) {
+	public static <T extends UnitType> void registerPayloadSource(Class<T> clz) {
 		var source = (PayloadSource) Blocks.payloadSource;
 		source.config((Class<UnitType>) clz,
 			(PayloadSource.PayloadSourceBuild build, UnitType type) -> {
