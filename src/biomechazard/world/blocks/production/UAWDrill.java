@@ -31,7 +31,7 @@ public class UAWDrill extends Drill {
 
 	public class UAWDrillBuild extends DrillBuild {
 		/** Without this, it would fuck up other drills */
-		protected static final Rand rand = new Rand();
+		protected /*static*/ final Rand rand = new Rand();
 
 		public void drawDrillParticles() {
 			float base = (Time.time / particleLife);
