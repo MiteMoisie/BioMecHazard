@@ -16,10 +16,15 @@ import static mindustry.content.Liquids.*;
 import static biomechazard.content.blocks.BMHTechtreeNodes.*;
 import static biomechazard.content.blocks.BMHBlocksTurret.*;
 import static biomechazard.content.blocks.UAWBlocksDefense.*;
+import static biomechazard.content.blocks.UAWBlocksPower.*;
+import static biomechazard.content.blocks.UAWBlocksLogistic.*;
+import static biomechazard.content.blocks.UAWBlocksProduction.*;
+import static biomechazard.content.blocks.UAWBlocksUnits.*;
 import static biomechazard.content.BMHBlocks.*;
 import static biomechazard.content.BMHUnits.*;
 import static biomechazard.content.BMHItems.*;
 import static biomechazard.content.BMHLiquids.*;
+import static biomechazard.content.UAWUnitTypes.*;
 
 public class BMHTechtree {
     public static void load(){
@@ -91,14 +96,14 @@ public class BMHTechtree {
 						nodeProduce(stoutsteel, () -> {
 						});
 					});
-					nodeProduce(Liquids.cryofluid, () -> {
+					nodeProduce(cryofluid, () -> {
 						nodeProduce(cryogel, () -> {
 						});
 					});
 				});
 			});
 			// Récolteurs d'objets | Distributions d'objets | Conduits de fluides | Usines de fabrication | Génération d'énergie
-			node(gateUAWCrafting/*, () -> {
+			node(gateUAWCrafting, () -> {
 				node(steamKettle, Seq.with(new Research(mechanicalPump)), () -> {
 					node(industrialBoiler, () -> {
 						node(pressureBoiler);
@@ -131,41 +136,41 @@ public class BMHTechtree {
 						});
 					});
 				});
-			}*/);
+			});
 			// Tours de défense (artillery energy machine-gun missile-launcher shotcannon snipers)
 			node(gateUAWTurret, () -> {
-				node(gateUAWTurretART/*, () -> {
+				node(gateUAWTurretART, () -> {
 					node(zounderkite, Seq.with(new Research(quadra), new Research(ashlock), new Research(salvo)), () -> {
 						node(skyhammer, Seq.with(new Research(ripple)), () -> {
 						});
 					});
-				}*/);
+				});
 				node(gateUAWTurretEN);
 				node(gateUAWTurretMG, () -> {
-					node(quadra/*, () -> {
+					node(quadra, () -> {
 						node(spitfire);
-					}*/);
+					});
 				});
 				node(gateUAWTurretMSL);
-				node(gateUAWTurretSG/*, () -> {
+				node(gateUAWTurretSG, () -> {
 					node(buckshot);
 					node(tempest);
 					node(strikeforce);
-				}*/);/*
+				});
 				node(ashlock, () -> {
 					node(longbow, () -> {
 						node(deadeye);
 					});
-				});*/
+				});
 			});
 			// Murs
-			node(gateUAWDefence/*, () -> {
+			node(gateUAWDefence, () -> {
 				node(stoutSteelWall, () -> {
 					node(stoutSteelWallLarge);
 				});
-			}*/);
+			});
 			// Usines de fabrication d'unités | Unités terrestres | Unités aériennes | Unités navales
-			/*node(airGroundFactory, () -> {
+			node(airGroundFactory, () -> {
 				node(crotchety, () -> {
 					node(cantankerous, Seq.with(new Research(gelatinizer)), () -> {
 					});
@@ -194,11 +199,7 @@ public class BMHTechtree {
 				node(exponentialPetroleumReconstructor, () -> {
 					node(tetrativePetroleumReconstructor);
 				});
-			});*/
+			});
 		});
 	}
 }
-
-
-
-
