@@ -554,7 +554,7 @@ public class UAWUnitTypes {
 			drag = 0.016f;
 			rotateSpeed = 5.5f;
 
-			ammoType = new ItemAmmoType(UAWItems.cryogel);
+			ammoType = new ItemAmmoType(BMHItems.cryogel);
 
 			faceTarget = true;
 			range = unitRange;
