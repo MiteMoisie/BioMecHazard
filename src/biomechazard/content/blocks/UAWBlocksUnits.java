@@ -41,7 +41,7 @@ public class UAWBlocksUnits {
 					Items.titanium, 120,
 					Items.graphite, 90,
 					Items.copper, 150,
-					UAWItems.cryogel, 30
+					BMHItems.cryogel, 30
 				)),
 				new UnitPlan(UAWUnitTypes.aglovale, 50f * tick, with(
 					Items.silicon, 90,
