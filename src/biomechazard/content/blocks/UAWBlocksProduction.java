@@ -66,7 +66,7 @@ public class UAWBlocksProduction {
 			updateEffect = UAWFx.cloudPuff(3.5f, UAWPal.steamMid);
 			drillEffect = Fx.mineBig;
 
-			consumeLiquid(UAWLiquids.steam, 0.25f);
+			consumeLiquid(BMHLiquids.steam, 0.25f);
 			consumeLiquid(Liquids.oil, 0.05f).boost();
 		}};
 		advancedSteamDrill = new UAWDrill("advanced-steam-drill") {{
@@ -89,7 +89,7 @@ public class UAWBlocksProduction {
 			drillEffect = Fx.mineBig;
 			rotateSpeed = 6f;
 
-			consumeLiquid(UAWLiquids.steam, 1.8f);
+			consumeLiquid(BMHLiquids.steam, 1.8f);
 			consumeLiquid(Liquids.oil, 0.1f).boost();
 		}};
 
@@ -117,7 +117,7 @@ public class UAWBlocksProduction {
 				Fx.drillSteam,
 				UAWFx.dynamicExplosion(4 * tilesize, UAWPal.graphiteFront, UAWPal.graphiteBack)
 			);
-			consumeLiquid(UAWLiquids.steam, 1f);
+			consumeLiquid(BMHLiquids.steam, 1f);
 		}};
 
 		// Frackers
@@ -143,7 +143,7 @@ public class UAWBlocksProduction {
 
 			result = Liquids.oil;
 			pumpAmount = 135 / tick;
-			consumeLiquid(UAWLiquids.steam, 144 / tick);
+			consumeLiquid(BMHLiquids.steam, 144 / tick);
 		}};
 
 		// Pumps
@@ -154,7 +154,7 @@ public class UAWBlocksProduction {
 				Items.silicon, 25,
 				Items.titanium, 25
 			));
-			consumeLiquid(UAWLiquids.steam, 0.25f);
+			consumeLiquid(BMHLiquids.steam, 0.25f);
 
 			size = 2;
 			pumpAmount = 0.2f;
@@ -177,7 +177,7 @@ public class UAWBlocksProduction {
 				Items.titanium, 35,
 				Items.plastanium, 35
 			));
-			consumeLiquid(UAWLiquids.steam, 0.5f);
+			consumeLiquid(BMHLiquids.steam, 0.5f);
 			size = 3;
 			pumpAmount = 0.25f;
 			liquidCapacity = 180f;
@@ -347,7 +347,7 @@ public class UAWBlocksProduction {
 			}};
 
 			float steamInput = 180f / tick;
-			consumeLiquid(UAWLiquids.steam, steamInput);
+			consumeLiquid(BMHLiquids.steam, steamInput);
 			consumeItem(Items.coal, 18);
 
 			outputItem = new ItemStack(Items.graphite, 12);
@@ -369,7 +369,7 @@ public class UAWBlocksProduction {
 					amount = 4;
 				}},
 				new DrawLiquidTile() {{
-					drawLiquid = UAWLiquids.steam;
+					drawLiquid = BMHLiquids.steam;
 					padding = 34 * px;
 				}},
 				new DrawDefault()
