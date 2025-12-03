@@ -6,6 +6,7 @@ import arc.struct.Seq;
 import mindustry.content.*;
 import mindustry.content.SectorPresets;
 import mindustry.game.Objectives.*;
+import biomechazard.content.blocks.*;
 
 import static mindustry.content.Blocks.*;
 import static mindustry.content.TechTree.*;
