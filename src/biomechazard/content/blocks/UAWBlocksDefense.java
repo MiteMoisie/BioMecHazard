@@ -1048,7 +1048,7 @@ public class UAWBlocksDefense {
 					);
 					shootEffect = UAWFx.shootHugeColor;
 					despawnEffect = UAWFx.empExplosion(splashDamageRadius, 3, backColor);
-					status = UAWStatusEffects.EMP;
+					status = BMHStatus.EMP;
 					hitSound = Sounds.plasmaboom;
 					statusDuration = 0.3f * 60;
 					ammoMultiplier = 6f;
