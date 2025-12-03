@@ -315,7 +315,7 @@ public class UAWUnitTypes {
 					despawnHit = true;
 					hitColor = UAWPal.surgeMiddle;
 					lifetime = (unitRange / speed) * 1.5f;
-					status = UAWStatusEffects.EMP;
+					status = BMHStatus.EMP;
 					statusDuration = 0.5f * tick;
 					shootEffect = Fx.shootBigColor;
 					smokeEffect = Fx.shootBigSmoke;
@@ -1457,7 +1457,7 @@ public class UAWUnitTypes {
 
 			immunities = ObjectSet.with(
 				StatusEffects.disarmed,
-				UAWStatusEffects.EMP,
+				BMHStatus.EMP,
 				StatusEffects.freezing
 			);
 
@@ -1597,7 +1597,7 @@ public class UAWUnitTypes {
 			range = unitRange;
 			maxRange = unitRange;
 
-			immunities = ObjectSet.with(StatusEffects.disarmed, UAWStatusEffects.EMP, StatusEffects.freezing);
+			immunities = ObjectSet.with(StatusEffects.disarmed, BMHStatus.EMP, StatusEffects.freezing);
 
 			treadFrames = 9;
 			treadPullOffset = 4;
@@ -1788,7 +1788,7 @@ public class UAWUnitTypes {
 			range = unitRange;
 			maxRange = unitRange;
 
-			immunities = ObjectSet.with(StatusEffects.disarmed, UAWStatusEffects.EMP, StatusEffects.freezing);
+			immunities = ObjectSet.with(StatusEffects.disarmed, BMHStatus.EMP, StatusEffects.freezing);
 
 			treadFrames = 9;
 			treadPullOffset = 4;
