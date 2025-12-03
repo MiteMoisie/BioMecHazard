@@ -1,7 +1,7 @@
 displayName: "[purple]BioMecHazard"
 name: "biomechazard"
 author: "[#00b3b3ff]MiteMoisie"
-main: "biomechazard.UAWModLoader"
+main: "biomechazard.BioMecHazardModLauncher"
 subtitle: "Expérimental. À utiliser avec prudence."
 description:
   '''
