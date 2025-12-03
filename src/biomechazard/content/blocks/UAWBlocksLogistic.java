@@ -44,7 +44,7 @@ public class UAWBlocksLogistic {
 //		compositeHeatNode = new HeatConduit("composite-heat-node") {{
 //			requirements(Category.power, with(
 //				Items.copper, 10,
-//				UAWItems.stoutsteel, 2,
+//				BMHItems.stoutsteel, 2,
 //				Items.graphite, 1
 //			));
 //			size = 1;
@@ -62,7 +62,7 @@ public class UAWBlocksLogistic {
 
 		pressurizedLiquidRouter = new LiquidRouter("pressurized-liquid-router") {{
 			requirements(Category.liquid, with(
-				UAWItems.stoutsteel, 3,
+				BMHItems.stoutsteel, 3,
 				Items.plastanium, 4,
 				Items.metaglass, 4
 			));
@@ -78,7 +78,7 @@ public class UAWBlocksLogistic {
 		}};
 		pressurizedLiquidJunction = new LiquidJunction("pressurized-liquid-junction") {{
 			requirements(Category.liquid, with(
-				UAWItems.stoutsteel, 3,
+				BMHItems.stoutsteel, 3,
 				Items.plastanium, 4,
 				Items.metaglass, 4
 			));
@@ -92,7 +92,7 @@ public class UAWBlocksLogistic {
 		}};
 		pressurizedLiquidBridge = new DirectionLiquidBridge("pressurized-liquid-bridge") {{
 			requirements(Category.liquid, with(
-				UAWItems.stoutsteel, 3,
+				BMHItems.stoutsteel, 3,
 				Items.plastanium, 4,
 				Items.metaglass, 4
 			));
@@ -118,7 +118,7 @@ public class UAWBlocksLogistic {
 				Items.titanium, 3,
 				Items.metaglass, 2,
 				Items.plastanium, 3,
-				UAWItems.stoutsteel, 2
+				BMHItems.stoutsteel, 2
 			));
 			health = 850;
 			baseExplosiveness = 8f;
