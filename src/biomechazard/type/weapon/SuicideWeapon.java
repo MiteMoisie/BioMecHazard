@@ -3,7 +3,7 @@
 * mod "Unlimited Armament Works"
 */
 
-package biomechazard.type.Weapon;
+package biomechazard.type.weapon;
 
 import mindustry.type.*;
 
