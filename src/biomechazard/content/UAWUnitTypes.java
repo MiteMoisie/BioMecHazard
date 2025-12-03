@@ -589,7 +589,7 @@ public class UAWUnitTypes {
 				recoil = 6 * px;
 				shootSound = Sfx.gunShoot5;
 				ejectEffect = Fx.casing3;
-				bullet = new StatusEffectBulletType(UAWStatusEffects.cryoBurn, 3 * tick) {{
+				bullet = new StatusEffectBulletType(BMHStatus.cryoBurn, 3 * tick) {{
 					lifetime = unitRange / speed;
 					splashDamage = 40;
 					splashDamageRadius = 4.5f * tilesize;
@@ -699,7 +699,7 @@ public class UAWUnitTypes {
 					spread = 1f;
 					barrels = 1;
 				}};
-				bullet = new StatusEffectBulletType(UAWStatusEffects.cryoBurn, 8 * tick) {{
+				bullet = new StatusEffectBulletType(BMHStatus.cryoBurn, 8 * tick) {{
 					lifetime = unitRange / speed;
 					// Fires twice, damage is doubled
 					splashDamage = 80;
@@ -803,7 +803,7 @@ public class UAWUnitTypes {
 						weapons.add(new SuicideWeapon() {{
 							float splashRad = 4 * tilesize;
 							bullet = new ExplosionBulletType(95, splashRad) {{
-								status = UAWStatusEffects.cryoBurn;
+								status = BMHStatus.cryoBurn;
 								statusDuration = 5 * tick;
 								makeFire = true;
 								hitColor = UAWPal.cryoMiddle;
