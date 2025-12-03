@@ -26,12 +26,12 @@ public class UAWStatusEffects {
 	superConduct;
 
 	public static void load() {
-		concussion = new UAWStatusEffect("concussion") {{
+		concussion = new UAWStatusEffect("status-concussion") {{
 			color = Pal.lightishGray;
 			reloadMultiplier = speedMultiplier = 0.6f;
 		}};
 
-		cryoBurn = new UAWStatusEffect("cryoburn") {{
+		cryoBurn = new UAWStatusEffect("status-cryoburn") {{
 			color = UAWPal.cryoMiddle;
 			effect = UAWFx.statusEffectSquare.wrap(color);
 			reloadMultiplier = 0.6f;
@@ -55,7 +55,7 @@ public class UAWStatusEffects {
 				});
 			});
 		}};
-		EMP = new UAWStatusEffect("emp") {{
+		EMP = new UAWStatusEffect("status-emp") {{
 			color = UAWPal.surgeBack;
 			effect = new MultiEffect(
 				UAWFx.statusEffectSquare.wrap(color),
@@ -72,7 +72,7 @@ public class UAWStatusEffects {
 			});
 		}};
 
-		superConduct = new UAWStatusEffect("superconduct") {{
+		superConduct = new UAWStatusEffect("status-superconduct") {{
 			dragMultiplier = 1.5f;
 			healthMultiplier = 0.7f;
 			color = Pal.surge.lerp(UAWPal.cryoMiddle, 0.5f);
@@ -81,7 +81,7 @@ public class UAWStatusEffects {
 				Fx.hitLancer
 			);
 		}};
-		thermalShock = new UAWStatusEffect("thermalshock") {{
+		thermalShock = new UAWStatusEffect("status-thermalshock") {{
 			healthMultiplier = 0.4f;
 			speedMultiplier = 0.8f;
 			reloadMultiplier = 0.4f;
