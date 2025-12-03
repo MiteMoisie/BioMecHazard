@@ -1,4 +1,9 @@
-package UAW.entities.abilities;
+/**
+* @author Eschatologue 
+* mod "Unlimited Armament Works"
+*/
+
+package biomechazard.entities.abilities;
 
 import arc.Core;
 import arc.graphics.Color;
