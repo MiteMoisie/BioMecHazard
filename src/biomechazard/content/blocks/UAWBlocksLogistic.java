@@ -5,7 +5,7 @@
 
 package biomechazard.content.blocks;
 
-import biomechazard.content.UAWItems;
+import biomechazard.content.*;
 import biomechazard.world.blocks.liquid.*;
 import mindustry.content.Items;
 import mindustry.type.Category;
