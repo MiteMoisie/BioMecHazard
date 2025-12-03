@@ -216,7 +216,7 @@ public class UAWBlocksProduction {
 				));
 			consumeLiquid(Liquids.cryofluid, 0.25f);
 			outputItem = new ItemStack(
-				UAWItems.cryogel, 1
+				BMHItems.cryogel, 1
 			);
 
 			drawer = new DrawMulti(
