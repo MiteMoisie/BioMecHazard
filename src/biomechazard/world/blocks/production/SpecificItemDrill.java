@@ -25,7 +25,7 @@ public class SpecificItemDrill extends BurstDrill {
 	/** This drill placing requirement */
 	public Block tileRequirement = Blocks.oreCoal;
 	/** The drilling result */
-	public Item drilledItem = UAWItems.anthracite;
+	public Item drilledItem = BMHItems.anthracite;
 
 	/** Dont tamper with this */
 	public boolean placeable;
