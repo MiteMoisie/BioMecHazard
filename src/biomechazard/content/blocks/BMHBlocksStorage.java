@@ -1,4 +1,4 @@
-package biomechazard;
+package biomechazard.content.blocks;
 
 import mindustry.content.Items;
 import mindustry.type.*;
@@ -110,5 +110,6 @@ public class BMHBlocksStorage{
 	}
 
 }
+
 
 
