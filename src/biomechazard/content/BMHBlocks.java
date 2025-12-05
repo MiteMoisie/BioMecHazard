@@ -26,12 +26,11 @@ public class BMHBlocks{
 			armor = 60f;
 			unitCapModifier = 32;
             itemCapacity = 19000;
-			unitMoveBreakable = true;
+			unitMoveBreakable = false;
             buildTime = 12600f;
 			floating = true;
             placeableLiquid = true;
             researchCostMultiplier = 0.15f;
-			//alwaysUnlocked = true;
 			
 			/** 
 			* À faire : ajouter la capacité au noyau de stocker des liquides. Pour l'instant
@@ -115,5 +114,5 @@ public class BMHBlocks{
 			}
 		}*/
 		};
-		
-}}
+	}
+}
