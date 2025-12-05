@@ -12,7 +12,11 @@ public class BMHTechtreeNodes {
 		gateQuarkhod, gateSector, gateCore, gateCoreUnit,  gateItem, gateDrill, gateDistribution, gateDuct, gateCrafting, gatePower, 
 		gateUtil, gateLogic, gateWall, gateTurret, gateUnitFactory, gateGroundUnit, gateAirUnit, gateNavalUnit, 
 		//Arbre Unlimited Armament Works
-		gateUAWStart, gateUAWCrafting, gateUAWDefence, gateUAWTurret, gateUAWTurretART, gateUAWTurretEN, gateUAWTurretMG, gateUAWTurretMSL, gateUAWTurretSG;
+		gateUAWStart, gateUAWCrafting, gateUAWDefence, gateUAWTurret, gateUAWTurretART, gateUAWTurretEN, gateUAWTurretMG, gateUAWTurretMSL, gateUAWTurretSG, 
+		//Arbre Fading Revelations
+		gateFRAmmo, gateFRBlocks, gateFRCores, gateFRCoreUnits, gateFRProduction, gateFRDistribution, gateFRDrills, gateFREffectBlocks, gateFRFactories, 
+		gateFRFlyingUnits, gateFRItems, gateFRGroundUnits, gateFRLiquid, gateFRMain, gateFRNavalUnits, gateFRPower, gateFRResources, gateFRTurrets, 
+		gateFRUnits, gateFRWalls;
 		
     public static void load() {
 		gateQuarkhod = new BMHTechtreeNode("gate-quarkhod") {{}};
@@ -42,5 +46,25 @@ public class BMHTechtreeNodes {
 		gateUAWTurretMG = new BMHTechtreeNode("gate-uaw-turret-mg") {{}};
 		gateUAWTurretMSL = new BMHTechtreeNode("gate-uaw-turret-msl") {{}};
 		gateUAWTurretSG = new BMHTechtreeNode("gate-uaw-turret-sg") {{}};
+		gateFRAmmo = new BMHTechtreeNode("gate-fr-ammo") {{}};
+		gateFRBlocks = new BMHTechtreeNode("gate-fr-blocks") {{}};
+		gateFRCores = new BMHTechtreeNode("gate-fr-cores") {{}};
+		gateFRCoreUnits = new BMHTechtreeNode("gate-fr-core-units") {{}};
+		gateFRProduction = new BMHTechtreeNode("gate-fr-crafters") {{}};
+		gateFRDistribution = new BMHTechtreeNode("gate-fr-distribution") {{}};
+		gateFRDrills = new BMHTechtreeNode("gate-fr-drills") {{}};
+		gateFREffectBlocks = new BMHTechtreeNode("gate-fr-effect") {{}};
+		gateFRFactories = new BMHTechtreeNode("gate-fr-factories") {{}};
+		gateFRFlyingUnits = new BMHTechtreeNode("gate-fr-flying") {{}};
+		gateFRItems = new BMHTechtreeNode("gate-fr-items") {{}};
+		gateFRGroundUnits = new BMHTechtreeNode("gate-fr-legs") {{}};
+		gateFRLiquid = new BMHTechtreeNode("gate-fr-liquids") {{}};
+		gateFRMain = new BMHTechtreeNode("gate-fr-main") {{}};
+		gateFRNavalUnits = new BMHTechtreeNode("gate-fr-naval") {{}};
+		gateFRPower = new BMHTechtreeNode("gate-fr-power") {{}};
+		gateFRResources = new BMHTechtreeNode("gate-fr-resources") {{}};
+		gateFRTurrets = new BMHTechtreeNode("gate-fr-turrets") {{}};
+		gateFRUnits = new BMHTechtreeNode("gate-fr-units") {{}};
+		gateFRWalls = new BMHTechtreeNode("gate-fr-walls") {{}};
     }
 }
