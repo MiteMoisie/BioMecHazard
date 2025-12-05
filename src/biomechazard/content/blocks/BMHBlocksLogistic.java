@@ -11,7 +11,7 @@ import static mindustry.type.ItemStack.*;
 
 public class BMHBlocksLogistic{
 	public static Block 
-		enhancedContainer;
+		itemsLaunchPad;
 		
 	public static void load(){
 		itemsLaunchPad = new LaunchPad("items-launch-pad"){{
@@ -25,4 +25,5 @@ public class BMHBlocksLogistic{
 			researchCostMultiplier = 1.5f;
         }};
 	}
+
 }
