@@ -15,6 +15,7 @@ import static mindustry.game.Objectives.*;
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
 import static biomechazard.content.blocks.BMHTechtreeNodes.*;
+import static biomechazard.content.blocks.BMHBlocksStorage.*;
 //import static biomechazard.content.blocks.BMHBlocksTurret.*;
 import static biomechazard.content.blocks.UAWBlocksDefense.*;
 import static biomechazard.content.blocks.UAWBlocksPower.*;
@@ -53,7 +54,19 @@ public class BMHTechtree {
 			node(gateDrill);
 			
 			// Distributions d'objets
-			node(gateDistribution);
+			node(gateDistribution, () -> {
+				node(enhancedUnloader, Seq.with(new Research(unloader)), () -> {
+					node(highOutputUnloader);
+				});
+				node(enhancedContainer, Seq.with(new Research(container)), () -> {
+					node(enhancedVault, Seq.with(new Research(vault)), () -> {
+						node(warehouse, Seq.with(new Research(coreNucleus)), () -> {
+							node(largeWarehouse, Seq.with(new Research(coreNethrax)), () -> {
+							});
+						});
+					});
+				});
+			});
 			
 			// Conduits de fluides
 			node(gateDuct);
@@ -89,7 +102,7 @@ public class BMHTechtree {
 			node(gateNavalUnit);
 		});
 		
-		nodeRoot("Unlimited Armament Works 2", gateUAWStart, () -> {
+		nodeRoot("Unlimited Armament Works", gateUAWStart, () -> {
 			// Objets et fluides
 			nodeProduce(steam, () -> {
 				nodeProduce(oil, () -> {
@@ -203,5 +216,4 @@ public class BMHTechtree {
 			});
 		});
 	}
-
 }
