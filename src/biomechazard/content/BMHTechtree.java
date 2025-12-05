@@ -10,12 +10,13 @@ import biomechazard.content.blocks.*;
 
 import static mindustry.content.Blocks.*;
 import static mindustry.content.TechTree.*;
-//import static mindustry.content.SectorPresets.*;
+import static mindustry.content.SectorPresets.*;
 import static mindustry.game.Objectives.*;
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
 import static biomechazard.content.blocks.BMHTechtreeNodes.*;
 import static biomechazard.content.blocks.BMHBlocksStorage.*;
+import static biomechazard.content.blocks.BMHBlocksLogistic.*;
 //import static biomechazard.content.blocks.BMHBlocksTurret.*;
 import static biomechazard.content.blocks.UAWBlocksDefense.*;
 import static biomechazard.content.blocks.UAWBlocksPower.*;
@@ -55,6 +56,8 @@ public class BMHTechtree {
 			
 			// Distributions d'objets
 			node(gateDistribution, () -> {
+				node(itemsLaunchPad, Seq.with(new SectorComplete(extractionOutpost)), () -> {
+				});
 				node(enhancedUnloader, Seq.with(new Research(unloader)), () -> {
 					node(highOutputUnloader);
 				});
