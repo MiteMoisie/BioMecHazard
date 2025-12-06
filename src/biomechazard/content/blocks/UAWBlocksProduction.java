@@ -482,7 +482,7 @@ public class UAWBlocksProduction {
 			drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawPistons(){{
                 sinMag = 5f * px;
                 sinScl = 6f;
-            }}, new DrawRegion("-mid"), new DrawLiquidTile(DrawLiquidTile, 40 * px), new DrawDefault(), new DrawGlowRegion(){{
+            }}, new DrawRegion("-mid"), new DrawLiquidTile(Liquids.cryofluid, 40 * px), new DrawDefault(), new DrawGlowRegion(){{
                 alpha = 0.6f;
                 //glowScale = 5f;
                 color = UAWPal.cryoMiddle;
