@@ -95,7 +95,7 @@ public class BioMecHazardModLauncher extends Mod{
 		
         //BMHSectors.load();
 		
-		Log.info("Mod BioMecHazard : chargement du mod 'Unlimited Armament Works'.");
+		Log.info("Mod BioMecHazard : chargement du contenu du mod 'Unlimited Armament Works'.");
 		//UAWStatusEffects.load();
 		UAWBullets.load();
 		UAWUnitTypes.load();
@@ -108,7 +108,7 @@ public class BioMecHazardModLauncher extends Mod{
 		UAWBlocksUnits.load();
 		//UAWSerpuloTechTree.load();
 		
-		Log.info("Mod BioMecHazard : chargement du mod 'Unlimited Armament Works'.");
+		Log.info("Mod BioMecHazard : chargement du contenu du mod 'Fading Revelations'.");
 		FRBlocksTrading.load();
 		
 		Log.info("Mod BioMecHazard : chargement des arbres technologiques.");
@@ -119,6 +119,7 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
+
 
 
 
