@@ -37,6 +37,7 @@ public class BMHTechtreeNodes {
 		gateGroundUnit = new BMHTechtreeNode("gate-ground-unit") {{}};
 		gateAirUnit = new BMHTechtreeNode("gate-air-unit") {{}};
 		gateNavalUnit = new BMHTechtreeNode("gate-naval-unit") {{}};
+		
 		gateUAWStart = new BMHTechtreeNode("gate-uaw-start") {{}};
 		gateUAWCrafting = new BMHTechtreeNode("gate-uaw-crafting") {{}};
 		gateUAWDefence = new BMHTechtreeNode("gate-uaw-defence") {{}};
@@ -46,6 +47,7 @@ public class BMHTechtreeNodes {
 		gateUAWTurretMG = new BMHTechtreeNode("gate-uaw-turret-mg") {{}};
 		gateUAWTurretMSL = new BMHTechtreeNode("gate-uaw-turret-msl") {{}};
 		gateUAWTurretSG = new BMHTechtreeNode("gate-uaw-turret-sg") {{}};
+		
 		gateFRAmmo = new BMHTechtreeNode("gate-fr-ammo") {{}};
 		gateFRBlocks = new BMHTechtreeNode("gate-fr-blocks") {{}};
 		gateFRCores = new BMHTechtreeNode("gate-fr-cores") {{}};
@@ -68,3 +70,4 @@ public class BMHTechtreeNodes {
 		gateFRWalls = new BMHTechtreeNode("gate-fr-walls") {{}};
     }
 }
+
