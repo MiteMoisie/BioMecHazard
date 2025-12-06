@@ -107,13 +107,18 @@ public class BioMecHazardModLauncher extends Mod{
 		UAWBlocksProduction.load();
 		UAWBlocksUnits.load();
 		//UAWSerpuloTechTree.load();
+		
+		Log.info("Mod BioMecHazard : chargement du mod 'Unlimited Armament Works'.");
+		FRBlocksTrading.load();
+		
 		Log.info("Mod BioMecHazard : chargement des arbres technologiques.");
 		BMHTechtreeNodes.load();
 		BMHTechtree.load();
 		
-		Log.info("Chargement de BioMecHazard v0.0.9" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
+		Log.info("Chargement de BioMecHazard v0.0.10" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
     }
 
 }
+
 
 
