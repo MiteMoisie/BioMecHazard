@@ -218,5 +218,53 @@ public class BMHTechtree {
 				});
 			});
 		});
+		
+		nodeRoot("Fading Revelations 2", gateFRMain, () -> {
+			
+			// Blocs
+			node(gateFRBlocks, () -> {
+				// Noyau  
+				node(gateFRCores);
+				// Usines de fabrication
+				node(gateFRProduction);
+				// Distributions d'objets
+				node(gateFRDistribution);
+				// Récolteurs d'objets
+				node(gateFRDrills);
+				// Utilitaires
+				node(gateFREffectBlocks);
+				// Conduits de fluides
+				node(gateFRLiquid);
+				// Génération d'énergie
+				node(gateFRPower);
+				// Tours de défense
+				node(gateFRTurrets);
+				// Murs
+				node(gateFRWalls);
+			});
+			
+			// Objets
+			node(gateFRItems, () -> {
+				// Ressources
+				node(gateFRResources);
+				// Munitions
+				node(gateFRAmmo);
+			});
+			
+			// Unités
+			node(gateFRUnits, () -> {
+				// Unités de noyau
+				node(gateFRCoreUnits);
+				// Usines de fabrication d'unités
+				node(gateFRFactories);
+				// Unités terrestres
+				node(gateFRGroundUnits);
+				// Unités aériennes
+				node(gateFRFlyingUnits);
+				// Unités navales
+				node(gateFRNavalUnits);
+			});
+		});
 	}
 }
+
