@@ -23,6 +23,7 @@ import static biomechazard.content.blocks.UAWBlocksPower.*;
 import static biomechazard.content.blocks.UAWBlocksLogistic.*;
 import static biomechazard.content.blocks.UAWBlocksProduction.*;
 import static biomechazard.content.blocks.UAWBlocksUnits.*;
+import static biomechazard.content.blocks.FRBlocksTrading.*;
 import static biomechazard.content.BMHBlocks.*;
 import static biomechazard.content.BMHUnits.*;
 import static biomechazard.content.BMHItems.*;
@@ -292,3 +293,4 @@ public class BMHTechtree {
 		});
 	}
 }
+
