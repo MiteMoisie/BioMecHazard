@@ -232,7 +232,32 @@ public class BMHTechtree {
 				// Récolteurs d'objets
 				node(gateFRDrills);
 				// Utilitaires
-				node(gateFREffectBlocks);
+				node(gateFREffectBlocks, () -> {
+					node(copperTradingStation, () -> {
+						node(titaniumTradingStation, () -> {
+							node(thoriumTradingStation);
+						});
+					});
+					node(leadTradingStation, () -> {
+						node(coalTradingStation, () -> {
+							node(graphiteTradingStation);
+							node(siliconTradingStation, () -> {
+								node(pyratiteTradingStation, () -> {
+									node(blastCompoundTradingStation);
+								});
+							});
+						});
+						node(sandTradingStation, () -> {
+							node(metaglassTradingStation);
+							node(plastaniumTradingStation, () -> {
+								node(phaseFabricTradingStation, () -> {
+									node(surgeAlloyTradingStation);
+								});
+							});
+						});
+						node(sporePodTradingStation);
+					});
+				});
 				// Conduits de fluides
 				node(gateFRLiquid);
 				// Génération d'énergie
@@ -267,4 +292,3 @@ public class BMHTechtree {
 		});
 	}
 }
-
