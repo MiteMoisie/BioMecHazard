@@ -20,7 +20,7 @@ public class BMHBlocksStorage{
 			requirements(Category.effect, with(copper, 11000, lead, 11000, silicon, 8000, thorium, 7000, plastanium, 6000));
 			unitType = BMHUnits.mokuge;
 			itemCapacity = 20000;
-			health = 8500
+			health = 8500;
 			unitCapModifier = 32;
 			alwaysUnlocked = true;
 			//researchCostMultiplier = 0.15f;
@@ -120,6 +120,7 @@ public class BMHBlocksStorage{
 	}
 
 }
+
 
 
 
