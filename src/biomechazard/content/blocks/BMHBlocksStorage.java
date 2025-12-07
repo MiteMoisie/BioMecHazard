@@ -12,9 +12,19 @@ import static mindustry.type.ItemStack.*;
 
 public class BMHBlocksStorage{
 	public static Block 
+		coreCage, 
 		enhancedContainer, enhancedVault, warehouse, largeWarehouse, enhancedUnloader, highOutputUnloader;
 	
 	public static void load(){
+		coreCage = CoreCage("core-cage"){{
+			requirements(Category.effect, with(copper, 11000, lead, 11000, silicon, 8000, thorium, 7000, plastanium, 6000));
+			unitType = BMHUnits.mokuge;
+			itemCapacity = 20000;
+			health = 8500
+			unitCapModifier = 32;
+			alwaysUnlocked = true;
+			//researchCostMultiplier = 0.15f;
+		}};
 		enhancedContainer = new StorageBlock("enhanced-container"){{
 			requirements(Category.effect, with(Items.titanium, 100, Items.metaglass, 50));
             size = 2;
@@ -110,6 +120,7 @@ public class BMHBlocksStorage{
 	}
 
 }
+
 
 
 
