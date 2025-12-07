@@ -16,7 +16,7 @@ public class BMHBlocksStorage{
 		enhancedContainer, enhancedVault, warehouse, largeWarehouse, enhancedUnloader, highOutputUnloader;
 	
 	public static void load(){
-		coreCage = CoreCage("core-cage"){{
+		coreCage = new CoreCage("core-cage"){{
 			requirements(Category.effect, with(copper, 11000, lead, 11000, silicon, 8000, thorium, 7000, plastanium, 6000));
 			unitType = BMHUnits.mokuge;
 			itemCapacity = 20000;
@@ -120,6 +120,7 @@ public class BMHBlocksStorage{
 	}
 
 }
+
 
 
 
