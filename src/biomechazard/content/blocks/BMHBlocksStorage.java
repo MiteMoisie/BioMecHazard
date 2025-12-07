@@ -8,6 +8,8 @@ import mindustry.world.blocks.storage.Unloader;
 import mindustry.world.blocks.storage.StorageBlock;
 import mindustry.world.meta.BlockGroup;
 
+import biomechazard.content.*;
+
 import static mindustry.type.ItemStack.*;
 
 public class BMHBlocksStorage{
@@ -17,7 +19,7 @@ public class BMHBlocksStorage{
 	
 	public static void load(){
 		coreCage = new CoreCage("core-cage"){{
-			requirements(Category.effect, with(copper, 11000, lead, 11000, silicon, 8000, thorium, 7000, plastanium, 6000));
+			requirements(Category.effect, with(Items.copper, 11000, Items.lead, 11000, Items.silicon, 8000, Items.thorium, 7000, Items.plastanium, 6000));
 			unitType = BMHUnits.mokuge;
 			itemCapacity = 20000;
 			health = 8500;
@@ -120,6 +122,7 @@ public class BMHBlocksStorage{
 	}
 
 }
+
 
 
 
