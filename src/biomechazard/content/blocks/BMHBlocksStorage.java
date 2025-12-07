@@ -21,6 +21,7 @@ public class BMHBlocksStorage{
 		coreCage = new CoreCage("core-cage"){{
 			requirements(Category.effect, with(Items.copper, 11000, Items.lead, 11000, Items.silicon, 8000, Items.thorium, 7000, Items.plastanium, 6000));
 			unitType = BMHUnits.mokuge;
+			size = 6;
 			itemCapacity = 20000;
 			health = 8500;
 			unitCapModifier = 32;
@@ -122,6 +123,7 @@ public class BMHBlocksStorage{
 	}
 
 }
+
 
 
 
