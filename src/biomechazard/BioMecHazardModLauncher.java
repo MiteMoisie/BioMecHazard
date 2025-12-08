@@ -70,7 +70,7 @@ public class BioMecHazardModLauncher extends Mod{
         Log.info("Mod BioMecHazard : chargement des unités.");
 		BMHUnits.load();
         Log.info("Mod BioMecHazard : chargement des blocs.");
-		BMHBlocks.load();
+		//BMHBlocks.load();
 		BMHBlocksStorage.load();
 		BMHBlocksLogistic.load();
 		/*
@@ -115,10 +115,11 @@ public class BioMecHazardModLauncher extends Mod{
 		BMHTechtreeNodes.load();
 		BMHTechtree.load();
 		
-		Log.info("Chargement de BioMecHazard v0.0.10" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
+		Log.info("Chargement de BioMecHazard v0.0.13" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
     }
 
 }
+
 
 
 
