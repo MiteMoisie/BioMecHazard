@@ -34,6 +34,12 @@ public class BMHTechtreeNodes {
 		gateLogic = new BMHTechtreeNode("gate-logic") {{}};
 		gateWall = new BMHTechtreeNode("gate-wall") {{}};
 		gateTurret = new BMHTechtreeNode("gate-turret") {{}};
+		gateTurretArtillery = new BMHTechtreeNode("gate-turret-art") {{}};
+		gateTurretEnergy = new BMHTechtreeNode("gate-turret-en") {{}};
+		gateTurretMachineGun = new BMHTechtreeNode("gate-turret-mg") {{}};
+		gateTurretMissileLauncher = new BMHTechtreeNode("gate-turret-msl") {{}};
+		gateTurretPrecisionShot = new BMHTechtreeNode("gate-turret-prc") {{}};
+		gateTurretShotgun = new BMHTechtreeNode("gate-turret-sg") {{}};
 		gateUnitFactory = new BMHTechtreeNode("gate-unit-factory") {{}};
 		gateGroundUnit = new BMHTechtreeNode("gate-ground-unit") {{}};
 		gateAirUnit = new BMHTechtreeNode("gate-air-unit") {{}};
@@ -71,5 +77,6 @@ public class BMHTechtreeNodes {
 		gateFRWalls = new BMHTechtreeNode("gate-fr-walls") {{}};
     }
 }
+
 
 
