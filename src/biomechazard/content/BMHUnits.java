@@ -208,7 +208,7 @@ public class BMHUnits{
 			itemCapacity = 110;
 			hitSize = 18f;
 			buildSpeed = 1.5f;
-			engineOffset: 8f;
+			engineOffset = 8f;
 			//rotateShooting = true;
 			//isCounted = false;
 			//commandLimit = 12;
@@ -293,5 +293,6 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
 
