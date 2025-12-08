@@ -96,7 +96,14 @@ public class BMHTechtree {
 			node(gateWall);
 			
 			// Tours de défense
-			node(gateTurret);
+			node(gateTurret, () -> {
+				node(gateTurretPrecisionShot);
+				node(gateTurretArtillery);
+				node(gateTurretMachineGun);
+				node(gateTurretShotgun);
+				node(gateTurretEnergy);
+				node(gateTurretMissileLauncher);
+			});
 			
 			// Usines de fabrication d'unités
 			node(gateUnitFactory);
@@ -298,5 +305,6 @@ public class BMHTechtree {
 		});
 	}
 }
+
 
 
