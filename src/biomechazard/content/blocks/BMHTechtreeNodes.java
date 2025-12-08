@@ -10,7 +10,8 @@ public class BMHTechtreeNodes {
     public static Block 
 		//Arbre Quarkhod
 		gateQuarkhod, gateSector, gateCore, gateCoreUnit,  gateItem, gateDrill, gateDistribution, gateDuct, gateCrafting, gatePower, 
-		gateUtil, gateLogic, gateWall, gateTurret, gateUnitFactory, gateGroundUnit, gateAirUnit, gateNavalUnit, 
+		gateUtil, gateLogic, gateWall, gateTurret, gateUnitFactory, gateGroundUnit, gateAirUnit, gateNavalUnit, gateTurretArtillery, 
+		gateTurretEnergy, gateTurretMachineGun, gateTurretMissileLauncher, gateTurretPrecisionShot, gateTurretShotgun, 
 		//Arbre Unlimited Armament Works
 		gateUAWStart, gateUAWCrafting, gateUAWDefence, gateUAWTurret, gateUAWTurretART, gateUAWTurretEN, gateUAWTurretMG, gateUAWTurretMSL, gateUAWTurretSG, 
 		//Arbre Fading Revelations
@@ -70,4 +71,5 @@ public class BMHTechtreeNodes {
 		gateFRWalls = new BMHTechtreeNode("gate-fr-walls") {{}};
     }
 }
+
 
