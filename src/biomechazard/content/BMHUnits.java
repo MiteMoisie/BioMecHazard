@@ -150,7 +150,7 @@ public class BMHUnits{
 					sprite = "bullet";
 				}};
 				
-			}};
+			}});
 			weapons.add(new Weapon("small-weapon-core"){{
 				reload = 20f;
                 x = 3f;
@@ -171,7 +171,7 @@ public class BMHUnits{
 					sprite = "bullet";
 				}};
 				
-			}};
+			}});
 			weapons.add(new Weapon("small-weapon-core"){{
 				reload = 20.1f;
                 x = 3f;
@@ -191,7 +191,7 @@ public class BMHUnits{
 					lifetime = 20f;
 					sprite = "bullet";
 				}};
-			}};
+			}});
 		}};
 		
 		epsilon = new UnitType("epsilon"){{
@@ -250,7 +250,7 @@ public class BMHUnits{
 					status = StatusEffects.blasted;
 					statusDuration = 40f;
 				}};
-			}};
+			}});
 			weapons.add(new Weapon("missiles-core"){{
 				reload = 40.001f;
                 x = 7f;
@@ -289,8 +289,9 @@ public class BMHUnits{
 					status = StatusEffects.blasted;
 					statusDuration = 40f;
 				}};
-			}};
+			}});
 		}};
 	}
 }
+
 
