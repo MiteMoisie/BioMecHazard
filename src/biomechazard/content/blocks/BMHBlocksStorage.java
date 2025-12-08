@@ -48,7 +48,7 @@ public class BMHBlocksStorage{
 			//researchCostMultiplier = 0.15f;
 		}};
 		
-		coreNetwork = new CoreCage("core-network"){{
+		coreNetwork = new CoreBlock("core-network"){{
 			requirements(Category.effect, 
 				with(Items.copper, 22000, Items.lead, 22000, Items.silicon, 22000, Items.thorium, 22000, Items.plastanium, 10000, Items.phaseFabric, 10000, 
 				Items.surgeAlloy, 22000, Items.titanium, 22000, Items.metaglass, 10000, Items.graphite, 10000));
@@ -160,6 +160,7 @@ public class BMHBlocksStorage{
 	}
 
 }
+
 
 
 
