@@ -122,7 +122,7 @@ public class BMHUnits{
 			itemCapacity = 90;
 			hitSize = 13f;
 			buildSpeed = 1.25f;
-			engineOffset: 8.5f;
+			engineOffset = 8.5f;
 			//rotateShooting = true;
 			//isCounted = false;
 			//commandLimit = 8;
@@ -238,9 +238,9 @@ public class BMHUnits{
 					drag = 0.015f;
 					width = 8f;
 					height = 14f;
-					frontColor: Color.valueOf("fff8e8");
-					backColor: Color.valueOf("f9c27a");
-					trailColor: Color.valueOf("ffb855");
+					frontColor = Color.valueOf("fff8e8");
+					backColor = Color.valueOf("f9c27a");
+					trailColor = Color.valueOf("ffb855");
 					hitEffect = Fx.blastExplosion;
 					despawnEffect = Fx.blastExplosion;
 					shootEffect = Fx.shootBig;
@@ -277,9 +277,9 @@ public class BMHUnits{
 					drag = 0.015f;
 					width = 8f;
 					height = 14f;
-					frontColor: Color.valueOf("fff8e8");
-					backColor: Color.valueOf("f9c27a");
-					trailColor: Color.valueOf("ffb855");
+					frontColor = Color.valueOf("fff8e8");
+					backColor = Color.valueOf("f9c27a");
+					trailColor = Color.valueOf("ffb855");
 					hitEffect = Fx.blastExplosion;
 					despawnEffect = Fx.blastExplosion;
 					shootEffect = Fx.shootBig;
@@ -293,3 +293,4 @@ public class BMHUnits{
 		}};
 	}
 }
+
