@@ -9,6 +9,7 @@ import mindustry.world.blocks.storage.StorageBlock;
 import mindustry.world.meta.BlockGroup;
 
 import biomechazard.content.*;
+import biomechazard.world.blocks.storage.*;
 
 import static mindustry.type.ItemStack.*;
 
@@ -158,6 +159,7 @@ public class BMHBlocksStorage{
 	}
 
 }
+
 
 
 
