@@ -77,7 +77,7 @@ public class CoreQuarkhod extends CoreBlock {
         super.setBars();
         addBar("poweroutput", entity -> new Bar(
             // The string "bar.poweroutput" is defined in the localization file "bundle".
-            () -> Core.bundle.format("bar.poweroutput", POWER_PRODUCTION * 60),
+            () -> Core.bundle.format("bar.poweroutput", powerProduction * 60),
             // The color of the bar, using Mindustry's predefined palette for power.
             () -> Pal.powerBar,
             // The fill percentage of the bar (0f to 1f). Since it's a constant output, it's always full.
@@ -101,7 +101,8 @@ public class CoreQuarkhod extends CoreBlock {
          */
         @Override
         public float getPowerProduction() {
-            return PpowerProduction;
+            return powerProduction;
         }
     }
+
 }
