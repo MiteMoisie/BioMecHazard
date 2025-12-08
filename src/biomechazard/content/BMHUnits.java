@@ -26,19 +26,22 @@ import static mindustry.content.StatusEffects.*;
 import static mindustry.Vars.*;
 
 public class BMHUnits{
-    public static UnitType mokuge;
-
-        public static void load(){
+	
+    public static UnitType mokuge, delta, epsilon;
+	
+	public static void load(){
         
         mokuge = new UnitType("mokuge"){{
 			//Plantage au démarrage : apparemment, ce constructeur est nécessaire
 			this.constructor = UnitEntity::create;
 			
+			isEnemy = false;
 			outlineColor = Color.valueOf("000000"); //Original 303A45
 			health = 2280;
             armor = 25;
 			flying = true;
 			immunities = ObjectSet.with(disarmed, sapped, slow, sporeSlowed, unmoving, shocked, freezing, overdrive);
+			canHeal = true;
 			
 			lightRadius = 35f;
 			lightOpacity = 0.1f;
@@ -104,4 +107,189 @@ public class BMHUnits{
 			engineColor = Color.valueOf("B40059");
 			engineColorInner = Color.valueOf("00E673");
         }};
-}}
+		
+		delta = new UnitType("delta"){{
+			this.constructor = UnitEntity::create;
+			flying = true;
+			speed = 3.8f;
+			accel = 0.125f;
+			drag = 0.0625f;
+			rotateSpeed = 2.1f;
+			mineSpeed = 9f;
+			mineTier = 3;
+			health = 300;
+            armor = 1;
+			itemCapacity = 90;
+			hitSize = 13f;
+			buildSpeed = 1.25f;
+			engineOffset: 8.5f;
+			//rotateShooting = true;
+			//isCounted = false;
+			//commandLimit = 8;
+			weapons.add(new Weapon("flakgun-core"){{
+				reload = 38f;
+                x = 5f;
+                y = 2f;
+				top = false;
+				rotate = false;
+				//shots: 5
+				inaccuracy = 5f;
+				velocityRnd = 0.25f;
+				shootY = 3f;
+				ejectEffect = Fx.casing2;
+				shootSound = Fx.shootBig;
+				bullet = new BasicBulletType(){{
+					damage = 12f;
+					speed = 5.5f;
+					width = 8f;
+					height = 14f;
+					shootEffect = Fx.shootSmall;
+					smokeEffect = Fx.shootSmallSmoke;
+					//tileDamageMultiplier: 0.07
+					lifetime = 40f;
+					sprite = "bullet";
+				}};
+				
+			}};
+			weapons.add(new Weapon("small-weapon-core"){{
+				reload = 20f;
+                x = 3f;
+                y = -3f;
+				top = false;
+				rotate = true;
+				rotateSpeed = 18f;
+				//shots: 1
+				inaccuracy = 1f;
+				ejectEffect = Fx.casing1;
+				bullet = new BasicBulletType(){{
+					damage = 8f;
+					speed = 8f;
+					width = 4f;
+					height = 9f;
+					//tileDamageMultiplier: 0.03
+					lifetime = 20f;
+					sprite = "bullet";
+				}};
+				
+			}};
+			weapons.add(new Weapon("small-weapon-core"){{
+				reload = 20.1f;
+                x = 3f;
+                y = -3f;
+				top = false;
+				rotate = true;
+				rotateSpeed = 18f;
+				//shots: 1
+				inaccuracy = 1f;
+				ejectEffect = Fx.casing1;
+				bullet = new BasicBulletType(){{
+					damage = 8f;
+					speed = 8f;
+					width = 4f;
+					height = 9f;
+					//tileDamageMultiplier: 0.03
+					lifetime = 20f;
+					sprite = "bullet";
+				}};
+			}};
+		}};
+		
+		epsilon = new UnitType("epsilon"){{
+			this.constructor = UnitEntity::create;
+			flying = true;
+			speed = 4.05f;
+			accel = 0.125f;
+			drag = 0.0625f;
+			rotateSpeed = 2.375f;
+			mineSpeed = 10f;
+			mineTier = 4;
+			health = 410;
+            armor = 3;
+			itemCapacity = 110;
+			hitSize = 18f;
+			buildSpeed = 1.5f;
+			engineOffset: 8f;
+			//rotateShooting = true;
+			//isCounted = false;
+			//commandLimit = 12;
+			weapons.add(new Weapon("missiles-core"){{
+				reload = 40f;
+                x = 7f;
+                y = 2f;
+				shootY = 3f;
+				top = false;
+				rotate = true;
+				//shots: 1
+				inaccuracy = 2f;
+				ejectEffect = null;
+				shootSound = Sounds.missile;
+				recoil = 3;
+				rotateSpeed = 8f;
+				bullet = new MissileBulletType(){{
+					damage = 20f;
+					splashDamage = 40f;
+					splashDamageRadius = 11f;
+					homingPower = 0.19;
+					homingRange = 72;
+					weaveMag = 2f;
+					weaveScale = 5f;
+					speed = 6.5f;
+					range = 280;
+					drag = 0.015f;
+					width = 8f;
+					height = 14f;
+					frontColor: Color.valueOf("fff8e8");
+					backColor: Color.valueOf("f9c27a");
+					trailColor: Color.valueOf("ffb855");
+					hitEffect = Fx.blastExplosion;
+					despawnEffect = Fx.blastExplosion;
+					shootEffect = Fx.shootBig;
+					smokeEffect = Fx.shootSmallSmoke;
+					//tileDamageMultiplier: 0.01
+					lifetime = 70f;
+					status = StatusEffects.blasted;
+					statusDuration = 40f;
+				}};
+			}};
+			weapons.add(new Weapon("missiles-core"){{
+				reload = 40.001f;
+                x = 7f;
+                y = 2f;
+				shootY = 3f;
+				top = false;
+				rotate = true;
+				//shots: 1
+				inaccuracy = 2f;
+				ejectEffect = null;
+				shootSound = Sounds.missile;
+				recoil = 3;
+				rotateSpeed = 8f;
+				bullet = new MissileBulletType(){{
+					damage = 20f;
+					splashDamage = 40f;
+					splashDamageRadius = 11f;
+					homingPower = 0.19;
+					homingRange = 72;
+					weaveMag = 2f;
+					weaveScale = 5f;
+					speed = 6.5f;
+					range = 280;
+					drag = 0.015f;
+					width = 8f;
+					height = 14f;
+					frontColor: Color.valueOf("fff8e8");
+					backColor: Color.valueOf("f9c27a");
+					trailColor: Color.valueOf("ffb855");
+					hitEffect = Fx.blastExplosion;
+					despawnEffect = Fx.blastExplosion;
+					shootEffect = Fx.shootBig;
+					smokeEffect = Fx.shootSmallSmoke;
+					//tileDamageMultiplier: 0.01
+					lifetime = 70f;
+					status = StatusEffects.blasted;
+					statusDuration = 40f;
+				}};
+			}};
+		}};
+	}
+}
