@@ -137,7 +137,7 @@ public class BMHUnits{
 				velocityRnd = 0.25f;
 				shootY = 3f;
 				ejectEffect = Fx.casing2;
-				shootSound = Fx.shootBig;
+				shootSound = Sounds.shootBig;
 				bullet = new BasicBulletType(){{
 					damage = 12f;
 					speed = 5.5f;
@@ -229,7 +229,7 @@ public class BMHUnits{
 					damage = 20f;
 					splashDamage = 40f;
 					splashDamageRadius = 11f;
-					homingPower = 0.19;
+					homingPower = 0.19f;
 					homingRange = 72;
 					weaveMag = 2f;
 					weaveScale = 5f;
@@ -268,7 +268,7 @@ public class BMHUnits{
 					damage = 20f;
 					splashDamage = 40f;
 					splashDamageRadius = 11f;
-					homingPower = 0.19;
+					homingPower = 0.19f;
 					homingRange = 72;
 					weaveMag = 2f;
 					weaveScale = 5f;
@@ -293,6 +293,7 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
 
 
