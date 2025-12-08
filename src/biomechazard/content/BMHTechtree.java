@@ -24,7 +24,7 @@ import static biomechazard.content.blocks.UAWBlocksLogistic.*;
 import static biomechazard.content.blocks.UAWBlocksProduction.*;
 import static biomechazard.content.blocks.UAWBlocksUnits.*;
 import static biomechazard.content.blocks.FRBlocksTrading.*;
-import static biomechazard.content.BMHBlocks.*;
+//import static biomechazard.content.BMHBlocks.*;
 import static biomechazard.content.BMHUnits.*;
 import static biomechazard.content.BMHItems.*;
 import static biomechazard.content.BMHLiquids.*;
@@ -40,13 +40,18 @@ public class BMHTechtree {
 			
 			// Noyau  
 			node(gateCore, () -> {
-				node(coreNethrax, Seq.with(new Research(coreNucleus)), () -> {
+				node(coreNexus, Seq.with(new Research(coreNucleus)), () -> {
+					node(coreNetwork);
+					node(coreNethrax);
 				});
 			});
 			
 			// Unités de noyau
 			node(gateCoreUnit, () -> {
-				node(mokuge);
+				node(delta, () -> {
+					node(epsilon);
+					node(mokuge);
+				});
 			});
 			
 			// Objets
@@ -293,4 +298,5 @@ public class BMHTechtree {
 		});
 	}
 }
+
 
