@@ -1,4 +1,4 @@
-package biomechazard.content.blocks;
+/**package biomechazard.content.blocks;
 
 import arc.struct.Seq;
 import mindustry.content.*;
@@ -102,4 +102,5 @@ public class FRBlocksAttack{
         }};
 		
 	}
-}
+
+}*/
