@@ -8,6 +8,8 @@ import mindustry.world.blocks.defense.*;
 
 import biomechazard.content.*;
 
+import static mindustry.type.ItemStack.*;
+
 public class FRBlocksDefense{
 	
 	public static Block plastaniumWallHuge;
@@ -25,5 +27,6 @@ public class FRBlocksDefense{
 	}
 
 }
+
 
 
