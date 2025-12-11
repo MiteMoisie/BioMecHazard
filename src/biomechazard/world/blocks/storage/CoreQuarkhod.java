@@ -2,13 +2,16 @@ package biomechazard.world.blocks.storage;
 
 import arc.Core;
 import arc.func.Func;
+import mindustry.world.blocks.liquid.*;
 import mindustry.game.*;
 import mindustry.gen.Building;
 import mindustry.graphics.Pal;
+import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.storage.CoreBlock;
-import mindustry.world.meta.Stat;
-import mindustry.world.meta.StatUnit;
+//import mindustry.world.meta.Stat;
+//import mindustry.world.meta.StatUnit;
+import mindustry.world.meta.*;
 import mindustry.ui.Bar;
 
 /**
@@ -25,10 +28,19 @@ public class CoreQuarkhod extends CoreBlock {
 	public CoreQuarkhod(String name) {
 		super(name);
 		
+        update = true;
+        solid = true;
+        noUpdateDisabled = true;
 		unitMoveBreakable = false;
 		floating = true;
 		placeableLiquid = true;
 		requiresCoreZone = false; //Pour que le noyau soit constructible n'importe où, cet attribut ne suffit pas.
+		
+		hasPower = true;
+		consumesPower = false;
+		outputsPower = true;
+		conductivePower = true;
+		
 		/** 
 		* À faire : ajouter la capacité au noyau de stocker des liquides. Pour l'instant
 		* le noyau affiche les infos mais n'accepte pas les liquides.
@@ -38,11 +50,6 @@ public class CoreQuarkhod extends CoreBlock {
 		liquidPressure = liquidCapacity / 10;
 		isDuct = true;
 		outputsLiquid = true;
-		
-		hasPower = true;
-		consumesPower = false;
-		outputsPower = true;
-		conductivePower = true;
 	}
 	
 	/**
@@ -103,7 +110,20 @@ public class CoreQuarkhod extends CoreBlock {
         public float getPowerProduction() {
             return powerProduction;
         }
+		
+		@Override
+        public void updateTile(){
+            iframes -= Time.delta;
+            thrusterTime -= Time.delta/90f;
+			dumpLiquid(liquids.current());
+        }
+		
+		@Override
+        public boolean acceptLiquid(Building source, Liquid liquid){
+            return (liquids.current() == liquid || liquids.currentAmount() < 0.2f);
+        }
     }
 
 }
+
 
