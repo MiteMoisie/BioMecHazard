@@ -8,6 +8,8 @@ import mindustry.world.blocks.storage.*;
 import biomechazard.content.*;
 import biomechazard.world.blocks.storage.*;
 
+import static mindustry.type.ItemStack.*;
+
 public class FRBlocksOthers{
 	public static Block 
 		constructionPylon, coreAtom, coreElement, mainCore, depository, advancedUnloader, darkMender, enhancedMendProjector, 
@@ -137,4 +139,5 @@ public class FRBlocksOthers{
 			update = true;
         }};
 	}
+
 }
