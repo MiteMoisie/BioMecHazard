@@ -34,7 +34,7 @@ public class FRBlocksPower{
             maxNodes = 4;
             laserRange = 10f;
             health = 90;
-			powerCapacity = 1000; //N'existe pas dans l'API. Signification dans le json inconnue.
+			//powerCapacity = 1000; //N'existe pas dans l'API. Signification dans le json inconnue.
 			laserColor1 = Color.valueOf("92dd7e");
 			laserColor2 = Color.valueOf("ffffff");
 			laserScale = 0.6f;
@@ -333,4 +333,5 @@ public class FRBlocksPower{
         }};
 		
 	}
+
 }
