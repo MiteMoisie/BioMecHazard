@@ -1,6 +1,7 @@
 package biomechazard.content.blocks;
 
 import mindustry.content.*;
+import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.defense.*;
 
@@ -21,4 +22,5 @@ public class FRBlocksDefense{
         }};
 		
 	}
+
 }
