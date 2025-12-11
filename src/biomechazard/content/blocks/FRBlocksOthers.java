@@ -1,6 +1,7 @@
 package biomechazard.content.blocks;
 
-import mindustry.content.Items;
+import arc.graphics.Color;
+import mindustry.content.*;
 import mindustry.type.*;
 import mindustry.world.Block;
 import mindustry.world.blocks.defense.*;
@@ -33,7 +34,7 @@ public class FRBlocksOthers{
 			researchCostMultiplier = 0.5f;
 			health = 8000;
 			itemCapacity = 16000;
-			unitType = FRUnits.deltaFR;
+			unitType = BMHUnits.mokuge;//FRUnits.deltaFR;
 			unitCapModifier = 32;
         }};
 		
@@ -44,7 +45,7 @@ public class FRBlocksOthers{
 			researchCostMultiplier = 0.5f;
 			health = 9500;
 			itemCapacity = 19000;
-			unitType = FRUnits.epsilonFR;
+			unitType = BMHUnits.mokuge;//FRUnits.epsilonFR;
 			unitCapModifier = 42;
         }};
 		
@@ -55,7 +56,7 @@ public class FRBlocksOthers{
 			researchCostMultiplier = 0.4f;
 			health = 11200;
 			itemCapacity = 22000;
-			unitType = FRUnits.mainCoreUnit;
+			unitType = BMHUnits.mokuge;//FRUnits.mainCoreUnit;
 			unitCapModifier = 56;
         }};
 		
@@ -88,7 +89,7 @@ public class FRBlocksOthers{
 			hasPower = false;
 			healPercent = 15f;
 			consumeItems(BMHItems.livingSteel, 1);
-			hasBoost = false;
+			//hasBoost = false;
 			//Ce bloc ne peut pas être boosté
 			//booster = false;
 			//optional = false;
@@ -114,7 +115,7 @@ public class FRBlocksOthers{
             cooldownNormal = 1.1f;
             cooldownBrokenBase = 0.9f;
             consumePower(5f);
-			hasBoost = false;
+			//hasBoost = false;
         }};
 
         miniOverdriveDome = new OverdriveProjector("mini-od"){{
@@ -141,3 +142,4 @@ public class FRBlocksOthers{
 	}
 
 }
+
