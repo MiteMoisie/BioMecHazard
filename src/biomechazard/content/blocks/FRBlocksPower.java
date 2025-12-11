@@ -38,7 +38,7 @@ public class FRBlocksPower{
 			laserColor1 = Color.valueOf("92dd7e");
 			laserColor2 = Color.valueOf("ffffff");
 			laserScale = 0.6f;
-			researchCostMultiplier = 0.2;
+			researchCostMultiplier = 0.2f;
         }};
 		
 		powerReserve = new Battery("power-reserve"){{
@@ -335,3 +335,4 @@ public class FRBlocksPower{
 	}
 
 }
+
