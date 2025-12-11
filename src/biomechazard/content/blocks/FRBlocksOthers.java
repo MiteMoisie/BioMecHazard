@@ -88,7 +88,7 @@ public class FRBlocksOthers{
 			phaseColor = Color.valueOf("6d5ac6");
 			hasPower = false;
 			healPercent = 15f;
-			consumeItems(BMHItems.livingSteel, 1);
+			consumeItems(with(BMHItems.livingSteel, 1));
 			//hasBoost = false;
 			//Ce bloc ne peut pas être boosté
 			//booster = false;
@@ -142,4 +142,5 @@ public class FRBlocksOthers{
 	}
 
 }
+
 
