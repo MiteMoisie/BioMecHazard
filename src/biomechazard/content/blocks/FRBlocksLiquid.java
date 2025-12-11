@@ -12,7 +12,7 @@ import static mindustry.type.ItemStack.*;
 public class FRBlocksLiquid{
 	
 	public static Block 
-		liquid-canister, steel-tank, steel-pump;
+		liquidCanister, steelTank, steelPump;
 	
 	public static void load(){
 		
@@ -50,4 +50,5 @@ public class FRBlocksLiquid{
         }};
 		
 	}
+
 }
