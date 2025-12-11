@@ -296,14 +296,14 @@ public class FRBlocksDefense{
             lightningDamage = 30f;
         }};
 
-        tungstenWall = new Wall("tungsten-wall-gigantic"){{
+        tungstenWallGigantic = new Wall("tungsten-wall-gigantic"){{
             requirements(Category.defense, with(Items.tungsten, 96));
             health = 11520;
             armor = 14f;
             size = 4;
         }};
 
-        tungstenWall = new Wall("tungsten-wall-huge"){{
+        tungstenWallHuge = new Wall("tungsten-wall-huge"){{
             requirements(Category.defense, with(Items.tungsten, 54));
             health = 6480;
             armor = 14f;
@@ -314,5 +314,6 @@ public class FRBlocksDefense{
 	}
 
 }
+
 
 
