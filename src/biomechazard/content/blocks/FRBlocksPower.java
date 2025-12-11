@@ -18,7 +18,10 @@ import static mindustry.type.ItemStack.*;
 public class FRBlocksPower{
 	
 	public static Block
-		advancedSurgeTower, omnidirectionalBeamNode, powerReserve, reinforcedLargePowerNode, reinforcedPowerNode;
+		advancedSurgeTower, omnidirectionalBeamNode, powerReserve, reinforcedLargePowerNode, reinforcedPowerNode, 
+		advancedSolarPanel, livingSteelThermalGenerator, overloadReactor, pyratiteGenerator, slagGenerator,
+		slagReactor, solarArray, steamTurbine, amalgamGenerator, tinyThermalGenerator, titaniumSolarPanel, 
+		turbineConcentrator, nuclearReactor;
 	
 	public static void load(){
 		
@@ -335,4 +338,5 @@ public class FRBlocksPower{
         }};
 		
 	}
+
 }
