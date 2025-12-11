@@ -5,6 +5,7 @@ import mindustry.content.*;
 import mindustry.entities.effect.*;
 import mindustry.type.*;
 import mindustry.world.Block;
+import mindustry.world.blocks.distribution.*;
 import mindustry.world.blocks.campaign.LaunchPad;
 import mindustry.world.meta.BlockGroup;
 import biomechazard.content.*;
@@ -19,7 +20,7 @@ public class FRBlocksLogistic{
 	public static void load(){
 		
 		amalgamConveyor = new StackConveyor("amalgam-conveyor"){{
-            requirements(Category.distribution, with(Items.steelAmalgam, 1, Items.silicon, 1, Items.graphite, 1));
+            requirements(Category.distribution, with(BMHItems.steelAmalgam, 1, Items.silicon, 1, Items.graphite, 1));
             health = 110;
             speed = 0.09f;
             itemCapacity = 20;
@@ -115,7 +116,7 @@ public class FRBlocksLogistic{
 		
 		advancedLaunchPad = new LaunchPad("big-launch-pad"){{
             requirements(Category.effect, 
-				with(Items.silicon, 700, Items.lead, 700, Items.titanium, 800, Items.plastanium, 200, Items.phaseFabric, 200, Items.steelAmalgam, 100));
+				with(Items.silicon, 700, Items.lead, 700, Items.titanium, 800, Items.plastanium, 200, Items.phaseFabric, 200, BMHItems.steelAmalgam, 100));
             health = 740;
             launchTime = 780f;
 			lightColor = Color.valueOf("8c0291");
@@ -127,4 +128,5 @@ public class FRBlocksLogistic{
 			consumeLiquid(Liquids.water, 0.3f);
         }};
 	}
+
 }
