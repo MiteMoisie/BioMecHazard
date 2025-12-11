@@ -6,6 +6,7 @@ import mindustry.entities.effect.*;
 import mindustry.type.*;
 import mindustry.world.Block;
 import mindustry.world.blocks.distribution.*;
+import mindustry.world.blocks.liquid.*;
 import mindustry.world.blocks.campaign.LaunchPad;
 import mindustry.world.meta.BlockGroup;
 import biomechazard.content.*;
@@ -81,14 +82,14 @@ public class FRBlocksLogistic{
 		titaniumJunction = new Junction("titanium-junction"){{
             requirements(Category.distribution, with(Items.copper, 6, Items.titanium, 4));
             size = 1;
-			speed = 18;
+			speed = 18f;
             health = 45;
         }};
 		
 		titaniumRouter = new Router("titanium-router"){{
             requirements(Category.distribution, with(Items.copper, 5, Items.titanium, 2));
 			dumpTime = 1;
-			speed = 0.1;
+			speed = 0.1f;
             health = 75;
 			itemCapacity = 20;
 			size = 1;
@@ -130,3 +131,4 @@ public class FRBlocksLogistic{
 	}
 
 }
+
