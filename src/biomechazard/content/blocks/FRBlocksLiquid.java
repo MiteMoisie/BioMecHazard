@@ -5,7 +5,7 @@ import mindustry.world.*;
 import mindustry.world.blocks.liquid.*;
 import mindustry.world.draw.*;
 
-import biomechazard.content;
+import biomechazard.content.*;
 
 import static mindustry.type.ItemStack.*;
 
@@ -52,3 +52,4 @@ public class FRBlocksLiquid{
 	}
 
 }
+
