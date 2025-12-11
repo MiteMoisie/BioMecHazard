@@ -1,10 +1,11 @@
 package biomechazard.content.blocks;
 
-import arc.audio.Sound;
+import arc.audio.*;
 import arc.graphics.*;
 import arc.math.*;
 import mindustry.content.*;
 import mindustry.entities.effect.*;
+import mindustry.gen.*;
 import mindustry.world.meta.*;
 import mindustry.type.*;
 import mindustry.world.*;
@@ -79,7 +80,7 @@ public class FRBlocksPower{
         }};
 		
 		livingSteelThermalGenerator = new ThermalGenerator("ls-gen"){{
-            requirements(Category.power, with(Items.copper, 50, Items.graphite, 45, Items.lead, 60, Items.metaglass, 50, Items.livingSteel, 35));
+            requirements(Category.power, with(Items.copper, 50, Items.graphite, 45, Items.lead, 60, Items.metaglass, 50, BMHItems.livingSteel, 35));
             attribute = Attribute.heat;
 			powerProduction = 3f;
             size = 2;
@@ -260,7 +261,7 @@ public class FRBlocksPower{
             itemDuration = 360f;
             liquidCapacity = 200f;
             consumePower(20f);
-            consumeItem(BMHItems.steelAmalgam, 1f);
+            consumeItem(BMHItems.steelAmalgam, 1);
             consumeLiquid(Liquids.cryofluid, 0.1f);
 			explosionDamage = 4000;
 			explosionRadius = 320;
@@ -340,3 +341,4 @@ public class FRBlocksPower{
 	}
 
 }
+
