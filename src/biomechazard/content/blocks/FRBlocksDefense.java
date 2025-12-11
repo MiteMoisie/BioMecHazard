@@ -4,6 +4,7 @@ import mindustry.content.*;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.defense.*;
+import mindustry.world.meta.BlockGroup;
 
 import biomechazard.content.*;
 
@@ -24,3 +25,4 @@ public class FRBlocksDefense{
 	}
 
 }
+
