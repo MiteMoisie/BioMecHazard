@@ -47,11 +47,12 @@ public class StorageBlockQuarkhod extends StorageBlock {
 		return true;
 	}*/
 	
-	public class CoreQuarkhodBuild extends CoreBlock.CoreBuild {
+	public class StorageBlockQuarkhodBuild extends StorageBuild {
 		
 		@Override
         public boolean acceptLiquid(Building source, Liquid liquid){
             return (liquids.current() == liquid || liquids.currentAmount() < 0.2f);
         }
 	}
+
 }
