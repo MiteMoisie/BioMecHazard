@@ -114,7 +114,7 @@ public class BioMecHazardModLauncher extends Mod{
 		FRBlocksLiquid.load();
 		FRBlocksPower.load();
 		FRBlocksDefense.load();
-		FRBlocksAttack.load();
+		//FRBlocksAttack.load();
 		FRBlocksTrading.load();
 		
 		Log.info("Mod BioMecHazard : chargement des arbres technologiques.");
@@ -125,6 +125,7 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
+
 
 
 
