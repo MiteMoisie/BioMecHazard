@@ -151,6 +151,7 @@ public class FRBlocksDefense{
             healPercent = 1f;
             health = 960;
 			envDisabled = 16;
+			researchCost = with(BMHItems.hardenedLivingSteel, 100);
         }};
 		
 		livingSteelWallLarge = new MendProjector("living-steel-wall-2"){{
@@ -167,6 +168,7 @@ public class FRBlocksDefense{
             healPercent = 1f;
             health = 3220;
 			envDisabled = 16;
+			researchCost = with(BMHItems.hardenedLivingSteel, 200);
         }};
 
         amalgamWallLarge = new PowerTurret("steel-alloy-wall-large"){{
@@ -201,6 +203,7 @@ public class FRBlocksDefense{
 					colorTo = Color.valueOf("ba6a83");
 				}};
             }};
+			researchCost = with(BMHItems.steelAmalgam, 600);
         }};
 
         amalgamWall = new PowerTurret("steel-alloy-wall-small"){{
@@ -235,6 +238,7 @@ public class FRBlocksDefense{
 					colorTo = Color.valueOf("ba6a83");
 				}};
             }};
+			researchCost = with(BMHItems.steelAmalgam, 300);
         }};
 
         armoredWall = new ShieldWall("armored-wall"){{
@@ -313,4 +317,5 @@ public class FRBlocksDefense{
         }};
 		
 	}
+
 }
