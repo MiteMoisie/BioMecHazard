@@ -23,6 +23,12 @@ import static biomechazard.content.blocks.UAWBlocksPower.*;
 import static biomechazard.content.blocks.UAWBlocksLogistic.*;
 import static biomechazard.content.blocks.UAWBlocksProduction.*;
 import static biomechazard.content.blocks.UAWBlocksUnits.*;
+import static biomechazard.content.blocks.FRBlocksOthers.*;
+import static biomechazard.content.blocks.FRBlocksLogistic.*;
+import static biomechazard.content.blocks.FRBlocksAttack.*;
+import static biomechazard.content.blocks.FRBlocksDefense.*;
+import static biomechazard.content.blocks.FRBlocksLiquid.*;
+import static biomechazard.content.blocks.FRBlocksPower.*;
 import static biomechazard.content.blocks.FRBlocksTrading.*;
 //import static biomechazard.content.BMHBlocks.*;
 import static biomechazard.content.BMHUnits.*;
@@ -237,15 +243,42 @@ public class BMHTechtree {
 			// Blocs
 			node(gateFRBlocks, () -> {
 				// Noyau  
-				node(gateFRCores);
+				node(gateFRCores, () -> {
+					node(coreAtom, () -> {
+						node(coreElement, () -> {
+							node(mainCore);
+						});
+					});
+				});
 				// Usines de fabrication
 				node(gateFRProduction);
 				// Distributions d'objets
-				node(gateFRDistribution);
+				node(gateFRDistribution, () -> {
+					node(titaniumJunction, () -> {
+						node(titaniumRouter, () -> {
+							node(surgeTitaniumConveyor, () -> {
+								node(advancedUnloader, () -> {
+									node(tinyMassDriver, () -> {
+										node(massAccelerator);
+									});
+								});
+							});
+							node(surgeAlloyConveyor, () -> {
+								node(amalgamConveyor);
+								node(surgeBridgeConveyor);
+							});
+							node(titaniumDistributor);
+						});
+					});
+				});
 				// Récolteurs d'objets
 				node(gateFRDrills);
 				// Utilitaires
 				node(gateFREffectBlocks, () -> {
+					node(depository, () -> {
+						node(advancedLaunchPad, Seq.with(new SectorComplete(extractionOutpost)), () -> {});
+						node(outpost);
+					});
 					node(copperTradingStation, () -> {
 						node(titaniumTradingStation, () -> {
 							node(thoriumTradingStation);
@@ -269,30 +302,140 @@ public class BMHTechtree {
 							});
 						});
 						node(sporePodTradingStation);
+						node(miniOverdriveDome, () -> {
+							node(constructionPylon);
+							node(enhancedMendProjector, () -> {
+								node(darkMender, () -> {
+									node(forceDome);
+								});
+							});
+						});
 					});
 				});
 				// Conduits de fluides
-				node(gateFRLiquid);
+				node(gateFRLiquid, () -> {
+					node(liquidCanister, () -> {
+						node(steelTank, () -> {
+							node(plastaniumConduit);
+							node(steelPump);
+						});
+					});
+				});
 				// Génération d'énergie
-				node(gateFRPower);
+				node(gateFRPower, () -> {
+					node(reinforcedPowerNode, () -> {
+						node(reinforcedLargePowerNode, () -> {
+							node(advancedSurgeTower);
+							node(powerReserve);
+						});
+					});
+					node(tinyThermalGenerator, () -> {
+						node(livingSteelThermalGenerator, () -> {
+							node(slagGenerator, () -> {
+								node(pyratiteGenerator);
+							});
+						});
+						node(waterVaporTurbine);
+						node(titaniumSolarPanel, () -> {
+							node(advancedSolarPanel, () -> {
+								node(solarArray);
+								node(uranium-reactor, () -> {
+									node(amalgamGenerator, () -> {
+										node(overloadReactor);
+									});
+								});
+							});
+						});
+					});
+				});
 				// Tours de défense
 				node(gateFRTurrets);
 				// Murs
-				node(gateFRWalls);
+				node(gateFRWalls, () -> {
+					node(copperWallHuge, () -> {
+						node(copperWallGigantic, () -> {
+							node(titaniumWallHuge, () -> {
+								node(armoredDoor, () -> {
+									node(doorHuge, () -> {
+										node(doorGigantic);
+									});
+								});
+								node(plastaniumWallHuge, () -> {
+									node(plastaniumWallGigantic);
+								});
+								node(thoriumWallHuge, () -> {
+									node(surgeAlloyWallHuge, () -> {
+										node(phaseWallHuge, () -> {
+											node(phaseWallGigantic);
+										});
+										node(surgeAlloyWallGigantic);
+									});
+									node(thoriumWallGigantic);
+								});
+								node(titaniumWallGigantic);
+							});
+						});
+						node(livingSteelWall, () -> {
+							node(livingSteelWallLarge, () -> {
+								node(amalgamWall, () -> {
+									node(amalgamWallLarge);
+								});
+							});
+						});
+					});
+					
+				});
 			});
 			
 			// Objets
 			node(gateFRItems, () -> {
 				// Ressources
-				node(gateFRResources);
+				node(gateFRResources, () -> {
+					nodeProduce(cryogenicGel, () -> {
+						nodeProduce(igneousAlloy, () -> {
+							nodeProduce(cryogenicAlloy, () -> {});
+						});
+					});
+					nodeProduce(uraniumRod, () -> {
+						nodeProduce(nuke, () -> {});
+					});
+					nodeProduce(gold, () -> {});
+					nodeProduce(livingSteel, () -> {
+						nodeProduce(hardenedLivingSteel, () -> {});
+						nodeProduce(livingSteelLiquid, () -> {
+							nodeProduce(acid, () -> {});
+							nodeProduce(neutronFluid, () -> {});
+						});
+						nodeProduce(steelAmalgam, () -> {});
+					});
+					nodeProduce(waterVapor, () -> {});
+				});
 				// Munitions
-				node(gateFRAmmo);
+				nodeProduce(gateFRAmmo, () -> {
+					nodeProduce(copperAmmo, () -> {
+						nodeProduce(titaniumAmmo, () -> {
+							nodeProduce(explosiveAmmo, () -> {
+								nodeProduce(healingAmmo, () -> {
+									nodeProduce(homingAmmo, () -> {
+										nodeProduce(nanoAmmo, () -> {});
+									});
+								});
+							});
+						});
+					});
+				});
 			});
 			
 			// Unités
 			node(gateFRUnits, () -> {
 				// Unités de noyau
-				node(gateFRCoreUnits);
+				node(gateFRCoreUnits/*, () -> {
+					node(deltaFR, () -> {
+						node(epsilonFR, () -> {
+							node(mainCoreUnit);
+						});
+					});
+				}*/);
 				// Usines de fabrication d'unités
 				node(gateFRFactories);
 				// Unités terrestres
@@ -305,6 +448,3 @@ public class BMHTechtree {
 		});
 	}
 }
-
-
-
