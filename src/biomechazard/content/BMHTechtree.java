@@ -25,7 +25,7 @@ import static biomechazard.content.blocks.UAWBlocksProduction.*;
 import static biomechazard.content.blocks.UAWBlocksUnits.*;
 import static biomechazard.content.blocks.FRBlocksOthers.*;
 import static biomechazard.content.blocks.FRBlocksLogistic.*;
-import static biomechazard.content.blocks.FRBlocksAttack.*;
+//import static biomechazard.content.blocks.FRBlocksAttack.*;
 import static biomechazard.content.blocks.FRBlocksDefense.*;
 import static biomechazard.content.blocks.FRBlocksLiquid.*;
 import static biomechazard.content.blocks.FRBlocksPower.*;
@@ -276,7 +276,7 @@ public class BMHTechtree {
 				// Utilitaires
 				node(gateFREffectBlocks, () -> {
 					node(depository, () -> {
-						node(advancedLaunchPad, Seq.with(new SectorComplete(extractionOutpost)), () -> {});
+						node(FRBlocksLogistic.advancedLaunchPad, Seq.with(new SectorComplete(extractionOutpost)), () -> {});
 						node(outpost);
 					});
 					node(copperTradingStation, () -> {
@@ -339,7 +339,7 @@ public class BMHTechtree {
 						node(titaniumSolarPanel, () -> {
 							node(advancedSolarPanel, () -> {
 								node(solarArray);
-								node(uranium-reactor, () -> {
+								node(nuclearReactor, () -> {
 									node(amalgamGenerator, () -> {
 										node(overloadReactor);
 									});
@@ -448,3 +448,4 @@ public class BMHTechtree {
 		});
 	}
 }
+
