@@ -21,7 +21,7 @@ public class FRBlocksPower{
 	public static Block
 		advancedSurgeTower, omnidirectionalBeamNode, powerReserve, reinforcedLargePowerNode, reinforcedPowerNode, 
 		advancedSolarPanel, livingSteelThermalGenerator, overloadReactor, pyratiteGenerator, slagGenerator,
-		slagReactor, solarArray, steamTurbine, amalgamGenerator, tinyThermalGenerator, titaniumSolarPanel, 
+		slagReactor, solarArray, waterVaporTurbine, amalgamGenerator, tinyThermalGenerator, titaniumSolarPanel, 
 		turbineConcentrator, nuclearReactor;
 	
 	public static void load(){
@@ -213,7 +213,7 @@ public class FRBlocksPower{
 			hasLiquids = false;
         }};
 		
-		steamTurbine = new ConsumeGenerator("steam-turbine"){{
+		waterVaporTurbine = new ConsumeGenerator("water-vapor-turbine"){{
             requirements(Category.power, with(Items.copper, 60, Items.lead, 60, Items.graphite, 35, Items.silicon, 40, BMHItems.livingSteel, 20));
             outputLiquid = new LiquidStack(BMHLiquids.waterVapor, 0.05f);
 			explodeOnFull = true;
@@ -341,4 +341,5 @@ public class FRBlocksPower{
 	}
 
 }
+
 
