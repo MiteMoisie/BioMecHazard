@@ -72,7 +72,7 @@ public class CoreQuarkhod extends CoreBlock {
     @Override
     public void setStats() {
         super.setStats();
-        stats.add(Stat.basePowerGeneration, powerProduction, StatUnit.powerSecond);
+        stats.add(Stat.basePowerGeneration, powerProduction * 60, StatUnit.powerSecond);
     }
 
     /**
@@ -126,6 +126,7 @@ public class CoreQuarkhod extends CoreBlock {
     }
 
 }
+
 
 
 
