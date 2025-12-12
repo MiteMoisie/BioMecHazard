@@ -109,16 +109,23 @@ public class BioMecHazardModLauncher extends Mod{
 		//UAWSerpuloTechTree.load();
 		
 		Log.info("Mod BioMecHazard : chargement du contenu du mod 'Fading Revelations'.");
+		FRBlocksOthers.load();
+		FRBlocksLogistic.load();
+		FRBlocksLiquid.load();
+		FRBlocksPower.load();
+		FRBlocksDefense.load();
+		FRBlocksAttack.load();
 		FRBlocksTrading.load();
 		
 		Log.info("Mod BioMecHazard : chargement des arbres technologiques.");
 		BMHTechtreeNodes.load();
 		BMHTechtree.load();
 		
-		Log.info("Chargement de BioMecHazard v0.0.14" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
+		Log.info("Chargement de BioMecHazard v0.0.15" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
     }
 
 }
+
 
 
 
