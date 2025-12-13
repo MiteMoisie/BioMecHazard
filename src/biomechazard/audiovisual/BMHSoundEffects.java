@@ -9,6 +9,8 @@ import mindustry.Vars;
 public class BMHSoundEffects {
 	
 	public static Sound nrexp = new Sound();
+	public static Sound vanillaMissileLaunch = new Sound();
+	public static Sound vanillaShootSpectre = new Sound();
 	
 	protected static Sound loadSound(String fileName) {
 		String name = "sounds/" + fileName;
@@ -25,6 +27,9 @@ public class BMHSoundEffects {
 	public static void load() {
 		if (Vars.headless) return;
 		nrexp = loadSound("nrexp");
+		vanillaMissileLaunch = loadSound("vanillaMissileLaunch");
+		vanillaShootSpectre = loadSound("vanillaShootSpectre");
 	}
 	
+
 }
