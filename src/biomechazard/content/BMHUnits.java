@@ -126,7 +126,7 @@ public class BMHUnits{
                     keepVelocity = false;
                     splashDamageRadius = 46f;
                     splashDamage = 38f;
-                    lifetime = 50f;
+                    lifetime = 70f;
                     trailColor = Pal.unitBack;
                     backColor = Pal.unitBack;
                     frontColor = Pal.unitFront;
@@ -150,7 +150,7 @@ public class BMHUnits{
                 bullet = new BasicBulletType(7f, 35){{
                     width = 12f;
                     height = 18f;
-                    lifetime = 25f;
+                    lifetime = 70f;
                     shootEffect = Fx.shootBig;
                 }};
             }});
@@ -165,10 +165,10 @@ public class BMHUnits{
                 shootSound = BMHSoundEffects.vanillaShootSpectre;
                 rotate = true;
                 shadow = 8f;
-                bullet = new BasicBulletType(7f, 35){{
+                bullet = new BasicBulletType(3.5f, 35){{
                     width = 12f;
                     height = 18f;
-                    lifetime = 25f;
+                    lifetime = 70f;
                     shootEffect = Fx.shootBig;
                 }};
             }});
@@ -373,4 +373,5 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
