@@ -115,7 +115,7 @@ public class BMHUnits{
                 shoot.shots = 2;
                 inaccuracy = 5f;
                 velocityRnd = 0.2f;
-                shootSound = Sounds.vanillaMissileLong;
+                shootSound = BMHSoundEffects.vanillaMissileLong;
                 bullet = new MissileBulletType(3f, 27){{
                     width = 8f;
                     height = 8f;
@@ -143,7 +143,7 @@ public class BMHUnits{
                 //shake = 1f;
                 rotateSpeed = 5f;
                 ejectEffect = Fx.casing1;
-                shootSound = Sounds.vanillaShootSpectre;
+                shootSound = BMHSoundEffects.vanillaShootSpectre;
                 rotate = true;
                 shadow = 8f;
                 bullet = new BasicBulletType(7f, 35){{
@@ -161,7 +161,7 @@ public class BMHUnits{
                 //shake = 1f;
                 rotateSpeed = 5f;
                 ejectEffect = Fx.casing1;
-                shootSound = Sounds.vanillaShootSpectre;
+                shootSound = BMHSoundEffects.vanillaShootSpectre;
                 rotate = true;
                 shadow = 8f;
                 bullet = new BasicBulletType(7f, 35){{
@@ -372,6 +372,7 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
 
 
