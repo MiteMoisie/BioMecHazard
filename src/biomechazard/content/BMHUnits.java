@@ -67,7 +67,7 @@ public class BMHUnits{
 			drag /= 5f;
 			strafePenalty = 0.3f;
 			
-			weapons.add(new Weapon("mokuge-mouth"){{
+			weapons.add(new Weapon("biomechazard-mokuge-mouth"){{
                 reload = 40f; //Original 75f;
                 shootY = 8f;
                 x = 0f;
@@ -92,11 +92,11 @@ public class BMHUnits{
                     chargeEffect = BMHEffects.purpleBigLaserBeam;
                 }};
             }});
-			weapons.add(new Weapon("pglrrhvdhrlw-weapon"){{
+			weapons.add(new Weapon("biomechazard-pglrrhvdhrlw-weapon"){{
                 shootSound = Sounds.lasershoot;
                 reload = 24f;
-                x = 8f;
-                y = 3f;
+                x = 30f;
+                y = 20f;
                 rotate = true;
                 bullet = new LaserBoltBulletType(8.32f, 26){{
                     lifetime = 35f;
@@ -106,7 +106,7 @@ public class BMHUnits{
                     frontColor = Color.valueOf("8762FF");
                 }};
             }});
-			weapons.add(new Weapon("gnthtkhnphkn-weapon"){{
+			weapons.add(new Weapon("biomechazard-gnthtkhnphkn-weapon"){{
                 reload = 40f;
                 x = 4f;
 				y = -2f;
@@ -135,7 +135,7 @@ public class BMHUnits{
                     weaveMag = 1f;
                 }};
             }});
-			weapons.add(new Weapon("ckrthlmmgtdrngg-weapon"){{
+			weapons.add(new Weapon("biomechazard-ckrthlmmgtdrngg-weapon"){{
                 y = 2f;
                 x = 6f;
                 shootY = 10f;
@@ -153,7 +153,7 @@ public class BMHUnits{
                     shootEffect = Fx.shootBig;
                 }};
             }});
-			weapons.add(new Weapon("ckrthlmmgtdrngg-weapon"){{
+			weapons.add(new Weapon("biomechazard-ckrthlmmgtdrngg-weapon"){{
                 y = -5f;
                 x = 4f;
                 shootY = 10f;
@@ -205,7 +205,7 @@ public class BMHUnits{
 			//rotateShooting = true;
 			//isCounted = false;
 			//commandLimit = 8;
-			weapons.add(new Weapon("flakgun-core"){{
+			weapons.add(new Weapon("biomechazard-flakgun-core"){{
 				reload = 38f;
                 x = 5f;
                 y = 2f;
@@ -230,7 +230,7 @@ public class BMHUnits{
 				}};
 				
 			}});
-			weapons.add(new Weapon("small-weapon-core"){{
+			weapons.add(new Weapon("biomechazard-small-weapon-core"){{
 				reload = 20f;
                 x = 3f;
                 y = -3f;
@@ -251,7 +251,7 @@ public class BMHUnits{
 				}};
 				
 			}});
-			weapons.add(new Weapon("small-weapon-core"){{
+			weapons.add(new Weapon("biomechazard-small-weapon-core"){{
 				reload = 20.1f;
                 x = 3f;
                 y = -3f;
@@ -291,7 +291,7 @@ public class BMHUnits{
 			//rotateShooting = true;
 			//isCounted = false;
 			//commandLimit = 12;
-			weapons.add(new Weapon("missiles-core"){{
+			weapons.add(new Weapon("biomechazard-missiles-core"){{
 				reload = 40f;
                 x = 7f;
                 y = 2f;
@@ -330,7 +330,7 @@ public class BMHUnits{
 					statusDuration = 40f;
 				}};
 			}});
-			weapons.add(new Weapon("missiles-core"){{
+			weapons.add(new Weapon("biomechazard-missiles-core"){{
 				reload = 40.001f;
                 x = 7f;
                 y = 2f;
@@ -372,13 +372,3 @@ public class BMHUnits{
 		}};
 	}
 }
-
-
-
-
-
-
-
-
-
-
