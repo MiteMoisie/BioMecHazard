@@ -67,7 +67,8 @@ public class BMHUnits{
 			drag /= 5f;
 			strafePenalty = 0.3f;
 			
-			weapons.add(new Weapon("-mouth"){{
+			weapons.add(
+			new Weapon("mokuge-mouth"){{
                 reload = 40f; //Original 75f;
                 shootY = 8f;
                 x = 0f;
@@ -91,7 +92,87 @@ public class BMHUnits{
 					//, Color.valueOf("00FFFF")
                     chargeEffect = BMHEffects.purpleBigLaserBeam;
                 }};
-            }});
+            }},
+			new Weapon("pglrrhvdhrlw-weapon"){{
+                shootSound = Sounds.lasershoot;
+                reload = 24f;
+                x = 8f;
+                y = 3f;
+                rotate = true;
+                bullet = new LaserBoltBulletType(8.32f, 26){{
+                    lifetime = 35f;
+                    healPercent = 25f;
+                    collidesTeam = true;
+                    backColor = Pal.heal;
+                    frontColor = Color.valueOf("8762FF");
+                }};
+            }},
+			new Weapon("gnthtkhnphkn-weapon"){{
+                reload = 40f;
+                x = 4f;
+				y = -2f;
+                rotate = true;
+                shake = 1f;
+                shoot.shots = 2;
+                inaccuracy = 5f;
+                velocityRnd = 0.2f;
+                shootSound = Sounds.missileLong;
+                bullet = new MissileBulletType(3f, 27){{
+                    width = 8f;
+                    height = 8f;
+                    //shrinkY = 0f;
+                    drag = -0.003f;
+                    homingRange = 60f;
+                    keepVelocity = false;
+                    splashDamageRadius = 46f;
+                    splashDamage = 38f;
+                    lifetime = 50f;
+                    trailColor = Pal.unitBack;
+                    backColor = Pal.unitBack;
+                    frontColor = Pal.unitFront;
+                    hitEffect = Fx.blastExplosion;
+                    despawnEffect = Fx.blastExplosion;
+                    weaveScale = 6f;
+                    weaveMag = 1f;
+                }};
+            }},
+			new Weapon("ckrthlmmgtdrngg-weapon"){{
+                y = 2f;
+                x = 6f;
+                shootY = 10f;
+                reload = 12;
+                //shake = 1f;
+                rotateSpeed = 5f;
+                ejectEffect = Fx.casing1;
+                shootSound = Sounds.shootSpectre;
+                rotate = true;
+                shadow = 8f;
+                bullet = new BasicBulletType(7f, 35){{
+                    width = 12f;
+                    height = 18f;
+                    lifetime = 25f;
+                    shootEffect = Fx.shootBig;
+                }};
+            }},
+			new Weapon("ckrthlmmgtdrngg-weapon"){{
+                y = -5f;
+                x = 4f;
+                shootY = 10f;
+                reload = 12;
+                //shake = 1f;
+                rotateSpeed = 5f;
+                ejectEffect = Fx.casing1;
+                shootSound = Sounds.shootSpectre;
+                rotate = true;
+                shadow = 8f;
+                bullet = new BasicBulletType(7f, 35){{
+                    width = 12f;
+                    height = 18f;
+                    lifetime = 25f;
+                    shootEffect = Fx.shootBig;
+                }};
+            }}
+			);
 			
             hitSize = 17f;
 			range = 125f;  
@@ -293,6 +374,7 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
 
 
