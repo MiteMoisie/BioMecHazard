@@ -158,7 +158,7 @@ public class BMHUnits{
                 y = -8f;
                 x = 10f;
                 shootY = 10f;
-                reload = 12;
+                reload = 36;
                 //shake = 1f;
                 rotateSpeed = 5f;
                 ejectEffect = Fx.casing1;
@@ -373,5 +373,6 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
 
