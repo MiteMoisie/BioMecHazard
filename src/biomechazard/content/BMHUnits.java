@@ -18,7 +18,6 @@ import mindustry.type.*;
 import mindustry.content.*;
 import mindustry.content.StatusEffects;
 import mindustry.type.unit.*;
-import mindustry.type.weapons.*;
 import mindustry.world.meta.*;
 import biomechazard.content.*;
 import biomechazard.audiovisual.*;
@@ -68,8 +67,7 @@ public class BMHUnits{
 			drag /= 5f;
 			strafePenalty = 0.3f;
 			
-			weapons.add(
-			new Weapon("mokuge-mouth"){{
+			weapons.add(new Weapon("mokuge-mouth"){{
                 reload = 40f; //Original 75f;
                 shootY = 8f;
                 x = 0f;
@@ -93,8 +91,8 @@ public class BMHUnits{
 					//, Color.valueOf("00FFFF")
                     chargeEffect = BMHEffects.purpleBigLaserBeam;
                 }};
-            }},
-			new Weapon("pglrrhvdhrlw-weapon"){{
+            }});
+			weapons.add(new Weapon("pglrrhvdhrlw-weapon"){{
                 shootSound = Sounds.lasershoot;
                 reload = 24f;
                 x = 8f;
@@ -107,8 +105,8 @@ public class BMHUnits{
                     backColor = Pal.heal;
                     frontColor = Color.valueOf("8762FF");
                 }};
-            }},
-			new Weapon("gnthtkhnphkn-weapon"){{
+            }});
+			weapons.add(new Weapon("gnthtkhnphkn-weapon"){{
                 reload = 40f;
                 x = 4f;
 				y = -2f;
@@ -136,8 +134,8 @@ public class BMHUnits{
                     weaveScale = 6f;
                     weaveMag = 1f;
                 }};
-            }},
-			new Weapon("ckrthlmmgtdrngg-weapon"){{
+            }});
+			weapons.add(new Weapon("ckrthlmmgtdrngg-weapon"){{
                 y = 2f;
                 x = 6f;
                 shootY = 10f;
@@ -154,8 +152,8 @@ public class BMHUnits{
                     lifetime = 25f;
                     shootEffect = Fx.shootBig;
                 }};
-            }},
-			new Weapon("ckrthlmmgtdrngg-weapon"){{
+            }});
+			weapons.add(new Weapon("ckrthlmmgtdrngg-weapon"){{
                 y = -5f;
                 x = 4f;
                 shootY = 10f;
@@ -172,8 +170,7 @@ public class BMHUnits{
                     lifetime = 25f;
                     shootEffect = Fx.shootBig;
                 }};
-            }}
-			);
+            }});
 			
             hitSize = 17f;
 			range = 125f;  
@@ -375,6 +372,7 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
 
 
