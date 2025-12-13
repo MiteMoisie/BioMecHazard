@@ -18,6 +18,7 @@ import mindustry.type.*;
 import mindustry.content.*;
 import mindustry.content.StatusEffects;
 import mindustry.type.unit.*;
+import mindustry.type.weapons.*;
 import mindustry.world.meta.*;
 import biomechazard.content.*;
 import biomechazard.audiovisual.*;
@@ -92,7 +93,7 @@ public class BMHUnits{
 					//, Color.valueOf("00FFFF")
                     chargeEffect = BMHEffects.purpleBigLaserBeam;
                 }};
-            }}/*,
+            }},
 			new Weapon("pglrrhvdhrlw-weapon"){{
                 shootSound = Sounds.lasershoot;
                 reload = 24f;
@@ -171,7 +172,7 @@ public class BMHUnits{
                     lifetime = 25f;
                     shootEffect = Fx.shootBig;
                 }};
-            }}*/
+            }}
 			);
 			
             hitSize = 17f;
@@ -374,6 +375,7 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
 
 
