@@ -85,7 +85,7 @@ public class BMHUnits{
                     length = 293.5f;
                     drawSize = 100f;
                     lifetime = 300f;
-                    healPercent = 0.5f;
+                    healPercent = 5f;
                     collidesTeam = true;
                     buildingDamageMultiplier = 0.10f;
                     colors = new Color[]{Color.valueOf("FF0000"), Color.valueOf("7665C9"), Color.valueOf("BD8BD6"), Color.valueOf("000000")};
@@ -95,11 +95,11 @@ public class BMHUnits{
             }});
 			weapons.add(new Weapon("biomechazard-pglrrhvdhrlw-weapon"){{
                 shootSound = Sounds.lasershoot;
-                reload = 24f;
+                reload = 15f;
                 x = 38f;
                 y = 12f;
                 rotate = true;
-                bullet = new LaserBoltBulletType(8.32f, 26){{
+                bullet = new LaserBoltBulletType(8.32f, 62){{
                     lifetime = 35f;
                     healPercent = 25f;
                     collidesTeam = true;
@@ -117,7 +117,7 @@ public class BMHUnits{
                 inaccuracy = 5f;
                 velocityRnd = 0.2f;
                 shootSound = BMHSoundEffects.vanillaMissileLong;
-                bullet = new MissileBulletType(3f, 27){{
+                bullet = new MissileBulletType(3f, 35){{
                     width = 8f;
                     height = 8f;
                     //shrinkY = 0f;
@@ -125,7 +125,7 @@ public class BMHUnits{
                     homingRange = 60f;
                     keepVelocity = false;
                     splashDamageRadius = 46f;
-                    splashDamage = 38f;
+                    splashDamage = 115f;
                     lifetime = 70f;
                     trailColor = Pal.unitBack;
                     backColor = Pal.unitBack;
@@ -140,14 +140,14 @@ public class BMHUnits{
                 y = 12f;
                 x = 22f;
                 shootY = 10f;
-                reload = 12;
+                reload = 3.75;
                 //shake = 1f;
                 rotateSpeed = 5f;
                 ejectEffect = Fx.casing1;
                 shootSound = BMHSoundEffects.vanillaShootSpectre;
                 rotate = true;
                 shadow = 8f;
-                bullet = new BasicBulletType(7f, 35){{
+                bullet = new BasicBulletType(7f, 28){{
                     width = 12f;
                     height = 18f;
                     lifetime = 70f;
@@ -158,14 +158,14 @@ public class BMHUnits{
                 y = -8f;
                 x = 10f;
                 shootY = 10f;
-                reload = 36;
+                reload = 3.75;
                 //shake = 1f;
                 rotateSpeed = 5f;
                 ejectEffect = Fx.casing1;
                 shootSound = BMHSoundEffects.vanillaShootSpectre;
                 rotate = true;
                 shadow = 8f;
-                bullet = new BasicBulletType(3.5f, 35){{
+                bullet = new BasicBulletType(7f, 28){{
                     width = 12f;
                     height = 18f;
                     lifetime = 70f;
@@ -373,6 +373,7 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
 
 
