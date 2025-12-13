@@ -72,6 +72,7 @@ public class BMHUnits{
                 shootY = 8f;
                 x = 0f;
                 y = 0f;
+				top = false;
                 continuous = true;
                 shoot.firstShotDelay = BMHEffects.purpleBigLaserBeam.lifetime -1f;
                 chargeSound = Sounds.lasercharge2;
@@ -95,8 +96,8 @@ public class BMHUnits{
 			weapons.add(new Weapon("biomechazard-pglrrhvdhrlw-weapon"){{
                 shootSound = Sounds.lasershoot;
                 reload = 24f;
-                x = 30f;
-                y = 20f;
+                x = 38f;
+                y = 12f;
                 rotate = true;
                 bullet = new LaserBoltBulletType(8.32f, 26){{
                     lifetime = 35f;
@@ -108,8 +109,8 @@ public class BMHUnits{
             }});
 			weapons.add(new Weapon("biomechazard-gnthtkhnphkn-weapon"){{
                 reload = 40f;
-                x = 4f;
-				y = -2f;
+                x = 18f;
+				y = -4f;
                 rotate = true;
                 shake = 1f;
                 shoot.shots = 2;
@@ -136,8 +137,8 @@ public class BMHUnits{
                 }};
             }});
 			weapons.add(new Weapon("biomechazard-ckrthlmmgtdrngg-weapon"){{
-                y = 2f;
-                x = 6f;
+                y = 12f;
+                x = 22f;
                 shootY = 10f;
                 reload = 12;
                 //shake = 1f;
@@ -154,8 +155,8 @@ public class BMHUnits{
                 }};
             }});
 			weapons.add(new Weapon("biomechazard-ckrthlmmgtdrngg-weapon"){{
-                y = -5f;
-                x = 4f;
+                y = -8f;
+                x = 10f;
                 shootY = 10f;
                 reload = 12;
                 //shake = 1f;
@@ -372,3 +373,4 @@ public class BMHUnits{
 		}};
 	}
 }
+
