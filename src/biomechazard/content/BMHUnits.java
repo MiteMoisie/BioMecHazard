@@ -92,7 +92,7 @@ public class BMHUnits{
 					//, Color.valueOf("00FFFF")
                     chargeEffect = BMHEffects.purpleBigLaserBeam;
                 }};
-            }},
+            }}/*,
 			new Weapon("pglrrhvdhrlw-weapon"){{
                 shootSound = Sounds.lasershoot;
                 reload = 24f;
@@ -171,7 +171,7 @@ public class BMHUnits{
                     lifetime = 25f;
                     shootEffect = Fx.shootBig;
                 }};
-            }}
+            }}*/
 			);
 			
             hitSize = 17f;
@@ -374,6 +374,7 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
 
 
