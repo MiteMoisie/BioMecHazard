@@ -8,9 +8,18 @@ import mindustry.Vars;
 
 public class BMHSoundEffects {
 	
-	public static Sound nrexp = new Sound();
 	public static Sound vanillaMissileLong = new Sound();
 	public static Sound vanillaShootSpectre = new Sound();
+	
+	public static Sound nrexp = new Sound();
+	public static Sound cavalryShoot = new Sound();
+	public static Sound crush = new Sound();
+	public static Sound energyCharge = new Sound();
+	public static Sound gasTorchBurn = new Sound();
+	public static Sound gattlingShoot = new Sound();
+	public static Sound hugeLaserCharge = new Sound();
+	public static Sound missileSiloLaunch = new Sound();
+	public static Sound nukeHit = new Sound();
 	
 	protected static Sound loadSound(String fileName) {
 		String name = "sounds/" + fileName;
@@ -26,11 +35,21 @@ public class BMHSoundEffects {
 	
 	public static void load() {
 		if (Vars.headless) return;
-		nrexp = loadSound("nrexp");
 		vanillaMissileLong = loadSound("vanillaMissileLong");
 		vanillaShootSpectre = loadSound("vanillaShootSpectre");
+		
+		nrexp = loadSound("nrexp");
+		cavalryShoot = new loadSound("cavalry-shoot");
+		crush = loadSound("crush");
+		energyCharge = loadSound("energy-charge");
+		gasTorchBurn = loadSound("gas-torch-burn");
+		gattlingShoot = loadSound("gattling-shoot");
+		hugeLaserCharge = loadSound("huge-laser-charge");
+		missileSiloLaunch = loadSound("missile-silo-launch");
+		nukeHit = loadSound("nuke-hit");
 	}
 	
 
 }
+
 
