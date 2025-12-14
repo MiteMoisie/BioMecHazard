@@ -39,7 +39,7 @@ public class BMHSoundEffects {
 		vanillaShootSpectre = loadSound("vanillaShootSpectre");
 		
 		nrexp = loadSound("nrexp");
-		cavalryShoot = new loadSound("cavalry-shoot");
+		cavalryShoot = loadSound("cavalry-shoot");
 		crush = loadSound("crush");
 		energyCharge = loadSound("energy-charge");
 		gasTorchBurn = loadSound("gas-torch-burn");
@@ -51,5 +51,6 @@ public class BMHSoundEffects {
 	
 
 }
+
 
 
