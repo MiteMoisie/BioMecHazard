@@ -30,6 +30,7 @@ import static biomechazard.content.blocks.FRBlocksDefense.*;
 import static biomechazard.content.blocks.FRBlocksLiquid.*;
 import static biomechazard.content.blocks.FRBlocksPower.*;
 import static biomechazard.content.blocks.FRBlocksTrading.*;
+import static biomechazard.content.blocks.FRBlocksDrills.*;
 //import static biomechazard.content.BMHBlocks.*;
 import static biomechazard.content.BMHUnits.*;
 import static biomechazard.content.BMHItems.*;
@@ -275,7 +276,31 @@ public class BMHTechtree {
 					});
 				});
 				// Récolteurs d'objets
-				node(gateFRDrills);
+				node(gateFRDrills, () -> {
+					node(groundGrinder, () -> {
+						node(groundMiller, () -> {
+							node(groundCrusher, () -> {
+								node(oilBore);
+							});
+						});
+					});
+					node(mechanicalSieve, () -> {
+						node(pneumaticSieve, () -> {
+							node(titaniumSieve, () -> {
+								node(steelSieve);
+							});
+						});
+					});
+					node(tinyMechanicalDrill, () -> {
+						node(tinyPneumaticDrill, () -> {
+							node(titaniumDrill, () -> {
+								node(compactLaserDrill, () -> {
+									node(hyperDrill);
+								});
+							});
+						});
+					});
+				});
 				// Utilitaires
 				node(gateFREffectBlocks, () -> {
 					node(depository, () -> {
@@ -451,5 +476,6 @@ public class BMHTechtree {
 		});
 	}
 }
+
 
 
