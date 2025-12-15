@@ -1,5 +1,6 @@
 package biomechazard.content.blocks;
 
+import arc.audio.*;
 import arc.graphics.*;
 import arc.math.Interp;
 import mindustry.content.*;
@@ -7,7 +8,7 @@ import mindustry.entities.effect.*;
 import mindustry.type.*;
 import mindustry.world.Block;
 import mindustry.world.blocks.production.*;
-import mindustry.world.meta.BlockGroup;
+import mindustry.world.meta.*;
 import biomechazard.content.*;
 import biomechazard.audiovisual.*;
 
@@ -81,8 +82,8 @@ public class FRBlocksDrills{
             hasPower = true;
 
             consumePower(3f);
-			loopSound = BMHSoundEffects.crush;
-			loopSoundVolume = 1.3f;
+			ambientSound = BMHSoundEffects.crush;
+			ambientSoundVolume = 1.3f;
         }};
 		
 		groundGrinder = new GenericCrafter("ground-grinder"){{
@@ -104,8 +105,8 @@ public class FRBlocksDrills{
             hasPower = true;
 
             consumePower(1f);
-			loopSound = BMHSoundEffects.crush;
-			loopSoundVolume = 1f;
+			ambientSound = BMHSoundEffects.crush;
+			ambientSoundVolume = 1f;
         }};
 		
 		groundMiller = new GenericCrafter("ground-miller"){{
@@ -127,8 +128,8 @@ public class FRBlocksDrills{
             hasPower = true;
 
             consumePower(2f);
-			loopSound = BMHSoundEffects.crush;
-			loopSoundVolume = 1.1f;
+			ambientSound = BMHSoundEffects.crush;
+			ambientSoundVolume = 1.1f;
         }};
 		
 		hyperDrill = new Drill("hyper-drill"){{
