@@ -154,11 +154,14 @@ public class BMHTechtree {
 						});
 						node(steamThumper, () -> {
 							node(alloyCrucible, () -> {
+								node(petroleumCrucible);
+								node(plastFabricator);
 							});
 						});
 					});
 					node(steamPump, Seq.with(new Research(rotaryPump)), () -> {
 						node(pulsometerPump, () -> {
+							node(oilDerrick, Seq.with(new Research(oilExtractor)), () -> {});
 							node(pressurizedConduit, Seq.with(new Research(platedConduit), new Produce(stoutsteel)), () -> {
 								node(platedPressurizedConduit);
 								node(pressurizedLiquidRouter, () ->
@@ -202,7 +205,7 @@ public class BMHTechtree {
 			// Murs
 			node(gateUAWDefence, () -> {
 				node(stoutSteelWall, () -> {
-					node(stoutSteelWallLarge);
+					node(stoutSteelWallLarge, Seq.with(new Research(forceProjector)), () -> {});
 				});
 			});
 			// Usines de fabrication d'unités | Unités terrestres | Unités aériennes | Unités navales
@@ -448,4 +451,5 @@ public class BMHTechtree {
 		});
 	}
 }
+
 
