@@ -5,9 +5,6 @@ import mindustry.type.*;
 import mindustry.type.Category;
 import mindustry.world.Block;
 import mindustry.world.blocks.storage.*;
-//import mindustry.world.blocks.storage.CoreBlock;
-//import mindustry.world.blocks.storage.StorageBlock;
-//import mindustry.world.blocks.storage.Unloader;
 import mindustry.world.meta.BlockGroup;
 
 import biomechazard.content.*;
@@ -82,23 +79,23 @@ public class BMHBlocksStorage{
         }};
 		
 		warehouse = new StorageBlockQuarkhod("warehouse"){{
-            requirements(Category.effect, with(Items.titanium, 250, Items.metaglass, 175, Items.thorium, 125));
+            requirements(Category.effect, with(Items.titanium, 400, Items.metaglass, 375, Items.thorium, 325));
             size = 4;
-            itemCapacity = 4500;
+            itemCapacity = 3200;
             scaledHealth = 55;
 			researchCostMultiplier = 1.5f;
-			liquidCapacity = 4700;
-			liquidPressure = 2000;
+			liquidCapacity = 3900;
+			liquidPressure = 3000;
         }};
 		
 		largeWarehouse = new StorageBlockQuarkhod("large-warehouse"){{
-            requirements(Category.effect, with(Items.titanium, 250, Items.metaglass, 175, Items.thorium, 125));
+            requirements(Category.effect, with(Items.titanium, 730, Items.metaglass, 700, Items.thorium, 675));
             size = 5;
-            itemCapacity = 17000;
+            itemCapacity = 7500;
             scaledHealth = 55;
 			researchCostMultiplier = 1.5f;
-			liquidCapacity = 14000;
-			liquidPressure = 10000;
+			liquidCapacity = 10000;
+			liquidPressure = 6000;
         }};
 		
 		enhancedUnloader = new Unloader("enhanced-unloader"){{
@@ -117,6 +114,7 @@ public class BMHBlocksStorage{
 	}
 
 }
+
 
 
 
