@@ -26,14 +26,15 @@ public class BMHBlocksUtility{
 			consumePower(20f);
             size = 2;
             range = 200f;
-            speedBoost = 2.75f;
-            useTime = 225f;
+            speedBoost = 3.5f;
+            useTime = 350f;
 			speedBoostPhase = 0.75f;
 			phaseRangeBoost = 50f;
             consumeItems(with(Items.phaseFabric, 4, Items.silicon, 4, Items.surgeAlloy, 2));
-			hasLiquids = true;
-			liquidCapacity = 80f;
-			consumeLiquid(Liquids.cryofluid, 0.15f).boost();
+			hasBoost = false;
+			//hasLiquids = true;
+			//liquidCapacity = 80f;
+			//consumeLiquid(Liquids.cryofluid, 0.15f).boost();
 			baseColor = Color.valueOf("4c75fc");
 			phaseColor = Color.valueOf("50b0fa");
         }};
@@ -48,4 +49,5 @@ public class BMHBlocksUtility{
 			maxPayloadSize = 50;
         }};
 	}
+
 }
