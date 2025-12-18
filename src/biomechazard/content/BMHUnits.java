@@ -59,7 +59,7 @@ public class BMHUnits{
 			mineHardnessScaling = false;
 			
 			itemCapacity = 150;
-            payloadCapacity = (3 * 3) * tilePayload;
+            payloadCapacity = (8f * 8f) * tilePayload;
 			
             speed = 6.7f;
 			rotateSpeed = 6.1f;
@@ -373,6 +373,7 @@ public class BMHUnits{
 		}};
 	}
 }
+
 
 
 
