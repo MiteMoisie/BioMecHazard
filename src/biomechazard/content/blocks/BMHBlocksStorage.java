@@ -33,11 +33,11 @@ public class BMHBlocksStorage{
 			liquidCapacity = 8000;
 			//liquidPressure = 800;
 			powerProduction = 14.5f;
-			drawer = new DrawMulti(
+			/*drawer = new DrawMulti(
 				new DrawRegion("-bottom"), 
 				new DrawLiquidRegion(), 
 				new DrawDefault()
-			);
+			);*/
 		}};
 		
 		coreNexus = new CoreBlock("core-nexus"){{
@@ -119,6 +119,7 @@ public class BMHBlocksStorage{
 	}
 
 }
+
 
 
 
