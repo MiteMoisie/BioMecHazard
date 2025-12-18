@@ -17,6 +17,7 @@ import static mindustry.content.Liquids.*;
 import static biomechazard.content.blocks.BMHTechtreeNodes.*;
 import static biomechazard.content.blocks.BMHBlocksStorage.*;
 import static biomechazard.content.blocks.BMHBlocksLogistic.*;
+import static biomechazard.content.blocks.BMHBlocksUtility.*;
 //import static biomechazard.content.blocks.BMHBlocksTurret.*;
 import static biomechazard.content.blocks.UAWBlocksDefense.*;
 import static biomechazard.content.blocks.UAWBlocksPower.*;
@@ -94,7 +95,10 @@ public class BMHTechtree {
 			node(gatePower);
 			
 			// Utilitaires
-			node(gateUtil);
+			node(gateUtil, () -> {
+				node(overclockedOverdriveDome);
+				node(recyclingComplex);
+			});
 			
 			// Systèmes logiques
 			node(gateLogic);
@@ -476,6 +480,7 @@ public class BMHTechtree {
 		});
 	}
 }
+
 
 
 
