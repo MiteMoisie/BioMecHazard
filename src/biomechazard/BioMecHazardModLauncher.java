@@ -116,15 +116,18 @@ public class BioMecHazardModLauncher extends Mod{
 		FRBlocksDefense.load();
 		//FRBlocksAttack.load();
 		FRBlocksTrading.load();
+		FRBlocksDrills.load();
+		//FRBlocksProduction.load();
 		
 		Log.info("Mod BioMecHazard : chargement des arbres technologiques.");
 		BMHTechtreeNodes.load();
 		BMHTechtree.load();
 		
-		Log.info("Chargement de BioMecHazard v0.0.24" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
+		Log.info("Chargement de BioMecHazard v0.0.26" /*+ MOD.meta.version*/ + " effectué | Durée écoulée : " + (Time.elapsed() / Time.toSeconds) + " sec.");
     }
 
 }
+
 
 
 
