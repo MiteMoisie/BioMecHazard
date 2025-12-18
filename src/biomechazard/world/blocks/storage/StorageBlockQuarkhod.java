@@ -25,6 +25,7 @@ public class StorageBlockQuarkhod extends StorageBlock {
 		super(name);
 		floating = true;
 		placeableLiquid = true;
+		update = true;
 		
 		consumesPower = false;
 		outputsPower = true;
@@ -48,6 +49,11 @@ public class StorageBlockQuarkhod extends StorageBlock {
 	}*/
 	
 	public class StorageBlockQuarkhodBuild extends StorageBuild {
+
+		@Override
+        public void updateTile(){
+            dumpLiquid(liquids.current());
+        }
 		
 		@Override
         public boolean acceptLiquid(Building source, Liquid liquid){
@@ -56,3 +62,4 @@ public class StorageBlockQuarkhod extends StorageBlock {
 	}
 
 }
+
