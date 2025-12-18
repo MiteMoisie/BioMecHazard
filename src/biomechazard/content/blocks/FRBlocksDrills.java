@@ -19,7 +19,7 @@ import static mindustry.type.ItemStack.*;
 public class FRBlocksDrills{
 	public static Block
 		cliffGrinder, cliffMiller, compactLaserDrill, groundCrusher, groundGrinder, groundMiller, hyperDrill, 
-		mechanicalSieve, pneumaticSieve, steelSieve, titaniumSieve, oilBore, ventConcentrator, plasmaBore, 
+		mechanicalSieve, pneumaticSieve, steelSieve, titaniumSieve, oilBore, ventConcentrator, 
 		tungstenBore, tinyPlasmaBore, tinyMechanicalDrill, tinyPneumaticDrill, titaniumDrill;
 	
 	public static void load(){
@@ -322,18 +322,6 @@ public class FRBlocksDrills{
             liquidCapacity = 80f;
         }};
 		
-		plasmaBore = new BeamDrill("plasma-bore"){{
-            requirements(Category.production, with(Items.beryllium, 60, Items.tungsten, 20));
-            consumePower(0.2f);
-            drillTime = 160f;
-            tier = 3;
-            size = 2;
-            range = 8;
-            fogRadius = 3;
-            researchCost = with(Items.beryllium, 10);
-            consumeLiquid(Liquids.hydrogen, 0.005f).boost();
-        }};
-		
 		tungstenBore = new BeamDrill("tungsten-bore"){{
             requirements(Category.production, with(Items.beryllium, 60, Items.tungsten, 20));
             consumePower(0.2f);
@@ -389,3 +377,4 @@ public class FRBlocksDrills{
 		
 	}
 }
+
