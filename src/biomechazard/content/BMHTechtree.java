@@ -210,7 +210,9 @@ public class BMHTechtree {
 			// Murs
 			node(gateUAWDefence, () -> {
 				node(stoutSteelWall, () -> {
-					node(stoutSteelWallLarge, Seq.with(new Research(forceProjector)), () -> {});
+					node(stoutSteelWallLarge, Seq.with(new Research(forceProjector)), () -> {
+						node(shieldWall);
+					});
 				});
 			});
 			// Usines de fabrication d'unités | Unités terrestres | Unités aériennes | Unités navales
@@ -246,7 +248,7 @@ public class BMHTechtree {
 			});
 		});
 		
-		nodeRoot("Fading Revelations 2", gateFRMain, () -> {
+		nodeRoot("Fading Revelations", gateFRMain, () -> {
 			
 			// Blocs
 			node(gateFRBlocks, () -> {
@@ -480,6 +482,7 @@ public class BMHTechtree {
 		});
 	}
 }
+
 
 
 
