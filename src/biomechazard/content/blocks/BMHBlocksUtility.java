@@ -48,6 +48,16 @@ public class BMHBlocksUtility{
             deconstructSpeed = 6f;
 			maxPayloadSize = 50;
         }};
+		
+		constructionPrinter = new BuildTurret("construction-printer"){{
+            requirements(Category.effect, with(Items.silicon, 90, Items.surgeAlloy, 80, Items.titanium, 150, Items.thorium, 150));
+            size = 2;
+			range = 300f;
+			buildSpeed = 3f;
+			consumePower(2f);
+            consumeLiquid(Liquids.cryofluid, 0.4f);
+        }};
 	}
 
 }
+
