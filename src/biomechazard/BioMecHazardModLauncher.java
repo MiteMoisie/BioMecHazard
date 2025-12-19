@@ -74,9 +74,9 @@ public class BioMecHazardModLauncher extends Mod{
 		BMHBlocksStorage.load();
 		BMHBlocksLogistic.load();
 		BMHBlocksUtility.load();
+		BMHBlocksProduction.load();
 		/*
 		BMHBlocksTurret.load();
-		BMHBlocksProduction.load();
 		BMHBlocksUnits.load();
 		BMHBlocksCore.load();
 		BMHBlocksDrill.load();
@@ -127,6 +127,7 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
+
 
 
 
