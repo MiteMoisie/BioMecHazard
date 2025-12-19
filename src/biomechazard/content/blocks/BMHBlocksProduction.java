@@ -32,10 +32,11 @@ public class BMHBlocksProduction{
 			consumePower(2.8f);
 			consumeItems(with(Items.titanium, 2, Items.sporePod, 1, Items.thorium, 2));
 			consumeLiquid(Liquids.oil, 0.6f);
-			outputItem = new ItemStack(BMHItems.livingSteel, 4, BMHItems.hardenedLivingSteel, 4);
+			outputItems = with(BMHItems.livingSteel, 4, BMHItems.hardenedLivingSteel, 4);
 			outputLiquid = new LiquidStack(BMHLiquids.livingSteelLiquid, 0.8f);
 			drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidRegion(BMHLiquids.livingSteelLiquid), new DrawDefault());
 		}};
 		
 	}
+
 }
