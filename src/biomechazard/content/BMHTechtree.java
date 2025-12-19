@@ -89,7 +89,9 @@ public class BMHTechtree {
 			node(gateDuct);
 			
 			// Usines de fabrication
-			node(gateCrafting);
+			node(gateCrafting, () -> {
+				node(livingSteelManufacturingIndustrialComplex, Seq.with(new Research(BMHItems.hardenedLivingSteel)), () -> {});
+			});
 			
 			// Génération d'énergie
 			node(gatePower);
@@ -483,6 +485,7 @@ public class BMHTechtree {
 		});
 	}
 }
+
 
 
 
