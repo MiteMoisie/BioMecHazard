@@ -42,6 +42,7 @@ public class BMHBlocksUtility{
 		recyclingComplex = new PayloadDeconstructor("recycling-complex"){{
             requirements(Category.crafting, with(Items.graphite, 250, Items.thorium, 250, Items.silicon, 200));
             health = 1000;
+			solid = false;
 			itemCapacity = 250;
             consumePower(3f);
             size = 5;
@@ -60,5 +61,6 @@ public class BMHBlocksUtility{
 	}
 
 }
+
 
 
