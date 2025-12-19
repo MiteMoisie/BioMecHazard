@@ -98,6 +98,7 @@ public class BMHTechtree {
 			node(gateUtil, () -> {
 				node(overclockedOverdriveDome);
 				node(recyclingComplex);
+				node(constructionPrinter, Seq.with(new Research(mendProjector)), () -> {});
 			});
 			
 			// Systèmes logiques
@@ -482,6 +483,7 @@ public class BMHTechtree {
 		});
 	}
 }
+
 
 
 
