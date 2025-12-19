@@ -16,7 +16,7 @@ import biomechazard.content.*;
 import static mindustry.type.ItemStack.*;
 
 public class BMHBlocksUtility{
-	public static Block overclockedOverdriveDome, recyclingComplex;
+	public static Block overclockedOverdriveDome, recyclingComplex, constructionPrinter;
 	
 	public static void load(){
 		
@@ -60,4 +60,5 @@ public class BMHBlocksUtility{
 	}
 
 }
+
 
