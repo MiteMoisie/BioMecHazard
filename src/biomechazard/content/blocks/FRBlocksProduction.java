@@ -193,7 +193,7 @@ public class FRBlocksProduction{
                     fill = true;
                     amount = 10;
 					sides = 8;
-					strokeMin = 0.7;
+					strokeMin = 0.7f;
                 }},
 				new DrawDefault()
 			);
@@ -253,8 +253,6 @@ public class FRBlocksProduction{
 			consumeLiquids(LiquidStack.with(Liquids.oil, 0.2f, Liquids.cryofluid, 0.2f, BMHLiquids.livingSteelLiquid, 0.2f));
 			ambientSound = Sounds.spellLoop;
 			ambientSoundVolume = 0.4f;
-			loopSound = Sounds.spellLoop;
-			loopSoundVolume = 0.4f;
 			size = 3;
 			drawer = new DrawMulti(
 				new DrawRegion("-bottom"), 
@@ -492,9 +490,8 @@ public class FRBlocksProduction{
 				}}, 
 				new DrawDefault()
             );
-			//Pas sûr que ces paramètres soient acceptés par un GenericCrafter
-			loopSound = Sounds.spellLoop;
-			loopSoundVolume = 0.2f;
+			ambientSound = Sounds.spellLoop;
+			ambientSoundVolume = 0.2f;
         }};
 		
 		igneousAlloySmelter = new GenericCrafter("alloy-crafter"){{
@@ -537,9 +534,8 @@ public class FRBlocksProduction{
 				new DrawCrucibleFlame(), 
 				new DrawDefault()
             );
-			//Pas sûr que ces paramètres soient acceptés par un GenericCrafter
-			loopSound = Sounds.smelter;
-			loopSoundVolume = 0.3f;
+			ambientSound = Sounds.smelter;
+			ambientSoundVolume = 0.3f;
         }};
 		
 		cryogenicAlloyFusingBasin = new GenericCrafter("cryogenic-alloy-assembler"){{
@@ -594,9 +590,8 @@ public class FRBlocksProduction{
 					color = Color.valueOf("2cbcc9");
 				}}
             );
-			//Pas sûr que ces paramètres soient acceptés par un GenericCrafter
-			loopSound = Sounds.smelter;
-			loopSoundVolume = 0.3f;
+			ambientSound = Sounds.smelter;
+			ambientSoundVolume = 0.3f;
         }};
 		
 		invertedPulverizer = new GenericCrafter("inverted-pulverizer"){{
@@ -626,7 +621,7 @@ public class FRBlocksProduction{
 			consumeItem(Items.scrap, 2);
 			craftTime = 30f;
 			outputItem = new ItemStack(Items.sand, 2);
-			drawer = new DrawMulti(new DrawDefault(), new DrawBlurSpin("-rotator", 0.8f, true), new DrawRegion("-top"));
+			drawer = new DrawMulti(new DrawDefault(), new DrawRegion("-rotator", 0.8f, true), new DrawRegion("-top"));
 		}};
 		
 		inducedKiln = new GenericCrafter("induced-kiln"){{
@@ -641,9 +636,8 @@ public class FRBlocksProduction{
 			consumeItems(with(Items.lead, 3, Items.sand, 4));
 			outputItem = new ItemStack(Items.metaglass, 5);
 			drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawCrucibleFlame(), new DrawDefault(), new DrawRegion("-top"));
-			//Pas sûr que ces paramètres soient acceptés par un GenericCrafter
-			loopSound = Sounds.smelter;
-			loopSoundVolume = 0.35f;
+			ambientSound = Sounds.smelter;
+			ambientSoundVolume = 0.35f;
 		}};
 		
 		siliconForge = new GenericCrafter("silicon-forge"){{
@@ -665,7 +659,7 @@ public class FRBlocksProduction{
 			size = 3;
 			consumePower(1.2f);
 			consumeItems(with(Items.lead, 1, Items.sand, 3, Items.coal, 4));
-			outputItem = new ItemStack(Items.graphite, 1, Items.silicon, 1, Items.metaglass, 1);
+			outputItems = with(Items.graphite, 1, Items.silicon, 1, Items.metaglass, 1);
 			craftTime = 30f;
 			drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawCrucibleFlame(), new DrawPistons(), new DrawDefault());
 		}};
@@ -886,63 +880,3 @@ public class FRBlocksProduction{
 		
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
