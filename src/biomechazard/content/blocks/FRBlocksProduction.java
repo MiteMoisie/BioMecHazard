@@ -413,7 +413,7 @@ public class FRBlocksProduction{
 				}}, 
 				new DrawGlowRegion("-top2"){{
 					color = Color.valueOf("dbaf85");
-				}}, 
+				}}
             );
         }};
 		
@@ -438,7 +438,7 @@ public class FRBlocksProduction{
 				}}, 
 				new DrawGlowRegion("-top2"){{
 					color = Color.valueOf("dbaf85");
-				}}, 
+				}}
             );
         }};
 		
@@ -586,7 +586,7 @@ public class FRBlocksProduction{
 					flameColor = Color.valueOf("c7e6b0");
 					midColor = Color.valueOf("d4d790");
 				}}, 
-				new DrawDefault()
+				new DrawDefault(), 
 				new DrawGlowRegion(){{
 					alpha = 0.4f;
 					glowScale = 6f;
@@ -816,7 +816,7 @@ public class FRBlocksProduction{
 				}}, 
 				new DrawGlowRegion("-top2"){{
 					color = Color.valueOf("fee650");
-				}}, 
+				}}
 			);
 		}};
 		
@@ -886,6 +886,7 @@ public class FRBlocksProduction{
 		
 	}
 }
+
 
 
 
