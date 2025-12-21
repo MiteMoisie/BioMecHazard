@@ -345,7 +345,7 @@ public class BMHTechtree {
 							node(acidVat, () -> {
 								node(acidEmulsifier);
 							});
-							node(waterExtractor, () -> {
+							node(advancedWaterExtractor, () -> {
 								node(advancedCryofluidMixer);
 								node(neutronBlender);
 							});
@@ -572,3 +572,4 @@ public class BMHTechtree {
 		});
 	}
 }
+
