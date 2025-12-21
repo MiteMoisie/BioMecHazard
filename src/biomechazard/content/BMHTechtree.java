@@ -28,6 +28,7 @@ import static biomechazard.content.blocks.UAWBlocksUnits.*;
 import static biomechazard.content.blocks.FRBlocksOthers.*;
 import static biomechazard.content.blocks.FRBlocksLogistic.*;
 //import static biomechazard.content.blocks.FRBlocksAttack.*;
+import static biomechazard.content.blocks.FRBlocksProduction.*;
 import static biomechazard.content.blocks.FRBlocksDefense.*;
 import static biomechazard.content.blocks.FRBlocksLiquid.*;
 import static biomechazard.content.blocks.FRBlocksPower.*;
@@ -63,8 +64,23 @@ public class BMHTechtree {
 				});
 			});
 			
-			// Objets
-			node(gateItem);
+			// Objets//nodeProduce(livingSteel);
+			node(gateItem, () -> {
+				nodeProduce(cryogenicGel, () -> {
+					nodeProduce(igneousAlloy, () -> {
+						nodeProduce(cryogenicAlloy, () -> {});
+					});
+				});
+				nodeProduce(livingSteel, () -> {
+					nodeProduce(livingSteelLiquid, () -> {
+						nodeProduce(hardenedLivingSteel, () -> {
+							nodeProduce(steelAmalgam, () -> {});
+						});
+					});
+				});
+				nodeProduce(uraniumRod, () -> {});
+				nodeProduce(neutronFluid, () -> {});
+			});
 			
 			// Récolteurs d'objets
 			node(gateDrill);
@@ -91,7 +107,7 @@ public class BMHTechtree {
 			
 			// Usines de fabrication
 			node(gateCrafting, () -> {
-				node(livingSteelManufacturingIndustrialComplex, Seq.with(new Research(BMHItems.hardenedLivingSteel)), () -> {});
+				node(livingSteelManufacturingIndustrialComplex, Seq.with(new Research(Items.thorium)), () -> {});
 			});
 			
 			// Génération d'énergie
@@ -99,7 +115,7 @@ public class BMHTechtree {
 			
 			// Utilitaires
 			node(gateUtil, () -> {
-				node(overclockedOverdriveDome);
+				node(overclockedOverdriveDome, Seq.with(new Research(overdriveDome)), () -> {});
 				node(recyclingComplex);
 				node(constructionPrinter, Seq.with(new Research(mendProjector)), () -> {});
 			});
@@ -265,7 +281,77 @@ public class BMHTechtree {
 					});
 				});
 				// Usines de fabrication
-				node(gateFRProduction);
+				node(gateFRProduction, () -> {
+					node(copperAmmocrafter, () -> {
+						node(titaniumAmmocrafter, () -> {
+							node(explosiveAmmocrafter, () -> {
+								node(healingAmmocrafter, () -> {
+									node(homingAmmocrafter, () -> {
+										node(nanobotAmmocrafter, () -> {
+											node(nukeCrafter);
+										});
+									});
+								});
+							});
+						});
+					});
+					node(livingSteelInfusionChamber, () -> {
+						node(livingSteelLiquifyingChamber, () -> {
+							node(livingSteelHardeningChamber, () -> {
+								node(livingSteelHardeningForge);
+							});
+							node(livingSteelLiquifyingForge);
+						});
+						node(livingSteelForge);
+					});
+					node(invertedPulverizer, () -> {
+						node(powderizer, () -> {
+							node(inducedKiln, () -> {
+								node(greenhouse, () -> {
+									node(pyratiteForge, () -> {
+										node(blastForge, () -> {
+											node(graphiteForge, () -> {
+												node(coalCondenser, () -> {
+													node(plastaniumForge, () -> {
+														node(phaseFabricForge, () -> {
+															node(advancedSeperator);
+														});
+														node(uraniumrodCrafter);
+													});
+													node(surgeAlloyForge, () -> {
+														node(amalgamSmelter, () -> {
+															node(amalgamForge);
+														});
+														node(cryogenicGelMixer, () -> {
+															node(igneousAlloySmelter, () -> {
+																node(cryogenicAlloyFusingBasin);
+															});
+														});
+													});
+												});
+											});
+										});
+									});
+									node(sporeCrusher);
+								});
+								node(siliconForge, () -> {
+									node(basicMultismelter);
+								});
+							});
+						});
+					});
+					node(steamCondenser, () -> {
+						node(dissolver, () -> {
+							node(acidVat, () -> {
+								node(acidEmulsifier);
+							});
+							node(waterExtractor, () -> {
+								node(advancedCryofluidMixer);
+								node(neutronBlender);
+							});
+						});
+					});
+				});
 				// Distributions d'objets
 				node(gateFRDistribution, () -> {
 					node(titaniumJunction, () -> {
@@ -486,11 +572,3 @@ public class BMHTechtree {
 		});
 	}
 }
-
-
-
-
-
-
-
-
