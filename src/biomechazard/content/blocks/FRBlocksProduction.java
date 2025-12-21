@@ -18,7 +18,7 @@ import static mindustry.type.ItemStack.*;
 public class FRBlocksProduction{
 	public static Block 
 		livingSteelInfusionChamber, livingSteelForge, livingSteelLiquifyingChamber, livingSteelLiquifyingForge, livingSteelHardeningChamber, 
-		livingSteelHardeningForge, steamCondenser, dissolver, acidVat, acidEmulsifier, waterExtractor, advancedCryofluidMixer, neutronBlender, 
+		livingSteelHardeningForge, steamCondenser, dissolver, acidVat, acidEmulsifier, advancedWaterExtractor, advancedCryofluidMixer, neutronBlender, 
 		copperAmmocrafter, titaniumAmmocrafter, explosiveAmmocrafter, healingAmmocrafter, homingAmmocrafter, nanobotAmmocrafter, nukeCrafter, 
 		uraniumrodCrafter, amalgamSmelter, amalgamForge, cryogenicGelMixer, igneousAlloySmelter, cryogenicAlloyFusingBasin, invertedPulverizer, 
 		powderizer, inducedKiln, siliconForge, basicMultismelter, sporeCrusher, greenhouse, pyratiteForge, blastForge, graphiteForge, coalCondenser, 
@@ -199,7 +199,7 @@ public class FRBlocksProduction{
 			);
         }};
 		
-		waterExtractor = new SolidPump("water-extractor"){{
+		advancedWaterExtractor = new SolidPump("advanced-water-extractor"){{
             requirements(Category.production, with(Items.metaglass, 65, Items.graphite, 150, Items.lead, 140, Items.copper, 175));
             result = Liquids.water;
 			hasPower = true;
@@ -208,7 +208,7 @@ public class FRBlocksProduction{
             size = 3;
             liquidCapacity = 250f;
             attribute = Attribute.water;
-            envRequired |= Env.groundWater;
+            //envRequired |= Env.groundWater;
             consumePower(3.5f);
 			health = 320;
         }};
@@ -880,3 +880,4 @@ public class FRBlocksProduction{
 		
 	}
 }
+
