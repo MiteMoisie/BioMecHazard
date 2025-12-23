@@ -13,7 +13,7 @@ import mindustry.world.blocks.storage.StorageBlock;
 import mindustry.world.meta.*;
 
 /**
-* Les noyaux Quarkhod sont différents des noyaux originaux : 
+* Les stockages Quarkhod sont différents des stockages originaux : 
 * - Ils peuvent être construit n'importe où, y compris sur l'eau. 
 * - Ils sont conducteurs d'énergie, alimentant les blocs adjacents. 
 * - Ils peuvent stocker les fluides et les redistribuer comme les réservoirs. 
@@ -29,7 +29,7 @@ public class StorageBlockQuarkhod extends StorageBlock {
 		
 		consumesPower = false;
 		outputsPower = true;
-		conductivePower = true;
+		conductivePower = true; // /!\ Ne fonctionne pas. 
 		
 		hasLiquids = true;
 		liquidCapacity = 700; //Même capacité de base que le petit réservoir basique.
@@ -62,4 +62,5 @@ public class StorageBlockQuarkhod extends StorageBlock {
 	}
 
 }
+
 
