@@ -40,7 +40,7 @@ public class CoreQuarkhod extends CoreBlock {
 		hasPower = true;
 		consumesPower = false;
 		outputsPower = true;
-		conductivePower = true;
+		conductivePower = true; // /!\ Ne fonctionne pas. 
 		
 		/** 
 		* À faire : ajouter la capacité au noyau de stocker des liquides. Pour l'instant
@@ -126,6 +126,7 @@ public class CoreQuarkhod extends CoreBlock {
     }
 
 }
+
 
 
 
