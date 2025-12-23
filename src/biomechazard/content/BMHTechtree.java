@@ -336,7 +336,7 @@ public class BMHTechtree {
 														});
 														node(cryogenicGelMixer, Seq.with(new Research(steelAmalgam)), () -> {
 															node(igneousAlloySmelter, Seq.with(new Research(steelAmalgam)), () -> {
-																node(cryogenicAlloyFusingBasinSeq.with(new Research(steelAmalgam)), () -> {});
+																node(cryogenicAlloyFusingBasin, Seq.with(new Research(steelAmalgam)), () -> {});
 															});
 														});
 													});
@@ -368,7 +368,7 @@ public class BMHTechtree {
 				node(gateFRDistribution, () -> {
 					node(titaniumJunction, () -> {
 						node(titaniumRouter, () -> {
-							node(surgeTitaniumConveyor, () -> {
+							node(titaniumBridgeConveyor, () -> {
 								node(advancedUnloader, () -> {
 									node(tinyMassDriver, () -> {
 										node(massAccelerator);
