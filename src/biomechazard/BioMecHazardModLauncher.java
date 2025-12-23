@@ -105,6 +105,7 @@ public class BioMecHazardModLauncher extends Mod{
 		UAWBlocksUnits.load();
 		
 		Log.info("Mod BioMecHazard : chargement du contenu du mod 'Fading Revelations'.");
+		FRUnitTypes.load();
 		FRBlocksOthers.load();
 		FRBlocksLogistic.load();
 		FRBlocksLiquid.load();
@@ -123,3 +124,4 @@ public class BioMecHazardModLauncher extends Mod{
     }
 
 }
+
