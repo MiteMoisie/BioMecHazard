@@ -39,6 +39,7 @@ import static biomechazard.content.BMHUnits.*;
 import static biomechazard.content.BMHItems.*;
 import static biomechazard.content.BMHLiquids.*;
 import static biomechazard.content.UAWUnitTypes.*;
+import static biomechazard.content.FRUnitTypes.*;
 
 public class BMHTechtree {
     public static void load(){
@@ -66,6 +67,12 @@ public class BMHTechtree {
 			
 			// Objets//nodeProduce(livingSteel);
 			node(gateItem, () -> {
+				nodeProduce(steam, () -> {
+					nodeProduce(anthracite, () -> {
+						nodeProduce(stoutsteel, () -> {});
+					});
+					nodeProduce(cryogel, () -> {});
+				});
 				nodeProduce(cryogenicGel, () -> {
 					nodeProduce(igneousAlloy, () -> {
 						nodeProduce(cryogenicAlloy, () -> {});
@@ -74,12 +81,17 @@ public class BMHTechtree {
 				nodeProduce(livingSteel, () -> {
 					nodeProduce(livingSteelLiquid, () -> {
 						nodeProduce(hardenedLivingSteel, () -> {
+							nodeProduce(neutronFluid, () -> {});
 							nodeProduce(steelAmalgam, () -> {});
 						});
 					});
 				});
-				nodeProduce(uraniumRod, () -> {});
-				nodeProduce(neutronFluid, () -> {});
+				nodeProduce(gold, () -> {
+					nodeProduce(uraniumRod, () -> {});
+				});
+				nodeProduce(waterVapor, () -> {
+					nodeProduce(acid, () -> {});
+				});
 			});
 			
 			// Récolteurs d'objets
@@ -553,13 +565,13 @@ public class BMHTechtree {
 			// Unités
 			node(gateFRUnits, () -> {
 				// Unités de noyau
-				node(gateFRCoreUnits/*, () -> {
+				node(gateFRCoreUnits, () -> {
 					node(deltaFR, () -> {
 						node(epsilonFR, () -> {
 							node(mainCoreUnit);
 						});
 					});
-				}*/);
+				});
 				// Usines de fabrication d'unités
 				node(gateFRFactories);
 				// Unités terrestres
@@ -572,4 +584,3 @@ public class BMHTechtree {
 		});
 	}
 }
-
