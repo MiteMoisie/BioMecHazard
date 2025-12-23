@@ -368,7 +368,7 @@ public class BMHTechtree {
 				node(gateFRDistribution, () -> {
 					node(titaniumJunction, () -> {
 						node(titaniumRouter, () -> {
-							node(surgeTitaniumConveyor, () -> {
+							node(/*surgeTitaniumConveyor*/titaniumRouter, () -> {
 								node(advancedUnloader, () -> {
 									node(tinyMassDriver, () -> {
 										node(massAccelerator);
@@ -584,3 +584,4 @@ public class BMHTechtree {
 		});
 	}
 }
+
