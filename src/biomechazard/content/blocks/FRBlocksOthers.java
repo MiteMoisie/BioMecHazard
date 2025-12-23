@@ -34,7 +34,7 @@ public class FRBlocksOthers{
 			researchCostMultiplier = 0.5f;
 			health = 8000;
 			itemCapacity = 16000;
-			unitType = BMHUnits.mokuge;//FRUnits.deltaFR;
+			unitType = FRUnitTypes.deltaFR;
 			unitCapModifier = 32;
         }};
 		
@@ -45,7 +45,7 @@ public class FRBlocksOthers{
 			researchCostMultiplier = 0.5f;
 			health = 9500;
 			itemCapacity = 19000;
-			unitType = BMHUnits.mokuge;//FRUnits.epsilonFR;
+			unitType = FRUnitTypes.epsilonFR;
 			unitCapModifier = 42;
         }};
 		
@@ -56,7 +56,7 @@ public class FRBlocksOthers{
 			researchCostMultiplier = 0.4f;
 			health = 11200;
 			itemCapacity = 22000;
-			unitType = BMHUnits.mokuge;//FRUnits.mainCoreUnit;
+			unitType = FRUnitTypes.mainCoreUnit;
 			unitCapModifier = 56;
         }};
 		
@@ -142,5 +142,6 @@ public class FRBlocksOthers{
 	}
 
 }
+
 
 
