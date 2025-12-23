@@ -2,10 +2,12 @@ package biomechazard.content;
 
 import arc.audio.*;
 import arc.graphics.*;
+import arc.struct.*;
 import mindustry.content.*;
 import mindustry.entities.abilities.*;
 import mindustry.entities.bullet.*;
 import mindustry.entities.effect.*;
+import mindustry.entities.pattern.*;
 import mindustry.gen.*;
 import mindustry.type.*;
 
@@ -378,6 +380,7 @@ public class FRUnitTypes{
 		
 	}
 }
+
 
 
 
