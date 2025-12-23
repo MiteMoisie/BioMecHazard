@@ -15,7 +15,7 @@ import static mindustry.type.ItemStack.*;
 
 public class FRBlocksLogistic{
 	public static Block 
-		plastaniumConduit, amalgamConveyor, surgeAlloyConveyor, surgeBridgeConveyor, surgeTitaniumConveyor, 
+		plastaniumConduit, amalgamConveyor, surgeAlloyConveyor, surgeBridgeConveyor, titaniumBridgeConveyor, 
 		titaniumDistributor, titaniumJunction, titaniumRouter, tinyMassDriver, massAccelerator, advancedLaunchPad;
 	
 	public static void load(){
@@ -62,7 +62,7 @@ public class FRBlocksLogistic{
 			hasPower = false;
         }};
 		
-		surgeTitaniumConveyor = new ItemBridge("titanium-bridge-conveyor"){{
+		titaniumBridgeConveyor = new ItemBridge("titanium-bridge-conveyor"){{
             requirements(Category.distribution, with(Items.lead, 4, Items.copper, 4, Items.titanium, 4));
             health = 250;
             range = 6;
@@ -129,6 +129,4 @@ public class FRBlocksLogistic{
 			consumeLiquid(Liquids.water, 0.3f);
         }};
 	}
-
 }
-
