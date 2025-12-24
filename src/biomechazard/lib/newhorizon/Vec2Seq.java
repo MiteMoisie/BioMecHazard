@@ -2,7 +2,7 @@
 * @author Yuria 
 * mod "New Horizon" v0.5.3
 */
-package newhorizon.util.struct;
+package biomechazard.lib.newhorizon;
 
 import arc.func.Boolf;
 import arc.func.Cons;
