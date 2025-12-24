@@ -13,7 +13,6 @@ import arc.util.Nullable;
 import arc.util.Time;
 import arc.util.Tmp;
 import mindustry.gen.Building;
-import mindustry.gen.Buildingc;
 import mindustry.graphics.Drawf;
 import mindustry.logic.Ranged;
 import biomechazard.lib.newhorizon.DrawFunc;
@@ -22,7 +21,7 @@ import static mindustry.Vars.tilesize;
 import static mindustry.Vars.world;
 import static biomechazard.lib.newhorizon.DrawFunc.sinScl;
 
-public interface Linkablec extends Buildingc, Ranged{
+public interface Linkablec extends Building, Ranged{
 	Seq<Building> tmpSeq = new Seq<>(1);
 	
 	@Override default boolean onConfigureBuildTapped(Building other){
@@ -42,12 +41,12 @@ public interface Linkablec extends Buildingc, Ranged{
 		if(builds == null){
 			if(linkValid(link())){
 				Draw.color(getLinkColor());
-				Drawf.circles(getX(), getY(), block().size / 2f * tilesize + Mathf.absin(Time.time * sinScl, 6f, 1f), getLinkColor());
+				Drawf.circles(getX(), getY(), block.size / 2f * tilesize + Mathf.absin(Time.time * sinScl, 6f, 1f), getLinkColor());
 				DrawFunc.link(this, link(), getLinkColor());
 			}
 		}else if(builds.size > 0){
 			Draw.color(getLinkColor());
-			Drawf.circles(getX(), getY(), block().size / 2f * tilesize + Mathf.absin(Time.time * sinScl, 6f, 1f), getLinkColor());
+			Drawf.circles(getX(), getY(), block.size / 2f * tilesize + Mathf.absin(Time.time * sinScl, 6f, 1f), getLinkColor());
 			
 			for(Building b : builds){
 				if(!linkValid(b))continue;
