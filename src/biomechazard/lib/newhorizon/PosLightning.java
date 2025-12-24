@@ -70,6 +70,30 @@ public class PosLightning {
 	/**Used for range spawn, make the lightning more random and has smoother spacing.*/
 	public static float trueHitChance = 1;
 	
+	public static final Effect posLightning = (new Effect(lifetime, 1200.0f, e -> {
+		if(!(e.data instanceof Vec2Seq)) return;
+		Vec2Seq lines = e.data();
+		
+		Draw.color(e.color, Color.white, e.fout() * 0.6f);
+		
+		Lines.stroke(e.rotation * e.fout());
+		
+		Fill.circle(lines.firstTmp().x, lines.firstTmp().y, Lines.getStroke() / 2f);
+		
+		for(int i = 0; i < lines.size() - 1; i++){
+			Vec2 cur = lines.setVec2(i, Tmp.v1);
+			Vec2 next = lines.setVec2(i + 1, Tmp.v2);
+			
+			Lines.line(cur.x, cur.y, next.x, next.y, false);
+			Fill.circle(next.x, next.y, Lines.getStroke() / 2f);
+		}
+	})).layer(Layer.effect - 0.001f);
+	
+	private static Building furthest;
+	private static final Rect rect = new Rect();
+	private static final Rand rand = new Rand();
+	private static final FloatSeq floatSeq = new FloatSeq();
+	private static final Vec2 tmp1 = new Vec2(), tmp2 = new Vec2(), tmp3 = new Vec2();
 	
 	/**(0, 1]*/
 	public static void setHitChance(float f){
