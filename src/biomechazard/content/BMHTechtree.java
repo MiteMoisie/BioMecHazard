@@ -87,7 +87,7 @@ public class BMHTechtree {
 					});
 				});
 				nodeProduce(gold, () -> {
-					nodeProduce(uraniumRod, () -> {});
+					nodeProduce(fuelRod, () -> {});
 				});
 				nodeProduce(waterVapor, () -> {
 					nodeProduce(acid, () -> {});
@@ -328,7 +328,7 @@ public class BMHTechtree {
 														node(phaseFabricForge, () -> {
 															node(advancedSeperator);
 														});
-														node(uraniumrodCrafter);
+														node(fuelRodCrafter);
 													});
 													node(surgeAlloyForge, () -> {
 														node(amalgamSmelter, () -> {
@@ -532,7 +532,7 @@ public class BMHTechtree {
 							nodeProduce(cryogenicAlloy, () -> {});
 						});
 					});
-					nodeProduce(uraniumRod, () -> {
+					nodeProduce(fuelRod, () -> {
 						nodeProduce(nuke, () -> {});
 					});
 					nodeProduce(gold, () -> {});
@@ -584,3 +584,4 @@ public class BMHTechtree {
 		});
 	}
 }
+
