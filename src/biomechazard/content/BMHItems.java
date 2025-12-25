@@ -10,14 +10,14 @@ import static mindustry.content.Items.*;
 * Objets issus du mod "Unlimited Armament Works" : cryogel dieselCore stoutsteel anthracite phlogistonCrystal sulphur
 * 	emptyBulletCasing standardBullet incendiaryBullet cryoBullet armourPiercingBullet spreadShotBullet explosiveBullet arcBullet
 * 	emptyMineCanister standardMineCanister incendiaryMineCanister cryoMineCanister antiAirMineCanister sporeMineCanister empMineCanister nukeMineCanister
-* Objets issus du mod "Fading Revelations" : gold steelAmalgam uraniumRod livingSteel hardenedLivingSteel cryogenicAlloy cryogenicGel igneousAlloy
+* Objets issus du mod "Fading Revelations" : gold steelAmalgam fuelRod livingSteel hardenedLivingSteel cryogenicAlloy cryogenicGel igneousAlloy
 *  copperAmmo titaniumAmmo explosiveAmmo healingAmmo homingAmmo nanoAmmo nuke
 */
 
 public class BMHItems {
 	public static Item 
 		// Manufacturé
-		cryogel, dieselCore, steelAmalgam, uraniumRod, cryogenicAlloy, cryogenicGel, igneousAlloy, 
+		cryogel, dieselCore, steelAmalgam, fuelRod, cryogenicAlloy, cryogenicGel, igneousAlloy, 
 		// Métal
 		stoutsteel, titaniumCarbide, gold, livingSteel, hardenedLivingSteel, 
 		// Cristal
@@ -56,7 +56,7 @@ public class BMHItems {
 			explosiveness = 0.2f;
 			charge = 0.9f;
 		}};
-		uraniumRod = new Item("uranium-rod", Color.valueOf("22b400")) {{
+		fuelRod = new Item("fuel-rod", Color.valueOf("22b400")) {{
 			cost = 2.5f;
 			flammability = 0.1f;
 			explosiveness = 0.2f;
@@ -155,4 +155,5 @@ public class BMHItems {
 		empMineCanister = new Item("mine-emp", Color.valueOf("6974c4")) {{}};
 		nukeMineCanister = new Item("mine-nuke", Color.valueOf("706f74")) {{}};
 	}
+
 }
