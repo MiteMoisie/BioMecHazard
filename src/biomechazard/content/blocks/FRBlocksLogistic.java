@@ -63,7 +63,7 @@ public class FRBlocksLogistic{
         }};
 		
 		titaniumBridgeConveyor = new ItemBridge("titanium-bridge-conveyor"){{
-            requirements(Category.distribution, with(Items.lead, 4, Items.copper, 4, Items.titanium, 4));
+            requirements(Category.distribution, with(Items.lead, 8, Items.copper, 8, Items.titanium, 8));
             health = 250;
             range = 6;
 			transportTime = 4f;
@@ -117,7 +117,7 @@ public class FRBlocksLogistic{
 		
 		advancedLaunchPad = new LaunchPad("big-launch-pad"){{
             requirements(Category.effect, 
-				with(Items.silicon, 700, Items.lead, 700, Items.titanium, 800, Items.plastanium, 200, Items.phaseFabric, 200, BMHItems.steelAmalgam, 100));
+				with(Items.silicon, 700, Items.lead, 700, BMHItems.livingSteel, 800, Items.plastanium, 200, Items.phaseFabric, 200, BMHItems.steelAmalgam, 100));
             health = 740;
             launchTime = 780f;
 			lightColor = Color.valueOf("8c0291");
@@ -130,3 +130,4 @@ public class FRBlocksLogistic{
         }};
 	}
 }
+
