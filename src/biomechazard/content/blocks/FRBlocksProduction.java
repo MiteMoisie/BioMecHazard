@@ -441,7 +441,7 @@ public class FRBlocksProduction{
         }};
 		
 		cryogenicGelMixer = new GenericCrafter("cryogenic-gel-mixer"){{
-            requirements(Category.crafting, with(Items.metaglass, 210, Items.lead, 250, Items.graphite, 200, Items.silicon, 150));
+            requirements(Category.crafting, with(Items.metaglass, 210, Items.lead, 250, Items.graphite, 200, Items.silicon, 150, Items.surgeAlloy, 75));
             updateEffectChance = 1f;
 			updateEffect = new RadialEffect(){{
 				layer = 118f;
@@ -495,7 +495,7 @@ public class FRBlocksProduction{
         }};
 		
 		igneousAlloySmelter = new GenericCrafter("alloy-crafter"){{
-            requirements(Category.crafting, with(Items.titanium, 200, Items.lead, 300, Items.graphite, 250, Items.silicon, 220));
+            requirements(Category.crafting, with(Items.titanium, 200, Items.lead, 300, Items.graphite, 250, Items.silicon, 220, Items.surgeAlloy, 75));
             updateEffect = new RadialEffect(){{
 				layer = 118f;
 				rotationSpacing = 12f;
@@ -881,5 +881,6 @@ public class FRBlocksProduction{
 		
 	}
 }
+
 
 
