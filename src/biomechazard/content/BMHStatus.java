@@ -106,9 +106,10 @@ public class BMHStatus {
 		}};
 		
 		acidicBurn = new BMHStatusEffect("acidic-burn") {{
-			damage = 0.1f;
-			speedMultiplier = 0.9f;
-			effectChance = 0.2f;
+			//damage = 0.1f;
+			speedMultiplier = 0.8f;
+			damageMultiplier = 0.8f;
+			/*effectChance = 0.2f;
 			effect = new ParticleEffect(){{
 				particles = 20;
 				colorFrom = Color.valueOf("f8f854");
@@ -120,7 +121,7 @@ public class BMHStatus {
 				strokeFrom = 1.1f;
 				strokeTo = 0.3f;
 				lifetime = 120f;
-			}};
+			}};*/
 		}};
 		constructionShock = new BMHStatusEffect("construction-shock") {{
 			buildSpeedMultiplier = 0.8f;
