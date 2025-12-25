@@ -333,13 +333,14 @@ public class FRBlocksPower{
 			smokeThreshold = 0.58f;
 			flashThreshold = 0.4f;
 			coolantPower = 0.5f;
-			fuelItem = BMHItems.uraniumRod;
-            consumeLiquid(BMHLiquids.livingSteelLiquid, 0.08f);
-            consumeItem(BMHItems.uraniumRod, 9);
+			fuelItem = BMHItems.fuelRod;
+            consumeLiquid(BMHLiquids.livingSteelLiquid, 0.02f);
+            consumeItem(BMHItems.fuelRod, 9);
         }};
 		
 	}
 
 }
+
 
 
