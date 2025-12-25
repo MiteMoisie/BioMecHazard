@@ -75,7 +75,7 @@ public class FRBlocksDrills{
 				sizeFrom = 12f;
 				sizeTo = 0f;
 			}};
-            outputItem = new ItemStack(Items.sand, 6);
+            outputItem = new ItemStack(Items.sand, 12);
             craftTime = 60f;
             itemCapacity = 50;
             size = 3;
@@ -83,7 +83,7 @@ public class FRBlocksDrills{
             hasLiquids = true;
             hasPower = true;
 
-            consumePower(3f);
+            consumePower(6f);
 			ambientSound = BMHSoundEffects.crush;
 			ambientSoundVolume = 1.3f;
         }};
@@ -377,4 +377,5 @@ public class FRBlocksDrills{
 		
 	}
 }
+
 
