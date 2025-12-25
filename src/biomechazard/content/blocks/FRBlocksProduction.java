@@ -20,7 +20,7 @@ public class FRBlocksProduction{
 		livingSteelInfusionChamber, livingSteelForge, livingSteelLiquifyingChamber, livingSteelLiquifyingForge, livingSteelHardeningChamber, 
 		livingSteelHardeningForge, steamCondenser, dissolver, acidVat, acidEmulsifier, advancedWaterExtractor, advancedCryofluidMixer, neutronBlender, 
 		copperAmmocrafter, titaniumAmmocrafter, explosiveAmmocrafter, healingAmmocrafter, homingAmmocrafter, nanobotAmmocrafter, nukeCrafter, 
-		uraniumrodCrafter, amalgamSmelter, amalgamForge, cryogenicGelMixer, igneousAlloySmelter, cryogenicAlloyFusingBasin, invertedPulverizer, 
+		fuelRodCrafter, amalgamSmelter, amalgamForge, cryogenicGelMixer, igneousAlloySmelter, cryogenicAlloyFusingBasin, invertedPulverizer, 
 		powderizer, inducedKiln, siliconForge, basicMultismelter, sporeCrusher, greenhouse, pyratiteForge, blastForge, graphiteForge, coalCondenser, 
 		plastaniumForge, surgeAlloyForge, phaseFabricForge, advancedSeperator;
 	
@@ -242,7 +242,7 @@ public class FRBlocksProduction{
         }};
 		
 		neutronBlender = new GenericCrafter("neutron-blender"){{
-            requirements(Category.crafting, with(Items.metaglass, 250, Items.titanium, 220, Items.silicon, 160, BMHItems.livingSteel, 140));
+            requirements(Category.crafting, with(Items.metaglass, 250, Items.titanium, 220, Items.silicon, 180, BMHItems.livingSteel, 140));
             outputLiquid = new LiquidStack(BMHLiquids.neutronFluid, 0.2f);
 			hasPower = true;
 			consumePower(2.2f);
@@ -373,13 +373,13 @@ public class FRBlocksProduction{
             hasLiquids = false;
             hasPower = true;
 			consumePower(6f);
-            consumeItems(with(Items.graphite, 20, Items.thorium, 10, Items.blastCompound, 10, BMHItems.uraniumRod, 10));
+            consumeItems(with(Items.graphite, 20, Items.thorium, 10, Items.blastCompound, 10, BMHItems.fuelRod, 10));
         }};
 		
-		uraniumrodCrafter = new GenericCrafter("uraniumrod-crafter"){{
+		fuelRodCrafter = new GenericCrafter("fuelrod-crafter"){{
             requirements(Category.crafting, with(Items.copper, 200, Items.lead, 150, Items.titanium, 60, Items.thorium, 50));
             size = 2;
-            outputItem = new ItemStack(BMHItems.uraniumRod, 3);
+            outputItem = new ItemStack(BMHItems.fuelRod, 3);
             craftTime = 300f;
             hasItems = true;
             hasLiquids = false;
@@ -785,6 +785,7 @@ public class FRBlocksProduction{
 			craftEffect = Fx.formsmoke;
 			updateEffect = Fx.plasticburn;
 			craftTime = 60f;
+			itemCapacity = 20;
 			liquidCapacity = 84f;
 			drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawPistons(){{sinMag = 2f;}}, new DrawDefault());
 			consumePower(3.75f);
@@ -880,4 +881,5 @@ public class FRBlocksProduction{
 		
 	}
 }
+
 
